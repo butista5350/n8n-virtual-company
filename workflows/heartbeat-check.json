@@ -1,5 +1,6 @@
 {
   "name": "Heartbeat Check",
+  "description": "Tier: T0 — heartbeat only (schedule + set), no LLM nodes or model endpoints; cost $0.",
   "nodes": [
     {
       "parameters": {

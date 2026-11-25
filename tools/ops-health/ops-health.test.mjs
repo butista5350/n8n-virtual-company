@@ -5,16 +5,21 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import crypto from 'node:crypto';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', '..');
 const FILES = {
   monitor: path.join(ROOT, 'workflows/ops/health-monitor.json'),
   handler: path.join(ROOT, 'workflows/ops/global-error-handler.json'),
+  heartbeat: path.join(ROOT, 'workflows/heartbeat-check.json'),
 };
 const load = (f) => JSON.parse(fs.readFileSync(f, 'utf8'));
 const monitor = load(FILES.monitor);
 const handler = load(FILES.handler);
+const heartbeat = load(FILES.heartbeat);
 const all = [monitor, handler];
+const PLACEHOLDER_CHAT = 'REPLACE_WITH_TELEGRAM_CHAT_ID';
+const EXPECTED = ['Heartbeat Check', 'GitHub AI Assistant', 'MCP server', 'Telegram Approval', 'Global Error Handler'];
 
 const ALLOWED_TYPES = new Set([
   'n8n-nodes-base.scheduleTrigger',
@@ -50,22 +55,23 @@ function runCode(code, { nodes = {}, input = [], executed = [], state = {}, now 
 const T0 = Date.parse('2026-11-25T09:45:00Z');
 const MIN = 60000;
 const cfg = {
-  n8n_base_url: 'http://localhost:5678',
+  n8n_base_url: 'http://localhost:5680',
   expected_workflows: ['Heartbeat Check', 'Telegram Approval'],
   heartbeat_workflow_name: 'Heartbeat Check',
   heartbeat_max_age_minutes: 30,
   failure_lookback_minutes: 15,
   suppress_hours: 2,
-  telegram_chat_id: '1208634276',
+  telegram_chat_id: PLACEHOLDER_CHAT,
 };
 const okResp = (body) => ({ statusCode: 200, body });
 // Production Config as exported (heartbeat check disabled until a heartbeat workflow exists).
 const prodCfg = Object.fromEntries(node(monitor, 'Config').parameters.assignments.assignments.map((a) => [a.name, a.type === 'array' ? JSON.parse(a.value) : a.value]));
-function signals(now, { hbAgeMin = 5, failures = [], apiDown = false, inactive = [], config = cfg, noHeartbeatWf = false } = {}) {
+function signals(now, { hbAgeMin = 5, failures = [], apiDown = false, inactive = [], config = cfg, noHeartbeatWf = false, extraWfs = [] } = {}) {
   const wfs = [
     { id: 'hb1', name: 'Heartbeat Check', active: !inactive.includes('Heartbeat Check'), settings: { errorWorkflow: 'geh' } },
     { id: 'ta1', name: 'Telegram Approval', active: !inactive.includes('Telegram Approval'), settings: { errorWorkflow: 'geh' } },
     { id: 'u1', name: 'Uncovered', active: true, settings: {} },
+    ...extraWfs.map((name, i) => ({ id: 'x' + i, name, active: !inactive.includes(name), settings: { errorWorkflow: 'geh' } })),
   ].filter((w) => !(noHeartbeatWf && w.id === 'hb1'));
   return {
     Config: config,
@@ -113,9 +119,17 @@ test('no secrets committed in workflow files', () => {
   for (const f of Object.values(FILES)) assert.ok(!SECRET.test(fs.readFileSync(f, 'utf8')), f);
 });
 
-test('Telegram alerts go to the approved chat and use HTML-escaped text', () => {
-  assert.equal(node(handler, 'Send Error Alert').parameters.chatId, '1208634276');
-  assert.equal(cfg.telegram_chat_id, node(monitor, 'Config').parameters.assignments.assignments.find((a) => a.name === 'telegram_chat_id').value);
+test('Telegram chat id and credential id are placeholders in committed files', () => {
+  assert.equal(node(handler, 'Send Error Alert').parameters.chatId, PLACEHOLDER_CHAT);
+  assert.equal(prodCfg.telegram_chat_id, PLACEHOLDER_CHAT);
+  for (const wf of all) for (const n of wf.nodes.filter((x) => x.credentials && x.credentials.telegramApi)) {
+    assert.equal(n.credentials.telegramApi.id, 'REPLACE_ME', wf.name + ': ' + n.name);
+  }
+  assert.equal(prodCfg.n8n_base_url, 'http://localhost:5680');
+});
+
+test('every workflow file carries a Tier: T0 note in its description', () => {
+  for (const wf of [monitor, handler, heartbeat]) assert.match(String(wf.description || ''), /^Tier: T0\b/, wf.name);
 });
 
 test('monitor schedules: every 15 minutes + daily 08:00 Asia/Riyadh', () => {
@@ -214,16 +228,27 @@ test('an API outage does not produce a false "recovered" for checks it could not
   assert.ok(Object.keys(state.opsHealth.active).some((k) => k === 'hb:stale'));
 });
 
-test('approved Config: heartbeat check disabled, Telegram Approval is the only expected workflow', () => {
-  assert.equal(String(prodCfg.heartbeat_workflow_name || ''), '');
-  assert.deepEqual(prodCfg.expected_workflows, ['Telegram Approval']);
+test('approved Config: heartbeat check enabled on Heartbeat Check, five expected workflows', () => {
+  assert.equal(prodCfg.heartbeat_workflow_name, 'Heartbeat Check');
+  assert.deepEqual(prodCfg.expected_workflows, EXPECTED);
   assert.equal(Number(prodCfg.heartbeat_max_age_minutes), 30);
   assert.equal(Number(prodCfg.failure_lookback_minutes), 15);
   assert.equal(Number(prodCfg.suppress_hours), 2);
 });
 
-test('with heartbeat disabled: no heartbeat alert even without a heartbeat workflow, summary says disabled', () => {
-  const opts = { config: prodCfg, noHeartbeatWf: true, hbAgeMin: 999 };
+test('approved Config: no alert when all five workflows exist and are active, alert names a missing one', () => {
+  const extra = EXPECTED.filter((n) => !['Heartbeat Check', 'Telegram Approval'].includes(n));
+  assert.deepEqual(runMonitor(T0, { config: prodCfg, extraWfs: extra }, {}), []);
+  const [a] = runMonitor(T0, { config: prodCfg, extraWfs: extra.filter((n) => n !== 'MCP server') }, {});
+  assert.equal(a.kind, 'alert');
+  assert.match(a.text, /MCP server/);
+  const [b] = runMonitor(T0, { config: prodCfg, extraWfs: extra, hbAgeMin: 45 }, {});
+  assert.match(b.text, /تأخرت النبضة/);
+});
+
+test('with heartbeat disabled (empty name): no heartbeat alert, summary says disabled', () => {
+  const disabled = { ...prodCfg, heartbeat_workflow_name: '', expected_workflows: ['Telegram Approval'] };
+  const opts = { config: disabled, noHeartbeatWf: true, hbAgeMin: 999 };
   assert.deepEqual(runMonitor(T0, opts, {}), []);
   const [s] = runMonitor(T0, opts, {}, true);
   assert.match(s.text, /كل الفحوصات سليمة/);
@@ -239,4 +264,55 @@ test('daily 08:00 summary is always sent and does not change suppression state',
   const [s2] = runMonitor(T0, { hbAgeMin: 45 }, state, true);
   assert.match(s2.text, /مشكلة قائمة/);
   assert.deepEqual(state, {});
+});
+
+// ---------------- Public-repo hygiene: no real IPs or Telegram chat ids in ANY file ----------------
+// Known real values are compared by SHA-256 only, so they are never written in this repo.
+const KNOWN_REAL_SHA256 = new Set([
+  '989a9b57db172d2ba491cfed0c6bd86ce9545a7c73d4802077df6433fda3937c', // production Telegram chat id
+  'aadbced5c9ecc806d98d5489893484bf97a5b30c90ddcc58f3e7aef4bdb9ca2b', // production host IP
+  '7927b6f79d86fccb05d912e11190874fc1dc60b3f95a1c57f596d97383f99075', // production Telegram credential id
+]);
+const SKIP_DIRS = new Set(['.git', 'node_modules']);
+const TEXT_EXT = /\.(json|md|mjs|cjs|js|ts|mts|ya?ml|txt|env|ini|conf|cfg|toml|sh|html|csv|example)$/i;
+const IPV4 = /(?<![\d.])(?:25[0-5]|2[0-4]\d|1?\d?\d)(?:\.(?:25[0-5]|2[0-4]\d|1?\d?\d)){3}(?![\d.])/g;
+const IP_ALLOWED = (ip) => /^127\./.test(ip) || ip === '0.0.0.0' || /^(192\.0\.2|198\.51\.100|203\.0\.113)\./.test(ip);
+const CHAT_KEY = /["']?(?:chat_?id|telegram_chat_id|chatId)["']?\s*[:=]\s*["']?-?\d{5,}/gi;
+const sha = (v) => crypto.createHash('sha256').update(v).digest('hex');
+
+export function findLeaks(text) {
+  const out = [];
+  for (const m of text.matchAll(IPV4)) if (!IP_ALLOWED(m[0])) out.push('ipv4');
+  for (const _ of text.matchAll(CHAT_KEY)) out.push('telegram-chat-id');
+  for (const m of text.matchAll(/-?\b\d{5,15}\b|\b[A-Za-z0-9]{16}\b/g)) {
+    if (KNOWN_REAL_SHA256.has(sha(m[0])) || KNOWN_REAL_SHA256.has(sha(m[0].replace(/^-/, '')))) out.push('known-real-value');
+  }
+  return out;
+}
+function listFiles(dir) {
+  const res = [];
+  for (const e of fs.readdirSync(dir, { withFileTypes: true })) {
+    if (e.isDirectory()) { if (!SKIP_DIRS.has(e.name)) res.push(...listFiles(path.join(dir, e.name))); }
+    else if (TEXT_EXT.test(e.name) || !e.name.includes('.')) res.push(path.join(dir, e.name));
+  }
+  return res;
+}
+
+test('leak detector catches synthetic samples and ignores placeholders', () => {
+  const ip = ['8', '8', '4', '4'].join('.');
+  assert.deepEqual(findLeaks('url: http://' + ip + ':5680'), ['ipv4']);
+  assert.ok(findLeaks('"chatId": "' + '9'.repeat(9) + '"').includes('telegram-chat-id'));
+  assert.ok(findLeaks('chat_id=-' + '1'.repeat(12)).includes('telegram-chat-id'));
+  assert.deepEqual(findLeaks('"chatId": "' + PLACEHOLDER_CHAT + '" http://localhost:5680 http://127.0.0.1:5680 typeVersion 1.2'), []);
+});
+
+test('no real IP address or Telegram chat id in any repository file', () => {
+  const files = listFiles(ROOT);
+  assert.ok(files.length >= 5);
+  const bad = [];
+  for (const f of files) {
+    const kinds = findLeaks(fs.readFileSync(f, 'utf8'));
+    if (kinds.length) bad.push(path.relative(ROOT, f) + ' -> ' + [...new Set(kinds)].join(','));
+  }
+  assert.deepEqual(bad, [], 'remove real values (reported by file and kind only):\n' + bad.join('\n'));
 });

@@ -1,5 +1,6 @@
 {
   "name": "Ops Health Monitor",
+  "description": "Tier: T0 — deterministic monitoring, no LLM nodes or model endpoints; read-only GET calls; cost $0.",
   "active": false,
   "nodes": [
     {
@@ -39,19 +40,19 @@
             {
               "id": "c1",
               "name": "n8n_base_url",
-              "value": "http://178.238.225.172:5680",
+              "value": "http://localhost:5680",
               "type": "string"
             },
             {
               "id": "c2",
               "name": "expected_workflows",
-              "value": "[\"Telegram Approval\"]",
+              "value": "[\"Heartbeat Check\",\"GitHub AI Assistant\",\"MCP server\",\"Telegram Approval\",\"Global Error Handler\"]",
               "type": "array"
             },
             {
               "id": "c3",
               "name": "heartbeat_workflow_name",
-              "value": "",
+              "value": "Heartbeat Check",
               "type": "string"
             },
             {
@@ -75,7 +76,7 @@
             {
               "id": "c7",
               "name": "telegram_chat_id",
-              "value": "1208634276",
+              "value": "REPLACE_WITH_TELEGRAM_CHAT_ID",
               "type": "string"
             }
           ]
@@ -258,7 +259,7 @@
       },
       "credentials": {
         "telegramApi": {
-          "id": "ZvNGYkNEcZip5e1h",
+          "id": "REPLACE_ME",
           "name": "Telegram account"
         }
       }

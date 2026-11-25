@@ -1,5 +1,6 @@
 {
   "name": "Global Error Handler",
+  "description": "Tier: T0 — deterministic error alerting, no LLM nodes or model endpoints; cost $0.",
   "active": false,
   "nodes": [
     {
@@ -40,7 +41,7 @@
       "parameters": {
         "resource": "message",
         "operation": "sendMessage",
-        "chatId": "1208634276",
+        "chatId": "REPLACE_WITH_TELEGRAM_CHAT_ID",
         "text": "={{ $json.text }}",
         "additionalFields": {
           "appendAttribution": false,
@@ -50,7 +51,7 @@
       },
       "credentials": {
         "telegramApi": {
-          "id": "ZvNGYkNEcZip5e1h",
+          "id": "REPLACE_ME",
           "name": "Telegram account"
         }
       }

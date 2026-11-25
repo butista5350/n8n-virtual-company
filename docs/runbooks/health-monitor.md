@@ -2,11 +2,11 @@
 
 | البند | القيمة |
 |---|---|
-| المسارات | `Ops Health Monitor` (`workflows/ops/health-monitor.json`) و`Global Error Handler` (`workflows/ops/global-error-handler.json`) |
+| المسارات | `Ops Health Monitor` (`workflows/ops/health-monitor.json`) و`Global Error Handler` (`workflows/ops/global-error-handler.json`)، ويعتمد المراقب على `Heartbeat Check` (`workflows/heartbeat-check.json`) |
 | المقعد المسؤول | مهندس مسارات n8n ومراقب الصحة والتنبيهات |
 | مستوى النموذج | T0 (بدون أي عقدة نموذج لغوي أو استدعاء لنقطة نهاية نموذج) |
 | الكلفة | 0$ |
-| قناة التنبيه | Telegram - المحادثة `1208634276` |
+| قناة التنبيه | Telegram - المحادثة المحددة في `telegram_chat_id` (القيمة الحقيقية تُضبط داخل n8n فقط) |
 | الحالة عند الاستيراد | غير فعّالين (`"active": false`) |
 | الاختبارات | `node --test tools/ops-health/*.test.mjs` |
 
@@ -22,10 +22,10 @@
 | سلامة n8n | `GET /healthz` | أي رد غير 2xx أو تعذّر الاتصال |
 | سلامة n8n API | `GET /api/v1/workflows` و`GET /api/v1/executions` | أي رد غير 2xx أو تعذّر الاتصال |
 | المسارات المتوقعة | `GET /api/v1/workflows?limit=250` | مسار متوقع غير موجود أو غير مفعّل |
-| حداثة النبضة (معطّل حالياً) | `GET /api/v1/executions?status=success&limit=1&workflowId=<Heartbeat>` | آخر تنفيذ ناجح أقدم من الحد (افتراضياً 30 دقيقة) أو لا يوجد |
-
-> **فحص النبضة معطّل مؤقتاً:** لا يوجد مسار نبضة في هذا المشروع حالياً (الاختبار الحي لم يجد `Heartbeat Check`). لذلك `heartbeat_workflow_name` فارغ و`Heartbeat Check` غير مدرج في `expected_workflows`. لإعادة التفعيل بعد إنشاء/ربط مسار النبضة: ضع اسمه في `heartbeat_workflow_name` وأضفه إلى `expected_workflows` (تعديل يحتاج موافقة).
+| حداثة النبضة | `GET /api/v1/executions?status=success&limit=1&workflowId=<Heartbeat Check>` | آخر تنفيذ ناجح أقدم من الحد (افتراضياً 30 دقيقة) أو لا يوجد |
 | الإخفاقات غير المغطاة | `GET /api/v1/executions?status=error&limit=100` | تنفيذ فاشل خلال آخر 15 دقيقة لمسار ليس له `errorWorkflow` |
+
+> **فحص النبضة مفعّل:** مسار النبضة هو `Heartbeat Check` (`workflows/heartbeat-check.json`)، ينفّذ كل 15 دقيقة، والحد الأقصى لعمر آخر نبضة ناجحة 30 دقيقة. لتعطيل الفحص مؤقتاً اترك `heartbeat_workflow_name` فارغاً وأزل الاسم من `expected_workflows` (تعديل يحتاج موافقة).
 
 الإخفاقات في المسارات المرتبطة بمعالج أخطاء لا تُكرَّر هنا، لأن `Global Error Handler` يبلّغ عنها فوراً.
 
@@ -44,13 +44,13 @@
 ### الإعدادات (عقدة `Config`)
 | الحقل | الافتراضي | الوصف |
 |---|---|---|
-| `n8n_base_url` | `http://178.238.225.172:5680` | عنوان n8n لطلبات API |
-| `expected_workflows` | `["Telegram Approval"]` | مسارات يجب أن تكون موجودة ومفعّلة |
-| `heartbeat_workflow_name` | فارغ (الفحص معطّل) | مسار النبضة؛ القيمة الفارغة تعطّل فحص النبضة |
+| `n8n_base_url` | `http://localhost:5680` | عنوان n8n لطلبات API؛ اضبطه داخل n8n على العنوان الفعلي للخادم |
+| `expected_workflows` | `["Heartbeat Check","GitHub AI Assistant","MCP server","Telegram Approval","Global Error Handler"]` | مسارات يجب أن تكون موجودة ومفعّلة |
+| `heartbeat_workflow_name` | `Heartbeat Check` | مسار النبضة؛ القيمة الفارغة تعطّل فحص النبضة |
 | `heartbeat_max_age_minutes` | `30` | أقصى عمر لآخر نبضة ناجحة |
 | `failure_lookback_minutes` | `15` | نافذة البحث عن الإخفاقات |
 | `suppress_hours` | `2` | مدة كتم التكرار |
-| `telegram_chat_id` | `1208634276` | محادثة التنبيهات |
+| `telegram_chat_id` | `REPLACE_WITH_TELEGRAM_CHAT_ID` | محادثة التنبيهات؛ تُستبدل داخل n8n بالمعرّف الحقيقي ولا تُحفظ في المستودع |
 
 ## 2. Global Error Handler
 - **المشغّل:** Error Trigger، يعمل عند فشل أي مسار يحدد هذا المسار في إعداد "Error Workflow".
@@ -63,14 +63,17 @@
 | `n8n API (monitor)` | n8n API | طلبات GET إلى `/api/v1` فقط |
 | `Telegram account` | Telegram API | إرسال التنبيهات |
 
-لا تُحفظ أي أسرار في ملفات المستودع؛ الملفات تشير إلى الاعتمادات بالاسم فقط.
+لا تُحفظ أي أسرار في ملفات المستودع؛ الملفات تشير إلى الاعتمادات بالاسم فقط، ومعرّف اعتماد Telegram فيها `REPLACE_ME` ومعرّف المحادثة `REPLACE_WITH_TELEGRAM_CHAT_ID`. المستودع عام: لا تُضف إليه عناوين IP أو معرّفات محادثات حقيقية (يفشل الاختبار عند ظهورها).
+
+كل مسار جديد يحمل ملاحظة `Tier` في وصفه، وأسماء النماذج (إن وُجدت مستقبلاً) تُوضع في `Config` فقط.
 
 ## 4. التفعيل (بعد دمج PR-1 وبموافقة تنفيذية)
-1. استورد الملفين في n8n؛ سيصلان غير فعّالين.
-2. اربط الاعتمادين أعلاه، وراجع قيم `Config`.
-3. شغّل `Ops Health Monitor` يدوياً مرة وتأكد من وصول الرسالة.
-4. انشر `Ops Health Monitor`.
-5. لكل مسار قائم يُراد تغطيته: Settings ← Error Workflow ← `Global Error Handler`. (تعديل أي مسار قائم يحتاج موافقة مستقلة.)
+1. استورد `workflows/heartbeat-check.json` والملفين في n8n؛ ستصل غير فعّالة.
+2. اربط الاعتمادين أعلاه، واستبدل `REPLACE_WITH_TELEGRAM_CHAT_ID` و`n8n_base_url` بالقيم الحقيقية داخل n8n فقط، وراجع بقية قيم `Config`.
+3. فعّل `Heartbeat Check` وانتظر نبضة ناجحة واحدة.
+4. شغّل `Ops Health Monitor` يدوياً مرة وتأكد من وصول الرسالة.
+5. انشر `Ops Health Monitor`.
+6. لكل مسار قائم يُراد تغطيته: Settings ← Error Workflow ← `Global Error Handler`. (تعديل أي مسار قائم يحتاج موافقة مستقلة.)
 
 ## 5. الاستجابة للتنبيهات
 | التنبيه | الإجراء |
@@ -90,4 +93,4 @@
 ```
 node --test tools/ops-health/*.test.mjs
 ```
-تتحقق من: `"active": false`، وGET فقط، وخلوّ المسارات من أي عقدة أو نقطة نهاية لنموذج لغوي، وحجب الأسرار وعدم وجودها في الملفات، وكتم التكرار ساعتين ثم التذكير، وإشعار التعافي، وعدم إعلان تعافٍ زائف عند انقطاع API، والملخص اليومي، وأن فحص النبضة معطّل في الإعداد المعتمد ولا يُطلق تنبيهاً. التفاصيل في `tools/ops-health/README.md`.
+تتحقق من: `"active": false`، وGET فقط، وخلوّ المسارات من أي عقدة أو نقطة نهاية لنموذج لغوي، وحجب الأسرار وعدم وجودها في الملفات، وكتم التكرار ساعتين ثم التذكير، وإشعار التعافي، وعدم إعلان تعافٍ زائف عند انقطاع API، والملخص اليومي، وأن الإعداد المعتمد يفعّل فحص النبضة ويضم المسارات الخمسة المتوقعة، وأن تعطيل النبضة بقيمة فارغة لا يُطلق تنبيهاً، ووجود ملاحظة `Tier: T0`، وخلوّ كل ملفات المستودع من عناوين IP أو معرّفات محادثات Telegram حقيقية. التفاصيل في `tools/ops-health/README.md`.
