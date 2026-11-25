@@ -30,7 +30,7 @@ const ALLOWED_TYPES = new Set([
 ]);
 const LLM_TYPE = /langchain|openai|anthropic|gemini|mistral|ollama|groq|perplexity|deepseek|openrouter|cohere|huggingface|lmchat|agent/i;
 const LLM_HOST = /api\.openai\.com|api\.anthropic\.com|generativelanguage\.googleapis\.com|openrouter\.ai|api\.mistral\.ai|api\.groq\.com|api\.deepseek\.com|api\.cohere\.|api-inference\.huggingface\.co|\/v1\/chat\/completions|\/v1\/messages|\/v1\/completions/i;
-const SECRET = /ghp_[A-Za-z0-9]{20,}|github_pat_[A-Za-z0-9_]{20,}|\bsk-[A-Za-z0-9_-]{16,}|\b\d{6,12}:[A-Za-z0-9_-]{30,}|eyJ[A-Za-z0-9_-]{10,}\.[A-Za-z0-9_-]{10,}\.|bearer\s+[A-Za-z0-9._~+\/=-]{16,}/i;
+const SECRET = /ghp_[A-Za-z0-9]{20,}|github_pat_[A-Za-z0-9_]{20,}|\bsk-[A-Za-z0-9_-]{16,}|\d{6,12}:[A-Za-z0-9_-]{30,}|eyJ[A-Za-z0-9_-]{10,}\.[A-Za-z0-9_-]{10,}\.|bearer\s+[A-Za-z0-9._~+\/=-]{16,}/i;
 
 const node = (wf, name) => wf.nodes.find((n) => n.name === name);
 const codeOf = (wf, name) => node(wf, name).parameters.jsCode;
@@ -221,6 +221,33 @@ test('monitor redacts secrets in alert text', () => {
   const out2 = runCode(codeOf(monitor, 'Evaluate Health'), { nodes, state: {}, now: T0, executed: ['Every 15 Minutes'] });
   assert.equal(out.length, 1);
   assert.ok(!out2[0].text.includes(SAMPLE_SECRETS[0]));
+});
+
+// Telegram token embedded in a bot URL (no word boundary between "bot" and the digits).
+const BOT_URL_TOKEN = '1234567890:AAHabcdefghijklmnopqrstuvwxyz012345';
+const BOT_URL = 'https://api.telegram.org/bot' + BOT_URL_TOKEN + '/sendMessage';
+
+test('handler redacts a Telegram token inside a bot<token> URL', () => {
+  const [out] = runCode(codeOf(handler, 'Format Error Alert'), {
+    now: T0,
+    input: [{ execution: { id: '901', error: { message: 'request to ' + BOT_URL + ' failed' }, lastNodeExecuted: 'Send', mode: 'trigger' }, workflow: { id: 'wtok', name: 'Token URL' } }],
+  });
+  assert.ok(!out.text.includes(BOT_URL_TOKEN), 'token leaked');
+  assert.ok(!out.text.includes('AAHabcdefghijklmnopqrstuvwxyz012345'), 'token secret part leaked');
+  assert.match(out.text, /bot\[REDACTED_TELEGRAM_TOKEN\]/);
+});
+
+test('monitor redacts a Telegram token inside a bot<token> URL', () => {
+  const nodes = signals(T0, {});
+  nodes['Check API Health'] = { error: { message: 'request to ' + BOT_URL + ' failed' } };
+  const out = runCode(codeOf(monitor, 'Evaluate Health'), { nodes, state: {}, now: T0, executed: ['Every 15 Minutes'] });
+  assert.equal(out.length, 1);
+  assert.ok(!out[0].text.includes(BOT_URL_TOKEN), 'token leaked');
+  assert.match(out[0].text, /bot\[REDACTED_TELEGRAM_TOKEN\]/);
+});
+
+test('committed-secret scanner catches a token inside a bot<token> URL', () => {
+  assert.ok(SECRET.test(BOT_URL));
 });
 
 // ---------------- Behaviour: alerts, 2h suppression, recovery ----------------
