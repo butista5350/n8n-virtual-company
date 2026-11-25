@@ -40,7 +40,7 @@
             {
               "id": "c1",
               "name": "n8n_base_url",
-              "value": "http://localhost:5680",
+              "value": "http://127.0.0.1:5680",
               "type": "string"
             },
             {

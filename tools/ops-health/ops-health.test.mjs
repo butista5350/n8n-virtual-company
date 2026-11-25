@@ -5,7 +5,6 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import crypto from 'node:crypto';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', '..');
 const FILES = {
@@ -55,7 +54,7 @@ function runCode(code, { nodes = {}, input = [], executed = [], state = {}, now 
 const T0 = Date.parse('2026-11-25T09:45:00Z');
 const MIN = 60000;
 const cfg = {
-  n8n_base_url: 'http://localhost:5680',
+  n8n_base_url: 'http://127.0.0.1:5680',
   expected_workflows: ['Heartbeat Check', 'Telegram Approval'],
   heartbeat_workflow_name: 'Heartbeat Check',
   heartbeat_max_age_minutes: 30,
@@ -125,7 +124,7 @@ test('Telegram chat id and credential id are placeholders in committed files', (
   for (const wf of all) for (const n of wf.nodes.filter((x) => x.credentials && x.credentials.telegramApi)) {
     assert.equal(n.credentials.telegramApi.id, 'REPLACE_ME', wf.name + ': ' + n.name);
   }
-  assert.equal(prodCfg.n8n_base_url, 'http://localhost:5680');
+  assert.equal(prodCfg.n8n_base_url, 'http://127.0.0.1:5680');
 });
 
 test('every workflow file carries a Tier: T0 note in its description', () => {
@@ -169,6 +168,48 @@ test('Global Error Handler handles trigger failures without an execution id', ()
   });
   assert.match(out.text, /Poller/);
   assert.ok(!out.text.includes('abc123secret'));
+});
+
+// ---------------- Global Error Handler: 2h dedup + 6/hour cap ----------------
+const gehErr = (wfId, nodeName, message, execId) => ({ execution: { id: String(execId || 1), error: { message }, lastNodeExecuted: nodeName, mode: 'trigger' }, workflow: { id: wfId, name: 'WF ' + wfId } });
+const geh = (state, now, ...items) => runCode(codeOf(handler, 'Format Error Alert'), { now, state, input: items });
+
+test('handler mutes the same error for 2 hours, then reports the repeat count', () => {
+  const st = {};
+  assert.equal(geh(st, T0, gehErr('w1', 'HTTP', 'timeout after 3000 ms', 11)).length, 1);
+  assert.equal(geh(st, T0 + 10 * MIN, gehErr('w1', 'HTTP', 'timeout after 5000 ms', 12)).length, 0);
+  assert.equal(geh(st, T0 + 119 * MIN, gehErr('w1', 'HTTP', 'timeout after 7000 ms', 13)).length, 0);
+  const [again] = geh(st, T0 + 121 * MIN, gehErr('w1', 'HTTP', 'timeout after 9000 ms', 14));
+  assert.match(again.text, /#14/);
+  assert.match(again.text, /تكرر: 2 مرة/);
+});
+
+test('handler dedup key ignores numbers and long ids but not workflow, node or text', () => {
+  const st = {};
+  assert.equal(geh(st, T0, gehErr('w1', 'HTTP', 'record a1b2c3d4e5f6a7b8 not found (row 42)')).length, 1);
+  assert.equal(geh(st, T0 + MIN, gehErr('w1', 'HTTP', 'record 9f8e7d6c5b4a3f2e not found (row 7)')).length, 0);
+  assert.equal(geh(st, T0 + MIN, gehErr('w2', 'HTTP', 'record a1b2c3d4e5f6a7b8 not found (row 42)')).length, 1);
+  assert.equal(geh(st, T0 + MIN, gehErr('w1', 'Code', 'record a1b2c3d4e5f6a7b8 not found (row 42)')).length, 1);
+  assert.equal(geh(st, T0 + MIN, gehErr('w1', 'HTTP', 'permission denied')).length, 1);
+});
+
+test('handler caps alerts at 6 per hour, then reports how many were muted', () => {
+  const st = {};
+  let sent = 0;
+  for (let i = 0; i < 9; i++) sent += geh(st, T0 + i * MIN, gehErr('w' + i, 'N', 'distinct failure ' + 'abcdefghi'[i])).length;
+  assert.equal(sent, 6);
+  const out = geh(st, T0 + 61 * MIN, gehErr('wz', 'N', 'another failure'));
+  assert.equal(out.length, 2);
+  assert.match(out[0].text, /^3 تنبيهات إضافية مكتومة/);
+  assert.match(out[1].text, /WF wz/);
+  assert.equal(geh(st, T0 + 62 * MIN, gehErr('wy', 'N', 'yet another')).length, 1, 'muted count resets after it is reported');
+});
+
+test('handler forgets dedup entries after 24 hours', () => {
+  const st = {};
+  geh(st, T0, gehErr('w1', 'HTTP', 'boom'));
+  geh(st, T0 + 25 * 60 * MIN, gehErr('w9', 'HTTP', 'other'));
+  assert.deepEqual(Object.keys(st.errors).filter((k) => k.startsWith('w1|')), []);
 });
 
 test('monitor redacts secrets in alert text', () => {
@@ -267,26 +308,17 @@ test('daily 08:00 summary is always sent and does not change suppression state',
 });
 
 // ---------------- Public-repo hygiene: no real IPs or Telegram chat ids in ANY file ----------------
-// Known real values are compared by SHA-256 only, so they are never written in this repo.
-const KNOWN_REAL_SHA256 = new Set([
-  '989a9b57db172d2ba491cfed0c6bd86ce9545a7c73d4802077df6433fda3937c', // production Telegram chat id
-  'aadbced5c9ecc806d98d5489893484bf97a5b30c90ddcc58f3e7aef4bdb9ca2b', // production host IP
-  '7927b6f79d86fccb05d912e11190874fc1dc60b3f95a1c57f596d97383f99075', // production Telegram credential id
-]);
+// Pattern-based detection only: no real values and no fingerprints of real values are stored in this repo.
 const SKIP_DIRS = new Set(['.git', 'node_modules']);
 const TEXT_EXT = /\.(json|md|mjs|cjs|js|ts|mts|ya?ml|txt|env|ini|conf|cfg|toml|sh|html|csv|example)$/i;
 const IPV4 = /(?<![\d.])(?:25[0-5]|2[0-4]\d|1?\d?\d)(?:\.(?:25[0-5]|2[0-4]\d|1?\d?\d)){3}(?![\d.])/g;
 const IP_ALLOWED = (ip) => /^127\./.test(ip) || ip === '0.0.0.0' || /^(192\.0\.2|198\.51\.100|203\.0\.113)\./.test(ip);
 const CHAT_KEY = /["']?(?:chat_?id|telegram_chat_id|chatId)["']?\s*[:=]\s*["']?-?\d{5,}/gi;
-const sha = (v) => crypto.createHash('sha256').update(v).digest('hex');
 
 export function findLeaks(text) {
   const out = [];
   for (const m of text.matchAll(IPV4)) if (!IP_ALLOWED(m[0])) out.push('ipv4');
   for (const _ of text.matchAll(CHAT_KEY)) out.push('telegram-chat-id');
-  for (const m of text.matchAll(/-?\b\d{5,15}\b|\b[A-Za-z0-9]{16}\b/g)) {
-    if (KNOWN_REAL_SHA256.has(sha(m[0])) || KNOWN_REAL_SHA256.has(sha(m[0].replace(/^-/, '')))) out.push('known-real-value');
-  }
   return out;
 }
 function listFiles(dir) {
