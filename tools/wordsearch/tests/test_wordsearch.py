@@ -86,7 +86,7 @@ class TestPdf(unittest.TestCase):
         r = PdfReader(self.interior)
         self.assertIn("Puzzle 1", r.pages[3].extract_text())
         self.assertIn("Solutions", r.pages[53].extract_text())
-        self.assertIn(CFG["title"], r.pages[0].extract_text())
+        self.assertIn(CFG["title"], " ".join(r.pages[0].extract_text().split()))
 
     def test_gutter_margin_not_below_kdp_minimum(self):
         self.assertGreaterEqual(gb.INNER / 72, 0.375)
