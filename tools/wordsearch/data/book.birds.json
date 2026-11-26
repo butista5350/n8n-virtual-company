@@ -1,0 +1,85 @@
+{
+ "title": "Large Print Backyard Birds Word Search",
+ "subtitle": "100 Puzzles for Seniors and Bird Lovers",
+ "volume": "Volume 1",
+ "author": "H. Eagle",
+ "year": 2026,
+ "grid_size": 13,
+ "seed": 21,
+ "puzzle_count": 100,
+ "themes_file": "themes_birds.json",
+ "fact_label": "Bird Fact",
+ "bonus_pages": true,
+ "back_cover_text": "Spend a peaceful hour with your favorite feathered friends, whatever the weather. Each of the 100 puzzles has 12 hidden words printed in big, clear letters, plus a friendly bird fact on every page. Solutions and bird watching log pages are included.",
+ "cover": {
+  "layout": "birds",
+  "tag": "A GIFT FOR BIRD LOVERS",
+  "headline": "LARGE PRINT",
+  "main": "BACKYARD BIRDS",
+  "sub": "WORD SEARCH",
+  "audience": "100 PUZZLES FOR SENIORS & BIRD LOVERS",
+  "teaser": [
+   [
+    "WREN",
+    1,
+    2,
+    [
+     0,
+     1
+    ]
+   ],
+   [
+    "FINCH",
+    3,
+    8,
+    [
+     1,
+     0
+    ]
+   ],
+   [
+    "OWL",
+    4,
+    0,
+    [
+     1,
+     1
+    ]
+   ],
+   [
+    "JAY",
+    8,
+    3,
+    [
+     0,
+     1
+    ]
+   ]
+  ],
+  "ribbon": "BIG CLEAR LETTERS  \u2022  BIRD FACTS & LOG INSIDE",
+  "back_title": [
+   "Big print.",
+   "Big birdsong."
+  ],
+  "features": [
+   "100 bird-themed puzzles",
+   "Extra-large, easy-to-read letters",
+   "A bird fact on every page",
+   "Solutions and bird watching log",
+   "One puzzle per page"
+  ],
+  "gift_line": "A thoughtful gift for anyone who loves to watch birds.",
+  "tiles": "BIRD"
+ },
+ "cover_palette": {
+  "bg_top": "#0C4A6E",
+  "bg_bottom": "#1D7FA8",
+  "accent": "#FDBA3B",
+  "coral": "#F97362",
+  "mint": "#BAE6FD",
+  "sky": "#E0F2FE",
+  "card": "#FFFDF5",
+  "ink": "#0B2F45",
+  "text": "#FFFFFF"
+ }
+}

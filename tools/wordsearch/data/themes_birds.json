@@ -1,0 +1,1702 @@
+{
+ "Feeder Favorites": {
+  "words": [
+   "CARDINAL",
+   "CHICKADEE",
+   "FINCH",
+   "SPARROW",
+   "JAY",
+   "NUTHATCH",
+   "TITMOUSE",
+   "DOVE",
+   "ROBIN",
+   "WREN",
+   "JUNCO",
+   "WOODPECKER"
+  ],
+  "fact": "Keep feeders clean by washing them every couple of weeks to protect visiting birds."
+ },
+ "Backyard Finches": {
+  "words": [
+   "GOLDFINCH",
+   "HOUSEFINCH",
+   "PURPLEFINCH",
+   "SISKIN",
+   "REDPOLL",
+   "GROSBEAK",
+   "CROSSBILL",
+   "BUNTING",
+   "SERIN",
+   "LINNET",
+   "CANARY",
+   "EVENINGFINCH"
+  ],
+  "fact": "Finches love nyjer and sunflower seed offered in a tube feeder."
+ },
+ "Woodpeckers": {
+  "words": [
+   "DOWNY",
+   "HAIRY",
+   "FLICKER",
+   "SAPSUCKER",
+   "PILEATED",
+   "REDBELLIED",
+   "REDHEADED",
+   "ACORN",
+   "DRUM",
+   "TREE",
+   "SUET",
+   "BARK"
+  ],
+  "fact": "Woodpeckers drum on trees to claim territory and to find insects beneath the bark."
+ },
+ "Owls of the Night": {
+  "words": [
+   "BARNOWL",
+   "SCREECHOWL",
+   "GREATHORNED",
+   "SNOWY",
+   "BARRED",
+   "BURROWING",
+   "SAWWHET",
+   "ELF",
+   "PELLET",
+   "TALON",
+   "HOOT",
+   "NIGHT"
+  ],
+  "fact": "Owls swallow small prey whole and later cough up pellets of fur and bone."
+ },
+ "Hummingbird Garden": {
+  "words": [
+   "NECTAR",
+   "HOVER",
+   "TINY",
+   "RUBYTHROAT",
+   "FEEDER",
+   "TUBULAR",
+   "BLOSSOM",
+   "WINGS",
+   "FLASH",
+   "ANNA",
+   "BUZZ",
+   "SALVIA"
+  ],
+  "fact": "Hummingbirds can hover and even fly backward, beating their wings dozens of times a second."
+ },
+ "Songbirds": {
+  "words": [
+   "WARBLER",
+   "THRUSH",
+   "VIREO",
+   "TANAGER",
+   "ORIOLE",
+   "BLUEBIRD",
+   "MEADOWLARK",
+   "CATBIRD",
+   "MOCKINGBIRD",
+   "THRASHER",
+   "WAXWING",
+   "BUNTING"
+  ],
+  "fact": "Many songbirds sing most loudly at dawn, a time called the dawn chorus."
+ },
+ "Birds of Prey": {
+  "words": [
+   "EAGLE",
+   "HAWK",
+   "FALCON",
+   "OSPREY",
+   "KESTREL",
+   "HARRIER",
+   "KITE",
+   "MERLIN",
+   "CONDOR",
+   "VULTURE",
+   "BUZZARD",
+   "TALON"
+  ],
+  "fact": "Hawks have sharp eyesight and can spot small prey from high above the field."
+ },
+ "Ducks and Geese": {
+  "words": [
+   "MALLARD",
+   "PINTAIL",
+   "WIGEON",
+   "TEAL",
+   "SHOVELER",
+   "GADWALL",
+   "EIDER",
+   "CANVASBACK",
+   "GOOSE",
+   "SWAN",
+   "POND",
+   "DRAKE"
+  ],
+  "fact": "Only the female mallard makes the classic quack sound."
+ },
+ "Shorebirds": {
+  "words": [
+   "SANDPIPER",
+   "PLOVER",
+   "CURLEW",
+   "AVOCET",
+   "STILT",
+   "DUNLIN",
+   "WILLET",
+   "GODWIT",
+   "SANDERLING",
+   "KILLDEER",
+   "TURNSTONE",
+   "SNIPE"
+  ],
+  "fact": "Shorebirds probe the mud and sand at low tide to find small tasty creatures."
+ },
+ "Wading Birds": {
+  "words": [
+   "HERON",
+   "EGRET",
+   "IBIS",
+   "BITTERN",
+   "CRANE",
+   "STORK",
+   "SPOONBILL",
+   "FLAMINGO",
+   "RAIL",
+   "MARSH",
+   "REED",
+   "WADE"
+  ],
+  "fact": "Herons stand very still in shallow water and then strike quickly at fish."
+ },
+ "Sea Birds": {
+  "words": [
+   "GULL",
+   "TERN",
+   "PELICAN",
+   "GANNET",
+   "PUFFIN",
+   "ALBATROSS",
+   "PETREL",
+   "SKUA",
+   "CORMORANT",
+   "BOOBY",
+   "SHEARWATER",
+   "FULMAR"
+  ],
+  "fact": "Albatrosses can glide for hours over the ocean with hardly a wingbeat."
+ },
+ "Bird Anatomy": {
+  "words": [
+   "BEAK",
+   "WING",
+   "FEATHER",
+   "TALON",
+   "CREST",
+   "TAIL",
+   "CLAW",
+   "BREAST",
+   "DOWN",
+   "QUILL",
+   "PLUMAGE",
+   "THROAT"
+  ],
+  "fact": "A bird's feathers are lightweight, strong and kept tidy by daily preening."
+ },
+ "Nests and Nesting": {
+  "words": [
+   "TWIG",
+   "MOSS",
+   "CUP",
+   "CAVITY",
+   "LINING",
+   "MUD",
+   "GRASS",
+   "SPIDERWEB",
+   "PLATFORM",
+   "BOX",
+   "HATCH",
+   "BROOD"
+  ],
+  "fact": "Many birds weave spider silk into the nest to hold the twigs together."
+ },
+ "Bird Songs and Calls": {
+  "words": [
+   "CHIRP",
+   "TWEET",
+   "WARBLE",
+   "TRILL",
+   "CHATTER",
+   "WHISTLE",
+   "CAW",
+   "COO",
+   "HOOT",
+   "SQUAWK",
+   "PEEP",
+   "CHEEP"
+  ],
+  "fact": "Learning a few bird songs makes every walk in the garden more fun."
+ },
+ "Seeds and Feed": {
+  "words": [
+   "SUNFLOWER",
+   "MILLET",
+   "NYJER",
+   "SAFFLOWER",
+   "CORN",
+   "SUET",
+   "PEANUT",
+   "THISTLE",
+   "BERRIES",
+   "RAISIN",
+   "CRACKED",
+   "OATS"
+  ],
+  "fact": "Black oil sunflower seed is a favorite of many backyard birds."
+ },
+ "Feeder Types": {
+  "words": [
+   "TUBE",
+   "HOPPER",
+   "PLATFORM",
+   "SUETCAGE",
+   "WINDOW",
+   "NECTAR",
+   "TRAY",
+   "BASKET",
+   "SQUIRREL",
+   "BAFFLE",
+   "POLE",
+   "HANGER"
+  ],
+  "fact": "A baffle on the pole helps keep squirrels away from the feeder."
+ },
+ "Birdbath Time": {
+  "words": [
+   "WATER",
+   "SPLASH",
+   "DRINK",
+   "BATHE",
+   "SHALLOW",
+   "ROCKS",
+   "DRIP",
+   "FOUNTAIN",
+   "CLEAN",
+   "REFILL",
+   "PEBBLES",
+   "RIPPLE"
+  ],
+  "fact": "Birds prefer shallow water, so add a few stones to a birdbath."
+ },
+ "Winter Birds": {
+  "words": [
+   "SNOWBIRD",
+   "JUNCO",
+   "EVENING",
+   "CARDINAL",
+   "CHICKADEE",
+   "FEEDER",
+   "SUET",
+   "FROST",
+   "WARM",
+   "FLUFF",
+   "SEEDS",
+   "WINTER"
+  ],
+  "fact": "Birds fluff their feathers in cold weather to trap warm air close to the body."
+ },
+ "Spring Arrivals": {
+  "words": [
+   "ROBIN",
+   "SWALLOW",
+   "MARTIN",
+   "ORIOLE",
+   "BLUEBIRD",
+   "CATBIRD",
+   "PHOEBE",
+   "WARBLER",
+   "VIREO",
+   "NESTING",
+   "SONG",
+   "BLOOM"
+  ],
+  "fact": "Robins are often among the first birds to be seen on the lawn in early spring."
+ },
+ "Summer Visitors": {
+  "words": [
+   "HUMMINGBIRD",
+   "TANAGER",
+   "ORIOLE",
+   "SWIFT",
+   "SWALLOW",
+   "BUNTING",
+   "NIGHTHAWK",
+   "WHIPPOORWILL",
+   "FIREFLY",
+   "GARDEN",
+   "SHADE",
+   "NECTAR"
+  ],
+  "fact": "Early morning is the best time to watch summer birds at the feeder."
+ },
+ "Autumn Migration": {
+  "words": [
+   "MIGRATE",
+   "FLOCK",
+   "SOUTH",
+   "FLYWAY",
+   "GEESE",
+   "LEAVES",
+   "CRANE",
+   "HAWKWATCH",
+   "ROUTE",
+   "JOURNEY",
+   "HARVEST",
+   "STOPOVER"
+  ],
+  "fact": "Many birds migrate at night using the stars and the earth's magnetic field to guide them."
+ },
+ "Blue Birds": {
+  "words": [
+   "BLUEBIRD",
+   "BLUEJAY",
+   "INDIGO",
+   "BUNTING",
+   "GROSBEAK",
+   "SWALLOW",
+   "SCRUBJAY",
+   "AZURE",
+   "KINGFISHER",
+   "MARTIN",
+   "LAZULI",
+   "STELLER"
+  ],
+  "fact": "The blue of a bluebird comes from the structure of its feathers, not from pigment."
+ },
+ "Red Birds": {
+  "words": [
+   "CARDINAL",
+   "TANAGER",
+   "FINCH",
+   "CROSSBILL",
+   "VERMILION",
+   "FLYCATCHER",
+   "ROBIN",
+   "REDPOLL",
+   "PYRRHULOXIA",
+   "SCARLET",
+   "CRIMSON",
+   "CARMINE"
+  ],
+  "fact": "Male cardinals are bright red, while females are a soft tan with red touches."
+ },
+ "Yellow Birds": {
+  "words": [
+   "GOLDFINCH",
+   "WARBLER",
+   "ORIOLE",
+   "CANARY",
+   "MEADOWLARK",
+   "GROSBEAK",
+   "YELLOWTHROAT",
+   "SISKIN",
+   "TANAGER",
+   "SAFFRON",
+   "GOLDEN",
+   "LEMON"
+  ],
+  "fact": "Goldfinches turn bright yellow in spring and olive-brown in winter."
+ },
+ "Black and White": {
+  "words": [
+   "CHICKADEE",
+   "JUNCO",
+   "MAGPIE",
+   "CROW",
+   "RAVEN",
+   "GRACKLE",
+   "STARLING",
+   "NUTHATCH",
+   "PENGUIN",
+   "EIDER",
+   "ORCA",
+   "ZEBRA"
+  ],
+  "fact": "Chickadees are curious little birds and can often be coaxed to eat from your hand."
+ },
+ "Brown Birds": {
+  "words": [
+   "SPARROW",
+   "WREN",
+   "THRASHER",
+   "THRUSH",
+   "CREEPER",
+   "TOWHEE",
+   "PIPIT",
+   "LARK",
+   "SNIPE",
+   "WOODCOCK",
+   "HAZEL",
+   "CHESTNUT"
+  ],
+  "fact": "Brown feathers help many birds blend into bushes and branches."
+ },
+ "Crow Family": {
+  "words": [
+   "CROW",
+   "RAVEN",
+   "MAGPIE",
+   "NUTCRACKER",
+   "ROOK",
+   "JACKDAW",
+   "CHOUGH",
+   "SCRUBJAY",
+   "BLUEJAY",
+   "CLEVER",
+   "SMART",
+   "CORVID"
+  ],
+  "fact": "Crows and jays are among the most clever of all birds."
+ },
+ "Little Birds": {
+  "words": [
+   "WREN",
+   "KINGLET",
+   "GNATCATCHER",
+   "CHICKADEE",
+   "HUMMER",
+   "TITMOUSE",
+   "SPARROW",
+   "SERIN",
+   "LINNET",
+   "FINCH",
+   "PIPIT",
+   "VIREO"
+  ],
+  "fact": "Tiny birds eat many times a day to keep their small bodies warm."
+ },
+ "Big Birds": {
+  "words": [
+   "EAGLE",
+   "OSTRICH",
+   "EMU",
+   "SWAN",
+   "CRANE",
+   "CONDOR",
+   "PELICAN",
+   "HERON",
+   "TURKEY",
+   "PEAFOWL",
+   "CASSOWARY",
+   "RHEA"
+  ],
+  "fact": "A bald eagle's nest can be as big as a small car and is reused for years."
+ },
+ "Flightless Birds": {
+  "words": [
+   "OSTRICH",
+   "EMU",
+   "KIWI",
+   "PENGUIN",
+   "CASSOWARY",
+   "RHEA",
+   "KAKAPO",
+   "TAKAHE",
+   "DODO",
+   "MOA",
+   "RUNNER",
+   "FLIGHTLESS"
+  ],
+  "fact": "Ostriches cannot fly, but they can run faster than most horses."
+ },
+ "Bird Watching Gear": {
+  "words": [
+   "BINOCULARS",
+   "FIELDGUIDE",
+   "NOTEBOOK",
+   "CAMERA",
+   "HAT",
+   "BOOTS",
+   "TRIPOD",
+   "LENS",
+   "SCOPE",
+   "CHECKLIST",
+   "BAG",
+   "JOURNAL"
+  ],
+  "fact": "A good pair of binoculars and a notebook are all a new birder really needs."
+ },
+ "Bird Watching Words": {
+  "words": [
+   "SPOTTING",
+   "LISTING",
+   "LIFER",
+   "FIELDMARK",
+   "HIDE",
+   "TWITCH",
+   "SIGHTING",
+   "BIRDER",
+   "HOTSPOT",
+   "COUNT",
+   "SURVEY",
+   "ALBUM"
+  ],
+  "fact": "A lifer is the first time you ever see a certain kind of bird."
+ },
+ "Garden Plants for Birds": {
+  "words": [
+   "SUNFLOWER",
+   "CONEFLOWER",
+   "ASTER",
+   "ZINNIA",
+   "HOLLY",
+   "ELDERBERRY",
+   "SERVICEBERRY",
+   "DOGWOOD",
+   "VIBURNUM",
+   "BAYBERRY",
+   "CEDAR",
+   "THISTLE"
+  ],
+  "fact": "Plants that produce seeds and berries bring birds to the garden all year."
+ },
+ "Trees Birds Love": {
+  "words": [
+   "OAK",
+   "MAPLE",
+   "PINE",
+   "BIRCH",
+   "ELM",
+   "CEDAR",
+   "SPRUCE",
+   "WILLOW",
+   "HICKORY",
+   "BEECH",
+   "POPLAR",
+   "ASH"
+  ],
+  "fact": "Old trees with holes make perfect homes for woodpeckers and owls."
+ },
+ "Birdhouses": {
+  "words": [
+   "BLUEBIRD",
+   "WRENHOUSE",
+   "BOX",
+   "HOLE",
+   "ROOF",
+   "PERCH",
+   "CEDAR",
+   "HINGE",
+   "DRAINAGE",
+   "CLEANOUT",
+   "MOUNT",
+   "PREDATOR"
+  ],
+  "fact": "Clean out a birdhouse each autumn so it is ready for new tenants in spring."
+ },
+ "Eggs and Chicks": {
+  "words": [
+   "EGG",
+   "NEST",
+   "HATCH",
+   "CHICK",
+   "FLEDGLING",
+   "YOLK",
+   "SHELL",
+   "BROOD",
+   "PARENT",
+   "WORM",
+   "FEED",
+   "PEEP"
+  ],
+  "fact": "Baby birds open their beaks wide and chirp loudly when a parent returns with food."
+ },
+ "Bird Behavior": {
+  "words": [
+   "PREEN",
+   "FLOCK",
+   "FORAGE",
+   "PERCH",
+   "MIGRATE",
+   "ROOST",
+   "DANCE",
+   "COURT",
+   "DISPLAY",
+   "SING",
+   "MOLT",
+   "FLY"
+  ],
+  "fact": "Birds preen to spread natural oils over their feathers and keep them waterproof."
+ },
+ "Bird Flight": {
+  "words": [
+   "SOAR",
+   "GLIDE",
+   "FLAP",
+   "HOVER",
+   "DIVE",
+   "SWOOP",
+   "CLIMB",
+   "LIFT",
+   "THERMAL",
+   "WINGSPAN",
+   "DRAFT",
+   "BANK"
+  ],
+  "fact": "Large birds often soar on rising warm air called thermals to save energy."
+ },
+ "Flocks and Names": {
+  "words": [
+   "MURMURATION",
+   "PARLIAMENT",
+   "GAGGLE",
+   "FLOCK",
+   "COVEY",
+   "SKEIN",
+   "MURDER",
+   "CHARM",
+   "WISDOM",
+   "EXALTATION",
+   "CONSPIRACY",
+   "UNKINDNESS"
+  ],
+  "fact": "A group of owls is called a parliament and a group of crows a murder."
+ },
+ "Bird Colors": {
+  "words": [
+   "SCARLET",
+   "AZURE",
+   "EMERALD",
+   "GOLDEN",
+   "IVORY",
+   "SLATE",
+   "CHESTNUT",
+   "AMBER",
+   "SAFFRON",
+   "RUSSET",
+   "OLIVE",
+   "CHARCOAL"
+  ],
+  "fact": "Birds can see colors that humans cannot, including some ultraviolet light."
+ },
+ "Bird Foods": {
+  "words": [
+   "NECTAR",
+   "SEEDS",
+   "INSECTS",
+   "BERRIES",
+   "GRUBS",
+   "WORMS",
+   "FRUIT",
+   "NUTS",
+   "ACORNS",
+   "FISH",
+   "SUET",
+   "MILLET"
+  ],
+  "fact": "Many seed-eating birds feed insects to their chicks because they need extra protein."
+ },
+ "Ground Feeders": {
+  "words": [
+   "JUNCO",
+   "TOWHEE",
+   "DOVE",
+   "SPARROW",
+   "QUAIL",
+   "PHEASANT",
+   "THRASHER",
+   "ROBIN",
+   "GROUSE",
+   "TURKEY",
+   "KILLDEER",
+   "PIPIT"
+  ],
+  "fact": "Scatter seed on the ground or a low tray for birds that like to feed down low."
+ },
+ "Thrush Family": {
+  "words": [
+   "ROBIN",
+   "BLUEBIRD",
+   "VEERY",
+   "SOLITAIRE",
+   "HERMIT",
+   "SWAINSON",
+   "WOODTHRUSH",
+   "FIELDFARE",
+   "REDWING",
+   "OUZEL",
+   "NIGHTINGALE",
+   "MISTLE"
+  ],
+  "fact": "The wood thrush has one of the most beautiful flute-like songs in the forest."
+ },
+ "Wrens and Creepers": {
+  "words": [
+   "CREEPER",
+   "CAROLINA",
+   "HOUSEWREN",
+   "WINTER",
+   "MARSH",
+   "CACTUS",
+   "BEWICK",
+   "SEDGE",
+   "BARK",
+   "SPIRAL",
+   "CLIMB",
+   "TWIGS"
+  ],
+  "fact": "A tiny wren can be heard singing loudly from a bush or a flowerpot."
+ },
+ "Chickadees and Titmice": {
+  "words": [
+   "CHICKADEE",
+   "TITMOUSE",
+   "BUSHTIT",
+   "VERDIN",
+   "CRESTED",
+   "CAPPED",
+   "CACHE",
+   "SUNFLOWER",
+   "SEED",
+   "PEEK",
+   "TUFT",
+   "CHEEKY"
+  ],
+  "fact": "Chickadees hide seeds in many places and remember where they put them."
+ },
+ "Nuthatches": {
+  "words": [
+   "NUTHATCH",
+   "CREEPER",
+   "BARK",
+   "SPIRAL",
+   "TRUNK",
+   "DOWNWARD",
+   "WHITEBREAST",
+   "REDBREAST",
+   "PYGMY",
+   "BROWNHEADED",
+   "CLIMB",
+   "SEEDS"
+  ],
+  "fact": "Nuthatches are one of the few birds that walk headfirst down a tree trunk."
+ },
+ "Doves and Pigeons": {
+  "words": [
+   "PIGEON",
+   "MOURNING",
+   "COLLARED",
+   "GROUND",
+   "TURTLEDOVE",
+   "COO",
+   "PERCH",
+   "WINGS",
+   "CLAP",
+   "WHISTLE",
+   "FLOCK",
+   "SEED"
+  ],
+  "fact": "The soft cooing of a mourning dove is a familiar sound at dawn and dusk."
+ },
+ "Kingfishers": {
+  "words": [
+   "KINGFISHER",
+   "DIVE",
+   "BELTED",
+   "STREAM",
+   "PERCH",
+   "BANK",
+   "BURROW",
+   "CREST",
+   "RATTLE",
+   "POND",
+   "DARTER",
+   "HALCYON"
+  ],
+  "fact": "The belted kingfisher digs a nesting burrow in a riverbank."
+ },
+ "Swallows and Swifts": {
+  "words": [
+   "SWALLOW",
+   "SWIFT",
+   "MARTIN",
+   "BARN",
+   "CLIFF",
+   "TREE",
+   "GLIDE",
+   "CHIMNEY",
+   "INSECT",
+   "MUD",
+   "NEST",
+   "AERIAL"
+  ],
+  "fact": "Swallows catch flying insects while soaring and swooping over open fields."
+ },
+ "Flycatchers": {
+  "words": [
+   "PHOEBE",
+   "KINGBIRD",
+   "PEEWEE",
+   "FLYCATCHER",
+   "CHAT",
+   "PERCH",
+   "HAWKING",
+   "INSECT",
+   "SNAP",
+   "RAPID",
+   "DART",
+   "WINGBEAT"
+  ],
+  "fact": "A phoebe often wags its tail while sitting on a perch."
+ },
+ "Warbler Colors": {
+  "words": [
+   "YELLOW",
+   "CHESTNUT",
+   "PRAIRIE",
+   "BLACKBURNIAN",
+   "CERULEAN",
+   "MAGNOLIA",
+   "REDSTART",
+   "PARULA",
+   "PINE",
+   "TOWNSEND",
+   "KIRTLAND",
+   "MOURNING"
+  ],
+  "fact": "Warblers are tiny colorful birds that pass through gardens during spring migration."
+ },
+ "Sparrows": {
+  "words": [
+   "SONG",
+   "CHIPPING",
+   "FIELD",
+   "HOUSE",
+   "VESPER",
+   "SWAMP",
+   "LARK",
+   "WHITETHROAT",
+   "FOX",
+   "SAVANNAH",
+   "TREE",
+   "LINCOLN"
+  ],
+  "fact": "The song sparrow has many different songs and sings from a low perch."
+ },
+ "Blackbird Family": {
+  "words": [
+   "GRACKLE",
+   "COWBIRD",
+   "BOBOLINK",
+   "ORIOLE",
+   "MEADOWLARK",
+   "REDWING",
+   "BLACKBIRD",
+   "STARLING",
+   "ROOST",
+   "MARSH",
+   "CATTAIL",
+   "CROW"
+  ],
+  "fact": "Red-winged blackbirds sing from the tops of cattails in spring."
+ },
+ "Orioles and Tanagers": {
+  "words": [
+   "ORIOLE",
+   "TANAGER",
+   "BALTIMORE",
+   "ORCHARD",
+   "SCARLET",
+   "SUMMER",
+   "ORANGES",
+   "JELLY",
+   "NECTAR",
+   "SWEET",
+   "FRUIT",
+   "BULLOCK"
+  ],
+  "fact": "Orioles are drawn to orange halves and grape jelly set out in spring."
+ },
+ "Grosbeaks": {
+  "words": [
+   "GROSBEAK",
+   "ROSEBREASTED",
+   "EVENING",
+   "BLACKHEADED",
+   "BLUE",
+   "PINE",
+   "SEEDS",
+   "HEAVY",
+   "SUNFLOWER",
+   "CRACK",
+   "TRIO",
+   "SPRING"
+  ],
+  "fact": "A grosbeak has a thick beak that easily cracks open large seeds."
+ },
+ "Blue Jays and Friends": {
+  "words": [
+   "BLUEJAY",
+   "STELLER",
+   "SCRUBJAY",
+   "CANADA",
+   "CLEVER",
+   "ACORN",
+   "CRESTED",
+   "CALL",
+   "NOISY",
+   "LOUD",
+   "BOLD",
+   "CACHE"
+  ],
+  "fact": "Blue jays can copy the call of a hawk and may do so near feeders."
+ },
+ "Raptors in the Sky": {
+  "words": [
+   "OSPREY",
+   "HARRIER",
+   "MERLIN",
+   "KESTREL",
+   "PEREGRINE",
+   "GOSHAWK",
+   "COOPERS",
+   "SHARPSHINNED",
+   "REDTAILED",
+   "BROADWINGED",
+   "SWAINSON",
+   "ROUGHLEGGED"
+  ],
+  "fact": "The red-tailed hawk is often seen perched on poles along roadsides."
+ },
+ "Peregrine Falcon": {
+  "words": [
+   "PEREGRINE",
+   "FALCON",
+   "STOOP",
+   "DIVE",
+   "FASTEST",
+   "CLIFF",
+   "NEST",
+   "CITY",
+   "LEDGE",
+   "WINGS",
+   "SWIFT",
+   "HUNT"
+  ],
+  "fact": "The peregrine falcon is the fastest bird in a dive."
+ },
+ "Bald Eagle": {
+  "words": [
+   "EAGLE",
+   "BALD",
+   "NEST",
+   "FISH",
+   "TALONS",
+   "EYRIE",
+   "RIVER",
+   "LAKE",
+   "SYMBOL",
+   "WHITE",
+   "HEAD",
+   "WINGSPAN"
+  ],
+  "fact": "Bald eagles often mate for life and return to the same nest each year."
+ },
+ "Owl Calls": {
+  "words": [
+   "HOOT",
+   "SCREECH",
+   "WHINNY",
+   "TREMOLO",
+   "BARK",
+   "PURR",
+   "HISS",
+   "TWILIGHT",
+   "WHO",
+   "COOK",
+   "CALLING",
+   "MIDNIGHT"
+  ],
+  "fact": "The great horned owl's deep hoot can be heard on a quiet night."
+ },
+ "Night Birds": {
+  "words": [
+   "WHIPPOORWILL",
+   "NIGHTHAWK",
+   "NIGHTJAR",
+   "OWL",
+   "FROGMOUTH",
+   "DUSK",
+   "MOTH",
+   "CALL",
+   "HUNT",
+   "MOON",
+   "QUIET",
+   "POTOO"
+  ],
+  "fact": "A whippoorwill repeats its name over and over on summer evenings."
+ },
+ "Pond and Lake Birds": {
+  "words": [
+   "LOON",
+   "GREBE",
+   "COOT",
+   "GALLINULE",
+   "DUCK",
+   "SWAN",
+   "MERGANSER",
+   "GOOSE",
+   "CANVASBACK",
+   "DIVE",
+   "PADDLE",
+   "MARSH"
+  ],
+  "fact": "Loons are expert divers and can stay under water for several minutes."
+ },
+ "Marsh Birds": {
+  "words": [
+   "RAIL",
+   "BITTERN",
+   "SORA",
+   "HERON",
+   "EGRET",
+   "IBIS",
+   "REED",
+   "CATTAIL",
+   "SEDGE",
+   "MUDFLAT",
+   "MARSHWREN",
+   "SWAMP"
+  ],
+  "fact": "Marsh birds hide among tall reeds and are often heard rather than seen."
+ },
+ "Island Birds": {
+  "words": [
+   "PUFFIN",
+   "PETREL",
+   "GANNET",
+   "TERN",
+   "GUILLEMOT",
+   "RAZORBILL",
+   "SHEARWATER",
+   "MURRE",
+   "COLONY",
+   "CLIFF",
+   "BURROW",
+   "OCEAN"
+  ],
+  "fact": "Puffins can hold several small fish in their colorful beaks at one time."
+ },
+ "Beaks and Bills": {
+  "words": [
+   "HOOKED",
+   "POINTED",
+   "CONICAL",
+   "FLAT",
+   "LONG",
+   "CURVED",
+   "STRAIGHT",
+   "WIDE",
+   "SPOON",
+   "SERRATED",
+   "STRONG",
+   "TINY"
+  ],
+  "fact": "The shape of a beak tells you what a bird likes to eat."
+ },
+ "Feathers": {
+  "words": [
+   "DOWN",
+   "CONTOUR",
+   "FLIGHT",
+   "TAIL",
+   "QUILL",
+   "BARB",
+   "PRIMARY",
+   "SECONDARY",
+   "COVERT",
+   "PLUME",
+   "MOLT",
+   "FLUFF"
+  ],
+  "fact": "Birds replace their old worn feathers once or twice a year in a process called molting."
+ },
+ "Bird Feet": {
+  "words": [
+   "TALON",
+   "CLAW",
+   "WEBBED",
+   "PERCHING",
+   "ZYGODACTYL",
+   "SCALES",
+   "TOES",
+   "GRIP",
+   "WADING",
+   "SWIMMING",
+   "GRASP",
+   "SPUR"
+  ],
+  "fact": "Woodpeckers have two toes pointing forward and two backward to grip tree trunks."
+ },
+ "Birds and Weather": {
+  "words": [
+   "RAIN",
+   "STORM",
+   "SNOW",
+   "FOG",
+   "WIND",
+   "CLOUD",
+   "SUNNY",
+   "FROST",
+   "BREEZE",
+   "DRIZZLE",
+   "CHILL",
+   "SKY"
+  ],
+  "fact": "Birds often visit the feeder more before a storm and need extra food during snow."
+ },
+ "Dawn Chorus": {
+  "words": [
+   "DAWN",
+   "SUNRISE",
+   "CHORUS",
+   "EARLY",
+   "MORNING",
+   "SING",
+   "TWILIGHT",
+   "DEW",
+   "WAKE",
+   "DAYBREAK",
+   "ROBIN",
+   "CHIRPING"
+  ],
+  "fact": "Listen early in the morning, when songbirds are at their most musical."
+ },
+ "Bird Poems and Art": {
+  "words": [
+   "SONNET",
+   "FEATHER",
+   "NIGHTINGALE",
+   "SKYLARK",
+   "SONG",
+   "VERSE",
+   "PAINT",
+   "SKETCH",
+   "CANVAS",
+   "FRAME",
+   "EASEL",
+   "AUDUBON"
+  ],
+  "fact": "John James Audubon painted beautiful portraits of North American birds."
+ },
+ "Famous Bird Names": {
+  "words": [
+   "AUDUBON",
+   "PETERSON",
+   "SIBLEY",
+   "DARWIN",
+   "WILSON",
+   "BARTRAM",
+   "CATESBY",
+   "GOULD",
+   "LEAR",
+   "MUIR",
+   "CARSON",
+   "ALDO"
+  ],
+  "fact": "Roger Tory Peterson wrote one of the most famous field guides to birds."
+ },
+ "Birds of the Farm": {
+  "words": [
+   "CHICKEN",
+   "ROOSTER",
+   "HEN",
+   "DUCK",
+   "GOOSE",
+   "TURKEY",
+   "GUINEAFOWL",
+   "QUAIL",
+   "PEAFOWL",
+   "COOP",
+   "BARN",
+   "BANTAM"
+  ],
+  "fact": "Hens lay eggs most often in the morning and prefer a quiet, cozy nesting box."
+ },
+ "Birds in Fairy Tales": {
+  "words": [
+   "SWAN",
+   "GOOSE",
+   "RAVEN",
+   "ROBIN",
+   "NIGHTINGALE",
+   "DOVE",
+   "OWL",
+   "EAGLE",
+   "STORK",
+   "PHOENIX",
+   "FALCON",
+   "CROW"
+  ],
+  "fact": "In many old stories the dove is a symbol of peace and the owl of wisdom."
+ },
+ "Bird Sayings": {
+  "words": [
+   "EARLYBIRD",
+   "FEATHER",
+   "FLOCK",
+   "NEST",
+   "LARK",
+   "CANARY",
+   "CHICKEN",
+   "BIRDBRAIN",
+   "SWAN",
+   "WINGS",
+   "EAGLE",
+   "EYED"
+  ],
+  "fact": "The early bird catches the worm, as the old saying goes."
+ },
+ "Garden Helpers": {
+  "words": [
+   "CHICKADEE",
+   "WREN",
+   "ROBIN",
+   "WARBLER",
+   "SWALLOW",
+   "BLUEBIRD",
+   "FLICKER",
+   "SPARROW",
+   "INSECTS",
+   "APHIDS",
+   "BEETLES",
+   "CATERPILLAR"
+  ],
+  "fact": "Many garden birds eat caterpillars and beetles that nibble on plants."
+ },
+ "Insect Eaters": {
+  "words": [
+   "FLYCATCHER",
+   "SWALLOW",
+   "SWIFT",
+   "WARBLER",
+   "WREN",
+   "CREEPER",
+   "BLUEBIRD",
+   "PHOEBE",
+   "BEETLE",
+   "MOTH",
+   "ANT",
+   "DRAGONFLY"
+  ],
+  "fact": "A single pair of chickadees can feed hundreds of caterpillars to their nestlings."
+ },
+ "Berry Lovers": {
+  "words": [
+   "WAXWING",
+   "THRUSH",
+   "ROBIN",
+   "MOCKINGBIRD",
+   "CATBIRD",
+   "BLUEBIRD",
+   "HOLLY",
+   "JUNIPER",
+   "ELDER",
+   "SUMAC",
+   "GRAPE",
+   "CHERRY"
+  ],
+  "fact": "Cedar waxwings travel in flocks and strip berry bushes in a few days."
+ },
+ "Birds of Mexico and South": {
+  "words": [
+   "MACAW",
+   "QUETZAL",
+   "PARROT",
+   "TANAGER",
+   "MOTMOT",
+   "TROGON",
+   "JACAMAR",
+   "CONDOR",
+   "HARPY",
+   "CURASSOW",
+   "TOUCANET",
+   "HUMMINGBIRD"
+  ],
+  "fact": "The resplendent quetzal has very long tail feathers in the cloud forest."
+ },
+ "Tropical Birds": {
+  "words": [
+   "TOUCAN",
+   "MACAW",
+   "PARROT",
+   "COCKATOO",
+   "LORIKEET",
+   "PARAKEET",
+   "HORNBILL",
+   "PARADISE",
+   "LOVEBIRD",
+   "FLAMINGO",
+   "TROPICS",
+   "PLUMAGE"
+  ],
+  "fact": "Parrots are smart birds and some can learn to speak many words."
+ },
+ "Birds of Africa": {
+  "words": [
+   "OSTRICH",
+   "SECRETARY",
+   "HORNBILL",
+   "FLAMINGO",
+   "WEAVER",
+   "SUNBIRD",
+   "LOVEBIRD",
+   "HOOPOE",
+   "BEEEATER",
+   "GUINEAFOWL",
+   "SAVANNA",
+   "ROLLER"
+  ],
+  "fact": "Weaver birds build amazing hanging nests from woven grass."
+ },
+ "Birds of Australia": {
+  "words": [
+   "EMU",
+   "KOOKABURRA",
+   "GALAH",
+   "LORIKEET",
+   "COCKATOO",
+   "BUDGERIGAR",
+   "CASSOWARY",
+   "LYREBIRD",
+   "BOWERBIRD",
+   "MAGPIE",
+   "FAIRYWREN",
+   "BRUSH"
+  ],
+  "fact": "The kookaburra's loud laugh-like call rings out at dawn and dusk."
+ },
+ "Birds of Asia": {
+  "words": [
+   "PEAFOWL",
+   "PHEASANT",
+   "CRANE",
+   "MYNA",
+   "HORNBILL",
+   "BULBUL",
+   "SUNBIRD",
+   "MANDARIN",
+   "PITTA",
+   "MUNIA",
+   "KINGFISHER",
+   "OSPREY"
+  ],
+  "fact": "Mandarin ducks are known for their dazzling colors and graceful looks."
+ },
+ "Birds of the Arctic": {
+  "words": [
+   "SNOWYOWL",
+   "PTARMIGAN",
+   "PUFFIN",
+   "GYRFALCON",
+   "EIDER",
+   "LONGSPUR",
+   "TUNDRA",
+   "ARCTIC",
+   "SNOWGOOSE",
+   "LOON",
+   "REDPOLL",
+   "FROZEN"
+  ],
+  "fact": "The ptarmigan turns white in winter to hide in the snow."
+ },
+ "Birds of the Desert": {
+  "words": [
+   "ROADRUNNER",
+   "CACTUSWREN",
+   "GAMBEL",
+   "QUAIL",
+   "VERDIN",
+   "PHAINOPEPLA",
+   "GILA",
+   "THRASHER",
+   "DUSTY",
+   "MESQUITE",
+   "SAGUARO",
+   "CHOLLA"
+  ],
+  "fact": "The roadrunner can race across the desert at a rapid pace."
+ },
+ "Birds of the Woods": {
+  "words": [
+   "OVENBIRD",
+   "TANAGER",
+   "WARBLER",
+   "THRUSH",
+   "WOODPECKER",
+   "GROUSE",
+   "WOODCOCK",
+   "NUTHATCH",
+   "SOLITAIRE",
+   "TRAIL",
+   "CANOPY",
+   "SHADE"
+  ],
+  "fact": "Forest birds often sing from high in the trees where they are hard to see."
+ },
+ "Birds of the Meadow": {
+  "words": [
+   "MEADOWLARK",
+   "BOBOLINK",
+   "BLUEBIRD",
+   "KESTREL",
+   "HARRIER",
+   "SPARROW",
+   "GRASS",
+   "WILDFLOWER",
+   "QUAIL",
+   "PIPIT",
+   "CLOVER",
+   "BREEZE"
+  ],
+  "fact": "Meadowlarks sing from fence posts across the open fields."
+ },
+ "Birds of the Prairie": {
+  "words": [
+   "SAGEGROUSE",
+   "SPARROW",
+   "LONGSPUR",
+   "BOBWHITE",
+   "CURLEW",
+   "DICKCISSEL",
+   "HARRIER",
+   "PHEASANT",
+   "PLAINS",
+   "GRASSLAND",
+   "HORIZON",
+   "WHEAT"
+  ],
+  "fact": "Prairie chickens gather in spring and perform dancing displays."
+ },
+ "Bird Counts and Science": {
+  "words": [
+   "CENSUS",
+   "BANDING",
+   "SURVEY",
+   "TRACKING",
+   "RECORD",
+   "EBIRD",
+   "GPS",
+   "RING",
+   "TAG",
+   "DATA",
+   "CITIZEN",
+   "SCIENCE"
+  ],
+  "fact": "Counting the birds in your yard each winter helps scientists track bird populations."
+ },
+ "Helping Birds": {
+  "words": [
+   "PLANT",
+   "SHELTER",
+   "FEEDER",
+   "WATER",
+   "NESTBOX",
+   "BRUSHPILE",
+   "NATIVE",
+   "SEED",
+   "SAFE",
+   "WINDOW",
+   "CATS",
+   "STEWARD"
+  ],
+  "fact": "Placing decals on windows helps prevent birds from flying into the glass."
+ },
+ "Bird Safety": {
+  "words": [
+   "WINDOW",
+   "DECAL",
+   "CATS",
+   "NETTING",
+   "CLEAN",
+   "POISON",
+   "SHELTER",
+   "SAFE",
+   "FEEDER",
+   "SNAKE",
+   "GUARD",
+   "COVER"
+  ],
+  "fact": "Keeping cats indoors protects many songbirds, especially in nesting season."
+ },
+ "A Day in the Birdyard": {
+  "words": [
+   "MORNING",
+   "AFTERNOON",
+   "EVENING",
+   "SUNSET",
+   "SUNRISE",
+   "BREAKFAST",
+   "SNACK",
+   "DINNER",
+   "DAWN",
+   "DUSK",
+   "ROOST",
+   "MIDDAY"
+  ],
+  "fact": "Birds are usually most active at the feeder in the early morning and late afternoon."
+ },
+ "Seasons for Birds": {
+  "words": [
+   "SPRING",
+   "SUMMER",
+   "AUTUMN",
+   "WINTER",
+   "NESTING",
+   "MOLTING",
+   "MIGRATING",
+   "SINGING",
+   "FLOCKING",
+   "FLEDGING",
+   "FEEDING",
+   "WATCHING"
+  ],
+  "fact": "Every season brings a different set of birds to your garden."
+ },
+ "Pet Birds": {
+  "words": [
+   "CANARY",
+   "PARAKEET",
+   "COCKATIEL",
+   "LOVEBIRD",
+   "FINCH",
+   "PARROT",
+   "BUDGIE",
+   "CAGE",
+   "PERCH",
+   "SEEDS",
+   "MIRROR",
+   "BELL"
+  ],
+  "fact": "A budgie can learn to mimic words and enjoys the company of its owner."
+ },
+ "Bird Habitats": {
+  "words": [
+   "FOREST",
+   "MARSH",
+   "MEADOW",
+   "DESERT",
+   "COAST",
+   "TUNDRA",
+   "JUNGLE",
+   "GARDEN",
+   "PRAIRIE",
+   "MOUNTAIN",
+   "ISLAND",
+   "WETLAND"
+  ],
+  "fact": "A garden with a mix of trees, shrubs and flowers can host many kinds of birds."
+ },
+ "Birder Snacks": {
+  "words": [
+   "TEA",
+   "COFFEE",
+   "SANDWICH",
+   "APPLE",
+   "COOKIE",
+   "THERMOS",
+   "BANANA",
+   "TRAILMIX",
+   "PICNIC",
+   "BLANKET",
+   "COCOA",
+   "LUNCH"
+  ],
+  "fact": "A thermos of tea and a comfortable chair make bird watching even better."
+ },
+ "Birds Around the House": {
+  "words": [
+   "PORCH",
+   "EAVES",
+   "GUTTER",
+   "CHIMNEY",
+   "GARAGE",
+   "FENCE",
+   "SHED",
+   "RAILING",
+   "LAWN",
+   "HEDGE",
+   "PATIO",
+   "ROOF"
+  ],
+  "fact": "Robins and phoebes sometimes build nests on porch beams and ledges."
+ },
+ "Birds and Flowers": {
+  "words": [
+   "ROSE",
+   "LILAC",
+   "TULIP",
+   "ASTER",
+   "ZINNIA",
+   "PHLOX",
+   "SALVIA",
+   "COLUMBINE",
+   "PETUNIA",
+   "BEEBALM",
+   "TRUMPET",
+   "FUCHSIA"
+  ],
+  "fact": "Tubular red flowers such as bee balm attract hummingbirds to your garden."
+ },
+ "Bird Names with Colors": {
+  "words": [
+   "REDWING",
+   "BLUEJAY",
+   "GOLDFINCH",
+   "BLACKBIRD",
+   "WHITETHROAT",
+   "GREENFINCH",
+   "YELLOWHAMMER",
+   "BLUETHROAT",
+   "REDSTART",
+   "BLACKCAP",
+   "WHITEWING",
+   "SILVEREYE"
+  ],
+  "fact": "Many bird names describe a color or a mark you can see in the field."
+ },
+ "Birds Named for Sounds": {
+  "words": [
+   "WHIPPOORWILL",
+   "BOBWHITE",
+   "CHICKADEE",
+   "KILLDEER",
+   "PHOEBE",
+   "CUCKOO",
+   "PEEWEE",
+   "CHIFFCHAFF",
+   "TOWHEE",
+   "CURLEW",
+   "BOOBOOK",
+   "CHACHALACA"
+  ],
+  "fact": "The chickadee and the bobwhite are named for the sounds that they make."
+ },
+ "Friendly Backyard Birds": {
+  "words": [
+   "ROBIN",
+   "WREN",
+   "SPARROW",
+   "CARDINAL",
+   "FINCH",
+   "CHICKADEE",
+   "JAY",
+   "DOVE",
+   "TITMOUSE",
+   "JUNCO",
+   "NUTHATCH",
+   "BLUEBIRD"
+  ],
+  "fact": "The more kinds of food and water you offer, the more kinds of birds will visit."
+ }
+}
