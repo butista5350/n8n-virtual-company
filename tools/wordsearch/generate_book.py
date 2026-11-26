@@ -71,17 +71,64 @@ def footer(c, page_no):
     c.drawCentredString(center_x(page_no), 34, str(page_no))
 
 
+def c_width(text, font, size):
+    from reportlab.pdfbase.pdfmetrics import stringWidth
+    return stringWidth(text, font, size)
+
+
+def balanced_lines(text, font, start, min_size, max_width, max_lines):
+    """Split text on word boundaries into <= max_lines lines whose widest line is as narrow as possible,
+    then return the largest size (start..min_size) at which every line fits max_width."""
+    import itertools
+    words = text.split()
+    best = None
+    for k in range(1, min(max_lines, len(words)) + 1):
+        for cuts in itertools.combinations(range(1, len(words)), k - 1):
+            idx = (0,) + cuts + (len(words),)
+            lines = [" ".join(words[idx[i]:idx[i + 1]]) for i in range(k)]
+            widest = max(c_width(l, font, 100) for l in lines)
+            if best is None or widest < best[0] - 1e-6 or (abs(widest - best[0]) < 1e-6 and len(lines) < len(best[1])):
+                best = (widest, lines)
+    widest, lines = best
+    size = min(start, max_width / widest * 100)
+    return max(min_size, size), lines
+
+
+def fit_lines(text, font, start, min_size, max_width, max_lines):
+    return balanced_lines(text, font, start, min_size, max_width, max_lines)
+
+
 def page_title(c, page_no, cfg):
-    c.setFont(FONT_B, 40)
-    c.drawCentredString(center_x(page_no), H * 0.62, cfg["title"])
-    c.setFont(FONT, 22)
-    y = H * 0.62 - 44
-    for line in simpleSplit(cfg["subtitle"], FONT, 22, W - INNER - OUTER - 40):
-        c.drawCentredString(center_x(page_no), y, line)
-        y -= 28
+    cx = center_x(page_no)
+    x0, x1 = live_area(page_no)
+    max_w = (x1 - x0) - 40
+    # Title: wrapped on word boundaries, never wider than the live area
+    size, lines = fit_lines(cfg["title"], FONT_B, 56, 30, max_w, 3)
+    lead = size * 1.18
+    y = H * 0.70
+    c.setStrokeGray(0)
+    c.setLineWidth(2.5)
+    c.line(cx - max_w / 2, y + size * 0.95, cx + max_w / 2, y + size * 0.95)
+    c.setFillGray(0)
+    c.setFont(FONT_B, size)
+    for line in lines:
+        c.drawCentredString(cx, y, line)
+        y -= lead
+    c.setLineWidth(2.5)
+    c.line(cx - max_w / 2, y + lead * 0.55, cx + max_w / 2, y + lead * 0.55)
+    # Subtitle
+    y -= lead * 0.55 + 14
+    s_size, s_lines = fit_lines(cfg["subtitle"], FONT, 24, 16, max_w, 2)
+    c.setFont(FONT, s_size)
+    for line in s_lines:
+        c.drawCentredString(cx, y, line)
+        y -= s_size * 1.3
     if cfg.get("volume"):
-        c.setFont(FONT_B, 20)
-        c.drawCentredString(center_x(page_no), y - 14, cfg["volume"])
+        c.setFont(FONT_B, 22)
+        c.drawCentredString(cx, y - 18, cfg["volume"])
+    # Author at the foot of the page
+    c.setFont(FONT, 18)
+    c.drawCentredString(cx, 110, cfg.get("author", ""))
 
 
 def page_copyright(c, page_no, cfg):
