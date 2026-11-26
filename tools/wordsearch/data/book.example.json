@@ -1,0 +1,22 @@
+{
+  "title": "Large Print Word Search",
+  "subtitle": "50 Easy-to-Read Puzzles for Adults",
+  "volume": "Volume 1",
+  "author": "REPLACE_WITH_PUBLISHER_NAME",
+  "year": 2026,
+  "grid_size": 13,
+  "seed": 1,
+  "puzzle_count": 50,
+  "back_cover_text": "Relax and enjoy 50 word search puzzles printed in big, clear letters. Each puzzle has 12 words hidden left to right, top to bottom, or diagonally down. Full solutions are at the back of the book.",
+  "cover_palette": {
+    "bg_top": "#0B3C5D",
+    "bg_bottom": "#1D7A8C",
+    "accent": "#F5B83D",
+    "coral": "#F4785B",
+    "mint": "#7ED6B2",
+    "sky": "#8EC9F2",
+    "card": "#FFFDF7",
+    "ink": "#12324A",
+    "text": "#FFFFFF"
+  }
+}

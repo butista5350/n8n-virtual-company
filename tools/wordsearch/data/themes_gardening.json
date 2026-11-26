@@ -1,0 +1,1702 @@
+{
+ "Spring Bulbs": {
+  "words": [
+   "TULIP",
+   "DAFFODIL",
+   "CROCUS",
+   "HYACINTH",
+   "SNOWDROP",
+   "ALLIUM",
+   "IRIS",
+   "SCILLA",
+   "MUSCARI",
+   "AMARYLLIS",
+   "FRITILLARIA",
+   "LILY"
+  ],
+  "fact": "Most spring bulbs are planted in autumn so they can rest through the cold of winter."
+ },
+ "Summer Flowers": {
+  "words": [
+   "ZINNIA",
+   "MARIGOLD",
+   "PETUNIA",
+   "COSMOS",
+   "SUNFLOWER",
+   "GERANIUM",
+   "DAHLIA",
+   "PHLOX",
+   "SALVIA",
+   "ASTER",
+   "LANTANA",
+   "VERBENA"
+  ],
+  "fact": "Removing faded blooms often encourages annual flowers to keep blooming for longer."
+ },
+ "Roses": {
+  "words": [
+   "TEAROSE",
+   "FLORIBUNDA",
+   "CLIMBER",
+   "RAMBLER",
+   "THORN",
+   "PETAL",
+   "BUD",
+   "PRUNING",
+   "FRAGRANT",
+   "HEDGE",
+   "BLOOM",
+   "SHRUB"
+  ],
+  "fact": "Roses are usually pruned in late winter or early spring, just as new growth begins."
+ },
+ "Herb Garden": {
+  "words": [
+   "BASIL",
+   "PARSLEY",
+   "SAGE",
+   "THYME",
+   "MINT",
+   "CHIVES",
+   "DILL",
+   "OREGANO",
+   "ROSEMARY",
+   "TARRAGON",
+   "CILANTRO",
+   "FENNEL"
+  ],
+  "fact": "Mint spreads quickly, so many gardeners grow it in a pot to keep it in check."
+ },
+ "Vegetable Patch": {
+  "words": [
+   "CARROT",
+   "BEANS",
+   "PEAS",
+   "LETTUCE",
+   "TOMATO",
+   "SQUASH",
+   "ONION",
+   "RADISH",
+   "BEETS",
+   "CUCUMBER",
+   "PEPPER",
+   "KALE"
+  ],
+  "fact": "Radishes grow fast and are often ready to pick in about four weeks."
+ },
+ "Tomato Time": {
+  "words": [
+   "CHERRY",
+   "ROMA",
+   "BEEFSTEAK",
+   "HEIRLOOM",
+   "STAKE",
+   "VINE",
+   "TRELLIS",
+   "RIPE",
+   "SEEDLING",
+   "SUCKERS",
+   "SAUCE",
+   "SALSA"
+  ],
+  "fact": "Tomatoes ripen best with plenty of warm sunshine, ideally six hours or more a day."
+ },
+ "Berry Patch": {
+  "words": [
+   "STRAWBERRY",
+   "BLUEBERRY",
+   "RASPBERRY",
+   "BLACKBERRY",
+   "CURRANT",
+   "GOOSEBERRY",
+   "ELDERBERRY",
+   "CRANBERRY",
+   "MULBERRY",
+   "BRAMBLE",
+   "HARVEST",
+   "JAM"
+  ],
+  "fact": "Blueberries like acidic soil, so many gardeners grow them in containers of special mix."
+ },
+ "Orchard Fruit": {
+  "words": [
+   "APPLE",
+   "PEAR",
+   "PLUM",
+   "CHERRY",
+   "PEACH",
+   "APRICOT",
+   "QUINCE",
+   "FIG",
+   "NECTARINE",
+   "ORCHARD",
+   "GRAFT",
+   "BLOSSOM"
+  ],
+  "fact": "Many fruit trees crop better when another variety grows nearby to help pollination."
+ },
+ "Citrus Grove": {
+  "words": [
+   "LEMON",
+   "LIME",
+   "ORANGE",
+   "GRAPEFRUIT",
+   "TANGERINE",
+   "KUMQUAT",
+   "CITRON",
+   "MANDARIN",
+   "POMELO",
+   "ZEST",
+   "JUICE",
+   "PEEL"
+  ],
+  "fact": "In cooler climates, citrus trees are often grown in pots and brought indoors for winter."
+ },
+ "Houseplants": {
+  "words": [
+   "POTHOS",
+   "FERN",
+   "CACTUS",
+   "ORCHID",
+   "ALOE",
+   "JADE",
+   "SPIDERPLANT",
+   "PEACELILY",
+   "MONSTERA",
+   "FICUS",
+   "PHILODENDRON",
+   "SNAKEPLANT"
+  ],
+  "fact": "Overwatering harms more houseplants than forgetting to water, so check the soil first."
+ },
+ "Succulents": {
+  "words": [
+   "AGAVE",
+   "SEDUM",
+   "ECHEVERIA",
+   "HAWORTHIA",
+   "YUCCA",
+   "ROSETTE",
+   "DESERT",
+   "GRAVEL",
+   "SUNLIGHT",
+   "STONECROP",
+   "SUCCULENT",
+   "ALOEVERA"
+  ],
+  "fact": "Succulents store water in thick leaves, so they like a deep soak followed by a dry spell."
+ },
+ "Garden Tools": {
+  "words": [
+   "SPADE",
+   "TROWEL",
+   "RAKE",
+   "HOE",
+   "SHEARS",
+   "PRUNERS",
+   "LOPPERS",
+   "FORK",
+   "HOSE",
+   "WHEELBARROW",
+   "GLOVES",
+   "WATERINGCAN"
+  ],
+  "fact": "Clean and dry your tools before storing them to keep them sharp and rust free."
+ },
+ "Rich Soil": {
+  "words": [
+   "COMPOST",
+   "HUMUS",
+   "LOAM",
+   "CLAY",
+   "SAND",
+   "SILT",
+   "MULCH",
+   "MANURE",
+   "PEAT",
+   "WORMS",
+   "TOPSOIL",
+   "NUTRIENTS"
+  ],
+  "fact": "A single handful of healthy soil can hold billions of tiny living organisms."
+ },
+ "Compost Heap": {
+  "words": [
+   "SCRAPS",
+   "LEAVES",
+   "GRASS",
+   "WORMS",
+   "BIN",
+   "HEAP",
+   "TURNING",
+   "DECAY",
+   "BROWNS",
+   "GREENS",
+   "EGGSHELLS",
+   "COMPOSTER"
+  ],
+  "fact": "A good heap balances greens like fresh clippings with browns like dry leaves."
+ },
+ "Watering Wisely": {
+  "words": [
+   "SPRINKLER",
+   "DRIP",
+   "BARREL",
+   "SOAKER",
+   "CAN",
+   "MORNING",
+   "MOISTURE",
+   "ROOTS",
+   "RESERVOIR",
+   "IRRIGATION",
+   "NOZZLE",
+   "RAINWATER"
+  ],
+  "fact": "Watering deeply but less often encourages plants to grow stronger, deeper roots."
+ },
+ "Pollinators": {
+  "words": [
+   "BEES",
+   "BUTTERFLY",
+   "MOTH",
+   "HUMMINGBIRD",
+   "WASP",
+   "BEETLE",
+   "NECTAR",
+   "POLLEN",
+   "HOVERFLY",
+   "BUMBLEBEE",
+   "MONARCH",
+   "FLOWERS"
+  ],
+  "fact": "Planting flowers in clusters makes it easier for bees to find them."
+ },
+ "Honey Bees": {
+  "words": [
+   "HIVE",
+   "HONEY",
+   "WAX",
+   "QUEEN",
+   "WORKER",
+   "DRONE",
+   "SWARM",
+   "APIARY",
+   "COMB",
+   "BEEKEEPER",
+   "SMOKER",
+   "FRAMES"
+  ],
+  "fact": "A honeybee makes only a tiny fraction of a teaspoon of honey in its whole life."
+ },
+ "Butterfly Garden": {
+  "words": [
+   "MONARCH",
+   "SWALLOWTAIL",
+   "ADMIRAL",
+   "CATERPILLAR",
+   "CHRYSALIS",
+   "MILKWEED",
+   "BUDDLEIA",
+   "NECTAR",
+   "FLUTTER",
+   "WINGS",
+   "SKIPPER",
+   "COMMA"
+  ],
+  "fact": "Monarch caterpillars feed only on milkweed, so planting it helps this butterfly."
+ },
+ "Backyard Birds": {
+  "words": [
+   "ROBIN",
+   "SPARROW",
+   "FINCH",
+   "CARDINAL",
+   "BLUEJAY",
+   "WREN",
+   "CHICKADEE",
+   "NUTHATCH",
+   "WOODPECKER",
+   "DOVE",
+   "ORIOLE",
+   "FEEDER"
+  ],
+  "fact": "A shallow birdbath with fresh water attracts birds as well as food does."
+ },
+ "Birdhouse Time": {
+  "words": [
+   "BIRDHOUSE",
+   "NESTBOX",
+   "PERCH",
+   "ROOF",
+   "ENTRANCE",
+   "CEDAR",
+   "NESTING",
+   "FLEDGLING",
+   "SEEDS",
+   "SUET",
+   "BIRDBATH",
+   "TWIGS"
+  ],
+  "fact": "Birdhouses are best put up in late winter, ready for the spring nesting season."
+ },
+ "Wildflowers": {
+  "words": [
+   "POPPY",
+   "CORNFLOWER",
+   "OXEYE",
+   "DAISY",
+   "CLOVER",
+   "LUPINE",
+   "YARROW",
+   "BLUEBELL",
+   "BUTTERCUP",
+   "FOXGLOVE",
+   "PRIMROSE",
+   "CAMPION"
+  ],
+  "fact": "Wildflower meadows do best in poor soil, where grasses cannot crowd out the flowers."
+ },
+ "Cottage Garden": {
+  "words": [
+   "DELPHINIUM",
+   "HOLLYHOCK",
+   "PEONY",
+   "LAVENDER",
+   "SWEETPEA",
+   "SNAPDRAGON",
+   "COLUMBINE",
+   "PINKS",
+   "TRELLIS",
+   "PICKET",
+   "ARCH",
+   "COTTAGE"
+  ],
+  "fact": "Cottage gardens mix flowers, herbs and vegetables together in relaxed, colorful borders."
+ },
+ "Lavender Fields": {
+  "words": [
+   "LAVENDER",
+   "ENGLISH",
+   "FRENCH",
+   "SCENT",
+   "SACHET",
+   "PURPLE",
+   "DRIED",
+   "BUNDLE",
+   "FRAGRANCE",
+   "SUNSHINE",
+   "PRUNE",
+   "HEDGES"
+  ],
+  "fact": "Lavender thrives in sunny spots with well-drained soil and little water once settled."
+ },
+ "Sunflowers": {
+  "words": [
+   "SUNFLOWER",
+   "SEEDS",
+   "PETALS",
+   "TALL",
+   "STALK",
+   "YELLOW",
+   "GIANT",
+   "ROASTED",
+   "FIELD",
+   "HELIANTHUS",
+   "KANSAS",
+   "BLOSSOM"
+  ],
+  "fact": "Young sunflower heads turn to follow the sun across the sky each day."
+ },
+ "Ferns and Moss": {
+  "words": [
+   "FERN",
+   "FROND",
+   "SPORE",
+   "MOSS",
+   "SHADE",
+   "FOREST",
+   "BRACKEN",
+   "OSTRICH",
+   "MAIDENHAIR",
+   "WOODLAND",
+   "DAMP",
+   "LICHEN"
+  ],
+  "fact": "Ferns reproduce by tiny spores instead of seeds."
+ },
+ "Shade Garden": {
+  "words": [
+   "HOSTA",
+   "ASTILBE",
+   "HELLEBORE",
+   "LUNGWORT",
+   "HEUCHERA",
+   "PRIMULA",
+   "IMPATIENS",
+   "BEGONIA",
+   "COLEUS",
+   "PERIWINKLE",
+   "SHADE",
+   "CANOPY"
+  ],
+  "fact": "Many shade plants have large leaves to catch as much light as possible."
+ },
+ "Trees": {
+  "words": [
+   "OAK",
+   "MAPLE",
+   "BIRCH",
+   "CEDAR",
+   "PINE",
+   "ELM",
+   "ASPEN",
+   "WILLOW",
+   "SPRUCE",
+   "WALNUT",
+   "CYPRESS",
+   "HICKORY"
+  ],
+  "fact": "A tree trunk usually adds one ring for each year of growth."
+ },
+ "Flowering Trees": {
+  "words": [
+   "DOGWOOD",
+   "MAGNOLIA",
+   "REDBUD",
+   "CRABAPPLE",
+   "HAWTHORN",
+   "LABURNUM",
+   "LINDEN",
+   "CATALPA",
+   "JACARANDA",
+   "SERVICEBERRY",
+   "SPRINGTIME",
+   "PETALS"
+  ],
+  "fact": "Plant flowering trees where you can enjoy them from a window in spring."
+ },
+ "Shrubs": {
+  "words": [
+   "HYDRANGEA",
+   "AZALEA",
+   "RHODODENDRON",
+   "FORSYTHIA",
+   "LILAC",
+   "BOXWOOD",
+   "HOLLY",
+   "CAMELLIA",
+   "SPIREA",
+   "PRIVET",
+   "WEIGELA",
+   "ELDER"
+  ],
+  "fact": "Hydrangea flower color can change with the acidity of the soil."
+ },
+ "Hedges and Borders": {
+  "words": [
+   "PRIVET",
+   "YEW",
+   "HOLLY",
+   "BOXWOOD",
+   "HAWTHORN",
+   "BEECH",
+   "HORNBEAM",
+   "LAUREL",
+   "FENCE",
+   "BORDER",
+   "EDGING",
+   "TRIMMING"
+  ],
+  "fact": "Trim hedges so the base is slightly wider than the top, letting light reach lower leaves."
+ },
+ "Lawn Care": {
+  "words": [
+   "GRASS",
+   "MOWER",
+   "LAWN",
+   "SEED",
+   "CLIPPINGS",
+   "EDGER",
+   "ROLLER",
+   "FERTILIZER",
+   "AERATE",
+   "THATCH",
+   "GREEN",
+   "TURF"
+  ],
+  "fact": "Mowing a little higher helps grass grow deeper roots and cope with dry spells."
+ },
+ "Common Weeds": {
+  "words": [
+   "DANDELION",
+   "CLOVER",
+   "CRABGRASS",
+   "THISTLE",
+   "NETTLE",
+   "PLANTAIN",
+   "CHICKWEED",
+   "BINDWEED",
+   "DOCK",
+   "GROUNDSEL",
+   "HOEING",
+   "PULLING"
+  ],
+  "fact": "Mulching around plants blocks light so fewer weed seeds can sprout."
+ },
+ "Mulch Matters": {
+  "words": [
+   "BARK",
+   "STRAW",
+   "CHIPS",
+   "LEAFMOLD",
+   "GRAVEL",
+   "COVER",
+   "LAYER",
+   "INSULATE",
+   "SOIL",
+   "DEPTH",
+   "NEEDLES",
+   "SHREDDED"
+  ],
+  "fact": "A layer of mulch two to three inches deep helps soil hold moisture."
+ },
+ "Seeds and Sowing": {
+  "words": [
+   "SEEDS",
+   "SOW",
+   "TRAY",
+   "SEEDLING",
+   "GERMINATE",
+   "PACKET",
+   "SPROUT",
+   "DIBBER",
+   "THINNING",
+   "COLDFRAME",
+   "PRICKING",
+   "LABELS"
+  ],
+  "fact": "Check the seed packet for sowing depth; a common guide is about twice the seed's width."
+ },
+ "Planting Day": {
+  "words": [
+   "SPRING",
+   "PLANTING",
+   "DIGGING",
+   "SPACING",
+   "HOLE",
+   "ROOTBALL",
+   "SETTLE",
+   "FIRMING",
+   "FROSTFREE",
+   "LABEL",
+   "STAKING",
+   "SUNNYSPOT"
+  ],
+  "fact": "Plant on a cloudy day or in the evening so young plants can settle before the heat."
+ },
+ "Autumn Garden": {
+  "words": [
+   "PUMPKIN",
+   "HARVEST",
+   "ACORN",
+   "GOURD",
+   "CIDER",
+   "SCARECROW",
+   "CHRYSANTHEMUM",
+   "RAKING",
+   "FOLIAGE",
+   "CRISP",
+   "BONFIRE",
+   "APPLES"
+  ],
+  "fact": "Autumn is a great time to plant trees and shrubs because the soil is still warm."
+ },
+ "Winter Garden": {
+  "words": [
+   "FROST",
+   "SNOW",
+   "EVERGREEN",
+   "BERRIES",
+   "SHELTER",
+   "BURLAP",
+   "HIBERNATE",
+   "DORMANT",
+   "BIRDFEED",
+   "ICICLE",
+   "POINSETTIA",
+   "WINTERBERRY"
+  ],
+  "fact": "Dormant plants are resting, not dead, and many need winter chill to flower later."
+ },
+ "Greenhouse": {
+  "words": [
+   "GLASS",
+   "VENTS",
+   "BENCH",
+   "HEATER",
+   "SHADING",
+   "TROPICAL",
+   "HUMIDITY",
+   "POTTING",
+   "TRAYS",
+   "PROPAGATE",
+   "CUTTINGS",
+   "THERMOMETER"
+  ],
+  "fact": "A greenhouse can stretch the growing season by weeks at both ends of the year."
+ },
+ "Container Gardening": {
+  "words": [
+   "POT",
+   "PLANTER",
+   "BASKET",
+   "WINDOWBOX",
+   "URN",
+   "SAUCER",
+   "DRAINAGE",
+   "TERRACOTTA",
+   "CERAMIC",
+   "BALCONY",
+   "PATIO",
+   "TROUGH"
+  ],
+  "fact": "Every pot needs drainage holes so roots never sit in soggy soil."
+ },
+ "Hanging Baskets": {
+  "words": [
+   "FUCHSIA",
+   "TRAILING",
+   "IVY",
+   "LOBELIA",
+   "BACOPA",
+   "HANGING",
+   "BRACKET",
+   "LINER",
+   "CHAIN",
+   "HOOK",
+   "PORCH",
+   "NASTURTIUM"
+  ],
+  "fact": "Hanging baskets dry out quickly, so they often need water every day in summer."
+ },
+ "Raised Beds": {
+  "words": [
+   "TIMBER",
+   "FRAME",
+   "BED",
+   "LEVEL",
+   "BLEND",
+   "LAYERS",
+   "PATHWAY",
+   "KNEELER",
+   "LINING",
+   "ACCESS",
+   "GALVANIZED",
+   "CORNERS"
+  ],
+  "fact": "Raised beds are easier on the back and warm up faster in spring."
+ },
+ "Climbing Plants": {
+  "words": [
+   "CLEMATIS",
+   "IVY",
+   "WISTERIA",
+   "HONEYSUCKLE",
+   "JASMINE",
+   "MORNINGGLORY",
+   "TRELLIS",
+   "ARBOR",
+   "PERGOLA",
+   "TENDRIL",
+   "TWINING",
+   "CLIMBING"
+  ],
+  "fact": "Twining plants wrap around supports, while others cling with tendrils or sticky pads."
+ },
+ "Pumpkin Patch": {
+  "words": [
+   "PUMPKIN",
+   "VINE",
+   "ORANGE",
+   "CARVING",
+   "GOURD",
+   "PIE",
+   "LANTERN",
+   "STEM",
+   "PATCH",
+   "HAYRIDE",
+   "COSTUME",
+   "COOKING"
+  ],
+  "fact": "Pumpkins need lots of space, and their vines can spread many feet across the garden."
+ },
+ "Potato Patch": {
+  "words": [
+   "SPUD",
+   "TUBER",
+   "CHITTING",
+   "EARTHING",
+   "HILLING",
+   "YUKON",
+   "RUSSET",
+   "FINGERLING",
+   "MASHED",
+   "ROASTED",
+   "CHIPS",
+   "TRENCH"
+  ],
+  "fact": "Potato plants are earthed up with soil to protect the tubers from light."
+ },
+ "Salad Bowl": {
+  "words": [
+   "LETTUCE",
+   "ARUGULA",
+   "SPINACH",
+   "ENDIVE",
+   "CHICORY",
+   "CRESS",
+   "ROMAINE",
+   "CHARD",
+   "MIZUNA",
+   "SCALLION",
+   "DRESSING",
+   "CROUTON"
+  ],
+  "fact": "Cut-and-come-again lettuce regrows after harvesting, giving several pickings."
+ },
+ "Peppers and Chiles": {
+  "words": [
+   "JALAPENO",
+   "POBLANO",
+   "CAYENNE",
+   "BELL",
+   "PAPRIKA",
+   "HABANERO",
+   "SERRANO",
+   "BANANA",
+   "SWEET",
+   "SPICY",
+   "CHILI",
+   "PIMENTO"
+  ],
+  "fact": "Most of a pepper's heat comes from the white ribs inside rather than the seeds."
+ },
+ "Root Vegetables": {
+  "words": [
+   "BEETROOT",
+   "PARSNIP",
+   "TURNIP",
+   "RUTABAGA",
+   "CELERIAC",
+   "SALSIFY",
+   "YAM",
+   "DAIKON",
+   "GINGER",
+   "GARLIC",
+   "SHALLOT",
+   "LEEK"
+  ],
+  "fact": "Loose, stone-free soil helps root vegetables grow long and straight."
+ },
+ "Onion Family": {
+  "words": [
+   "ONION",
+   "GARLIC",
+   "SHALLOT",
+   "LEEK",
+   "SCALLION",
+   "BULB",
+   "CLOVE",
+   "SETS",
+   "PICKLED",
+   "BRAIDED",
+   "SWEET",
+   "RAMPS"
+  ],
+  "fact": "Garlic is usually planted in autumn from individual cloves."
+ },
+ "Squash Family": {
+  "words": [
+   "ZUCCHINI",
+   "BUTTERNUT",
+   "SPAGHETTI",
+   "PATTYPAN",
+   "KABOCHA",
+   "DELICATA",
+   "CROOKNECK",
+   "MARROW",
+   "GOURDS",
+   "CUCURBIT",
+   "BLOSSOMS",
+   "HUBBARD"
+  ],
+  "fact": "Zucchini flowers are edible and can be stuffed or fried."
+ },
+ "Cabbage Family": {
+  "words": [
+   "CABBAGE",
+   "BROCCOLI",
+   "CAULIFLOWER",
+   "SPROUTS",
+   "KOHLRABI",
+   "BOKCHOY",
+   "COLLARDS",
+   "SAVOY",
+   "BRASSICA",
+   "NETTING",
+   "HEADS",
+   "FLORETS"
+  ],
+  "fact": "Cover brassicas with fine netting to keep butterflies from laying eggs on the leaves."
+ },
+ "Corn and Grains": {
+  "words": [
+   "SWEETCORN",
+   "MAIZE",
+   "TASSEL",
+   "SILK",
+   "KERNEL",
+   "COB",
+   "HUSK",
+   "WHEAT",
+   "BARLEY",
+   "OATS",
+   "RYE",
+   "STALKS"
+  ],
+  "fact": "Corn is wind-pollinated, so plant it in blocks rather than a single long row."
+ },
+ "Beans": {
+  "words": [
+   "RUNNER",
+   "BUSH",
+   "POLE",
+   "LIMA",
+   "FAVA",
+   "KIDNEY",
+   "PINTO",
+   "NAVY",
+   "SNAP",
+   "SOYBEAN",
+   "TEEPEE",
+   "PODS"
+  ],
+  "fact": "Beans can add nitrogen to the soil through helpful bacteria on their roots."
+ },
+ "Peas": {
+  "words": [
+   "SNOWPEA",
+   "SUGARSNAP",
+   "SHELLING",
+   "TENDRILS",
+   "SWEET",
+   "CRISP",
+   "PICKING",
+   "EARLY",
+   "COOL",
+   "CHICKPEA",
+   "PEASHOOTS",
+   "GREENS"
+  ],
+  "fact": "Peas prefer cool weather, so sow them early in spring."
+ },
+ "Melon Patch": {
+  "words": [
+   "WATERMELON",
+   "CANTALOUPE",
+   "HONEYDEW",
+   "MUSKMELON",
+   "RIND",
+   "JUICY",
+   "SWEET",
+   "RIPENESS",
+   "VINES",
+   "SUMMER",
+   "SLICES",
+   "PICNIC"
+  ],
+  "fact": "A ripe watermelon often has a yellowish patch where it rested on the ground."
+ },
+ "Grapes and Vines": {
+  "words": [
+   "GRAPEVINE",
+   "VINEYARD",
+   "CONCORD",
+   "MUSCAT",
+   "RAISINS",
+   "CLUSTER",
+   "WINERY",
+   "SEEDLESS",
+   "HARVEST",
+   "TRELLIS",
+   "PRUNING",
+   "JUICE"
+  ],
+  "fact": "Grapevines fruit on new shoots, which is why they are pruned hard in winter."
+ },
+ "Nut Trees": {
+  "words": [
+   "WALNUT",
+   "PECAN",
+   "ALMOND",
+   "HAZELNUT",
+   "CHESTNUT",
+   "PISTACHIO",
+   "CASHEW",
+   "ACORN",
+   "HICKORY",
+   "BUTTERNUT",
+   "SHELL",
+   "CRACKING"
+  ],
+  "fact": "Many nut trees take several years to begin producing, so planting early pays off."
+ },
+ "Garden Pests": {
+  "words": [
+   "APHID",
+   "SLUG",
+   "SNAIL",
+   "CATERPILLAR",
+   "BEETLE",
+   "WEEVIL",
+   "MITE",
+   "EARWIG",
+   "SQUIRREL",
+   "RABBIT",
+   "DEER",
+   "MOLE"
+  ],
+  "fact": "Ladybugs and lacewings eat aphids, so welcoming them helps protect your plants."
+ },
+ "Helpful Insects": {
+  "words": [
+   "LADYBUG",
+   "LACEWING",
+   "HOVERFLY",
+   "GROUNDBEETLE",
+   "DRAGONFLY",
+   "MANTIS",
+   "SPIDER",
+   "EARTHWORM",
+   "BUMBLEBEE",
+   "FIREFLY",
+   "CENTIPEDE",
+   "WASP"
+  ],
+  "fact": "Many insects in the garden are helpers that eat pests or pollinate plants."
+ },
+ "Garden Wildlife": {
+  "words": [
+   "HEDGEHOG",
+   "TOAD",
+   "FROG",
+   "SQUIRREL",
+   "CHIPMUNK",
+   "RABBIT",
+   "BAT",
+   "LIZARD",
+   "SALAMANDER",
+   "OPOSSUM",
+   "RACCOON",
+   "FIREFLY"
+  ],
+  "fact": "A toad in the garden can eat many insects and slugs in a single night."
+ },
+ "Pond Life": {
+  "words": [
+   "POND",
+   "LILYPAD",
+   "REEDS",
+   "KOI",
+   "GOLDFISH",
+   "FOUNTAIN",
+   "FROG",
+   "TADPOLE",
+   "CATTAIL",
+   "DRAGONFLY",
+   "WATERLILY",
+   "PUMP"
+  ],
+  "fact": "Even a small pond can become a haven for frogs, dragonflies and birds."
+ },
+ "Water Features": {
+  "words": [
+   "FOUNTAIN",
+   "BIRDBATH",
+   "CASCADE",
+   "STREAM",
+   "POND",
+   "FALLS",
+   "PUMP",
+   "BASIN",
+   "TRICKLE",
+   "RIPPLE",
+   "SPLASH",
+   "BUBBLER"
+  ],
+  "fact": "The gentle sound of running water can make a garden feel calmer."
+ },
+ "Garden Paths": {
+  "words": [
+   "GRAVEL",
+   "STEPPING",
+   "STONE",
+   "BRICK",
+   "PAVER",
+   "SLATE",
+   "WALKWAY",
+   "CURVED",
+   "MOSSY",
+   "COBBLES",
+   "TRAIL",
+   "DECKING"
+  ],
+  "fact": "Curved paths invite you to wander and reveal the garden a little at a time."
+ },
+ "Garden Seating": {
+  "words": [
+   "BENCH",
+   "SWING",
+   "HAMMOCK",
+   "CHAIR",
+   "TABLE",
+   "UMBRELLA",
+   "LOUNGER",
+   "GAZEBO",
+   "PATIO",
+   "CUSHION",
+   "SHADE",
+   "SEATING"
+  ],
+  "fact": "A shady seat near your favorite flowers is the best spot for a coffee break."
+ },
+ "Garden Decor": {
+  "words": [
+   "GNOME",
+   "SUNDIAL",
+   "WINDCHIME",
+   "STATUE",
+   "LANTERN",
+   "PLAQUE",
+   "ORNAMENT",
+   "MOSAIC",
+   "WEATHERVANE",
+   "BIRDHOUSE",
+   "SCULPTURE",
+   "ARCHWAY"
+  ],
+  "fact": "A sundial tells the time by the shadow the sun casts."
+ },
+ "From Garden to Table": {
+  "words": [
+   "PESTO",
+   "SALSA",
+   "JAM",
+   "PICKLES",
+   "CHUTNEY",
+   "SALAD",
+   "SOUP",
+   "PRESERVE",
+   "CANNING",
+   "DRIED",
+   "SYRUP",
+   "RELISH"
+  ],
+  "fact": "Fresh herbs add the most flavor when stirred in just before serving."
+ },
+ "Jam and Preserves": {
+  "words": [
+   "JAM",
+   "JELLY",
+   "MARMALADE",
+   "CHUTNEY",
+   "PRESERVES",
+   "PECTIN",
+   "JAR",
+   "LID",
+   "SEAL",
+   "SUGAR",
+   "BERRIES",
+   "CANNING"
+  ],
+  "fact": "Fruit jams set because of natural pectin, found in apples and citrus peel."
+ },
+ "Tea Garden": {
+  "words": [
+   "CHAMOMILE",
+   "MINT",
+   "LEMONBALM",
+   "HIBISCUS",
+   "ROSEHIP",
+   "LAVENDER",
+   "TEAPOT",
+   "STEEP",
+   "FRESH",
+   "DRIED",
+   "HONEY",
+   "CUP"
+  ],
+  "fact": "Many herbal teas can be brewed from leaves and flowers you grow yourself."
+ },
+ "Cut Flowers": {
+  "words": [
+   "BOUQUET",
+   "VASE",
+   "STEMS",
+   "SNIPS",
+   "ZINNIA",
+   "DAHLIA",
+   "GERBERA",
+   "ARRANGE",
+   "FRESH",
+   "RIBBON",
+   "CENTERPIECE",
+   "BUCKET"
+  ],
+  "fact": "Cut flowers in the cool of the morning and put the stems straight into water."
+ },
+ "Dried Flowers": {
+  "words": [
+   "LAVENDER",
+   "STATICE",
+   "STRAWFLOWER",
+   "HYDRANGEA",
+   "HANGING",
+   "WREATH",
+   "POTPOURRI",
+   "SACHET",
+   "GARLAND",
+   "AIRDRY",
+   "BUNDLE",
+   "RIBBON"
+  ],
+  "fact": "Hang flower bunches upside down in a dry, dark place to keep their color."
+ },
+ "Flower Arranging": {
+  "words": [
+   "FOLIAGE",
+   "FILLER",
+   "FOCAL",
+   "VASE",
+   "FLORAL",
+   "OASIS",
+   "WIRE",
+   "TAPE",
+   "ARRANGE",
+   "BALANCE",
+   "CENTERPIECE",
+   "GREENERY"
+  ],
+  "fact": "An odd number of stems often looks more natural in an arrangement."
+ },
+ "Orchids": {
+  "words": [
+   "PHALAENOPSIS",
+   "CYMBIDIUM",
+   "DENDROBIUM",
+   "CATTLEYA",
+   "BARK",
+   "SPIKE",
+   "AERIAL",
+   "EPIPHYTE",
+   "VANDA",
+   "ORCHID",
+   "BLOOMS",
+   "REPOTTING"
+  ],
+  "fact": "Many orchids grow on trees in the wild and take moisture from the air."
+ },
+ "African Violets": {
+  "words": [
+   "VIOLET",
+   "FUZZY",
+   "LEAVES",
+   "BLOOMS",
+   "WICKING",
+   "SAUCER",
+   "INDIRECT",
+   "PURPLE",
+   "WINDOWSILL",
+   "REPOT",
+   "RUFFLED",
+   "DELICATE"
+  ],
+  "fact": "African violets dislike cold water on their fuzzy leaves, so many people water from below."
+ },
+ "Cacti": {
+  "words": [
+   "SAGUARO",
+   "PRICKLYPEAR",
+   "BARREL",
+   "SPINES",
+   "DESERT",
+   "CHOLLA",
+   "OPUNTIA",
+   "AREOLE",
+   "DRYLAND",
+   "SANDY",
+   "SUNNY",
+   "THORNY"
+  ],
+  "fact": "A cactus spine is really a modified leaf."
+ },
+ "Bonsai": {
+  "words": [
+   "BONSAI",
+   "MINIATURE",
+   "PRUNING",
+   "WIRING",
+   "JUNIPER",
+   "TRAY",
+   "PATIENCE",
+   "SHAPING",
+   "DWARF",
+   "STYLE",
+   "POTTERY",
+   "BALANCE"
+  ],
+  "fact": "Bonsai is the art of growing tiny trees in shallow containers, shaped over many years."
+ },
+ "Japanese Garden": {
+  "words": [
+   "PAGODA",
+   "LANTERN",
+   "KOI",
+   "BAMBOO",
+   "MOSS",
+   "GRAVEL",
+   "STONES",
+   "BRIDGE",
+   "TEAHOUSE",
+   "MAPLE",
+   "ZEN",
+   "CHERRYTREE"
+  ],
+  "fact": "Raked gravel in a Japanese garden often stands for flowing water."
+ },
+ "English Garden": {
+  "words": [
+   "BORDERS",
+   "HEDGEROW",
+   "ROSEBUSH",
+   "LAWN",
+   "TOPIARY",
+   "SUMMERHOUSE",
+   "FOXGLOVE",
+   "DELPHINIUM",
+   "TEAROOM",
+   "PATHWAY",
+   "PEONIES",
+   "SUNDIAL"
+  ],
+  "fact": "Topiary is the art of clipping shrubs into shapes such as spheres, cones and animals."
+ },
+ "Tropical Garden": {
+  "words": [
+   "HIBISCUS",
+   "PALM",
+   "BANANA",
+   "PLUMERIA",
+   "BAMBOO",
+   "PARADISE",
+   "JUNGLE",
+   "HUMID",
+   "FRANGIPANI",
+   "BROMELIAD",
+   "GINGER",
+   "MANGO"
+  ],
+  "fact": "Many tropical plants must come indoors when temperatures drop in autumn."
+ },
+ "Desert Garden": {
+  "words": [
+   "YUCCA",
+   "AGAVE",
+   "SAGEBRUSH",
+   "GRAVEL",
+   "ROCKS",
+   "SUNSHINE",
+   "DRYLAND",
+   "OCOTILLO",
+   "MESQUITE",
+   "XERISCAPE",
+   "ARID",
+   "DUNES"
+  ],
+  "fact": "Xeriscaping uses drought-tolerant plants to save water in dry climates."
+ },
+ "Rock Garden": {
+  "words": [
+   "ALPINE",
+   "STONES",
+   "BOULDER",
+   "GRAVEL",
+   "SEDUM",
+   "THYME",
+   "MOSS",
+   "CREVICE",
+   "DWARF",
+   "ROCKERY",
+   "PEBBLES",
+   "SAXIFRAGE"
+  ],
+  "fact": "Alpine plants like gritty, fast-draining soil that copies mountain slopes."
+ },
+ "Meadow": {
+  "words": [
+   "GRASSES",
+   "WILDFLOWERS",
+   "POPPIES",
+   "CLOVER",
+   "YARROW",
+   "DAISIES",
+   "SWAYING",
+   "BUTTERFLIES",
+   "SUMMER",
+   "MOWING",
+   "HAYFIELD",
+   "CORNFLOWER"
+  ],
+  "fact": "Meadows are usually mown once a year, after wildflowers have set seed."
+ },
+ "Saving Seeds": {
+  "words": [
+   "SEEDHEAD",
+   "DRY",
+   "ENVELOPE",
+   "LABEL",
+   "HEIRLOOM",
+   "STORE",
+   "COOL",
+   "JAR",
+   "PACKET",
+   "DATE",
+   "HARVEST",
+   "ANNUAL"
+  ],
+  "fact": "Seeds saved from heirloom plants will grow true to type."
+ },
+ "Propagation": {
+  "words": [
+   "CUTTING",
+   "DIVISION",
+   "LAYERING",
+   "GRAFTING",
+   "ROOTING",
+   "HORMONE",
+   "SEEDLING",
+   "OFFSET",
+   "RUNNER",
+   "SUCKER",
+   "TRAY",
+   "MISTING"
+  ],
+  "fact": "Many houseplants root easily from a cutting placed in a glass of water."
+ },
+ "Pruning Basics": {
+  "words": [
+   "SECATEURS",
+   "LOPPERS",
+   "SHEARS",
+   "SAW",
+   "CUT",
+   "NODE",
+   "BUD",
+   "DEADWOOD",
+   "SHAPING",
+   "THINNING",
+   "CLEAN",
+   "ANGLE"
+  ],
+  "fact": "Make pruning cuts just above a bud, sloping slightly away from it."
+ },
+ "Garden Safety": {
+  "words": [
+   "GLOVES",
+   "HAT",
+   "SUNSCREEN",
+   "WATER",
+   "KNEEPAD",
+   "BOOTS",
+   "GOGGLES",
+   "STRETCH",
+   "REST",
+   "SHADE",
+   "POSTURE",
+   "LIFTING"
+  ],
+  "fact": "Take short breaks to drink water and stretch, especially on warm days."
+ },
+ "Sun and Shade": {
+  "words": [
+   "FULLSUN",
+   "PARTSHADE",
+   "SUNLIT",
+   "DAPPLED",
+   "MORNING",
+   "AFTERNOON",
+   "CANOPY",
+   "SHADOW",
+   "BRIGHT",
+   "FILTERED",
+   "SOUTHFACING",
+   "NORTHFACING"
+  ],
+  "fact": "Most vegetables need at least six hours of direct sunlight a day."
+ },
+ "Garden Weather": {
+  "words": [
+   "FROST",
+   "DROUGHT",
+   "DEWDROP",
+   "BREEZE",
+   "SHOWER",
+   "STORM",
+   "HAIL",
+   "WINDY",
+   "SUNNY",
+   "CLOUDY",
+   "HUMID",
+   "RAINBOW"
+  ],
+  "fact": "A rain gauge shows how much water your garden has really received."
+ },
+ "Plant Food": {
+  "words": [
+   "FERTILIZER",
+   "NITROGEN",
+   "PHOSPHORUS",
+   "POTASH",
+   "ORGANIC",
+   "COMPOST",
+   "MANURE",
+   "BONEMEAL",
+   "SEAWEED",
+   "FEEDING",
+   "GRANULES",
+   "LIQUID"
+  ],
+  "fact": "Plants use three main nutrients: nitrogen, phosphorus and potassium."
+ },
+ "Garden Journal": {
+  "words": [
+   "NOTEBOOK",
+   "PHOTOS",
+   "SKETCH",
+   "PLAN",
+   "DATES",
+   "SEASON",
+   "RECORD",
+   "WEATHER",
+   "HARVEST",
+   "LESSONS",
+   "JOURNAL",
+   "CALENDAR"
+  ],
+  "fact": "A simple garden journal helps you remember what grew well and when to plant next year."
+ },
+ "Garden Planning": {
+  "words": [
+   "LAYOUT",
+   "BED",
+   "PLOT",
+   "DESIGN",
+   "SKETCH",
+   "BORDER",
+   "ZONES",
+   "SPACING",
+   "ROTATION",
+   "SUCCESSION",
+   "MEASURE",
+   "SOILTEST"
+  ],
+  "fact": "Rotating vegetable crops each year helps keep soil healthy."
+ },
+ "Feeding the Birds": {
+  "words": [
+   "MILLET",
+   "SUET",
+   "PEANUTS",
+   "NECTAR",
+   "FEEDER",
+   "TUBE",
+   "THISTLE",
+   "SEEDMIX",
+   "CAGE",
+   "SQUIRRELPROOF",
+   "BIRDSEED",
+   "PERCHING"
+  ],
+  "fact": "Cleaning feeders regularly helps keep visiting birds healthy."
+ },
+ "Farmers Market": {
+  "words": [
+   "STALL",
+   "BASKET",
+   "FRESH",
+   "LOCAL",
+   "ORGANIC",
+   "PRODUCE",
+   "HONEY",
+   "EGGS",
+   "BREAD",
+   "FLOWERS",
+   "CRATE",
+   "SEASONAL"
+  ],
+  "fact": "Produce often tastes best when picked ripe and eaten within a day or two."
+ },
+ "Community Garden": {
+  "words": [
+   "ALLOTMENT",
+   "PLOT",
+   "SHARING",
+   "NEIGHBORS",
+   "VOLUNTEER",
+   "WORKSHOP",
+   "SWAP",
+   "HARVEST",
+   "WATERING",
+   "TOOLSHED",
+   "FRIENDS",
+   "LEARNING"
+  ],
+  "fact": "Community gardens bring neighbors together and put unused land to good use."
+ },
+ "Garden History": {
+  "words": [
+   "ROMAN",
+   "MEDIEVAL",
+   "CLOISTER",
+   "VERSAILLES",
+   "PARTERRE",
+   "MAZE",
+   "KNOT",
+   "HERBAL",
+   "EDEN",
+   "VICTORIAN",
+   "CONSERVATORY",
+   "ORANGERY"
+  ],
+  "fact": "Maze and knot gardens became fashionable in European gardens hundreds of years ago."
+ },
+ "Flower Emblems": {
+  "words": [
+   "ROSE",
+   "LILY",
+   "IRIS",
+   "LOTUS",
+   "THISTLE",
+   "DAFFODIL",
+   "SAKURA",
+   "HEATHER",
+   "SHAMROCK",
+   "TULIP",
+   "EDELWEISS",
+   "MARIGOLD"
+  ],
+  "fact": "Many countries and regions choose a national or state flower as a symbol."
+ },
+ "Edible Flowers": {
+  "words": [
+   "NASTURTIUM",
+   "PANSY",
+   "VIOLA",
+   "BORAGE",
+   "CALENDULA",
+   "SQUASHBLOSSOM",
+   "ROSEPETAL",
+   "LAVENDER",
+   "HIBISCUS",
+   "DAYLILY",
+   "ELDERFLOWER",
+   "SALAD"
+  ],
+  "fact": "Only eat flowers you are sure are safe and that were grown without chemical sprays."
+ },
+ "Pressed Flowers": {
+  "words": [
+   "PRESS",
+   "BLOTTING",
+   "PETALS",
+   "FRAME",
+   "PAPER",
+   "DRYING",
+   "BOOKMARK",
+   "GLASS",
+   "CARD",
+   "WEIGHT",
+   "CRAFT",
+   "DESIGN"
+  ],
+  "fact": "Flowers pressed between sheets of paper inside a heavy book dry flat in a few weeks."
+ },
+ "Garden Sounds": {
+  "words": [
+   "BIRDSONG",
+   "BUZZ",
+   "RUSTLE",
+   "TRICKLE",
+   "CHIRP",
+   "HUM",
+   "BREEZE",
+   "CRICKET",
+   "CHIME",
+   "SPLASH",
+   "WHISPER",
+   "CROAK"
+  ],
+  "fact": "Gardens full of flowers, trees and water often have a wonderful variety of sounds."
+ },
+ "Backyard Barbecue": {
+  "words": [
+   "GRILL",
+   "SMOKER",
+   "SKEWERS",
+   "CORN",
+   "BURGER",
+   "SALAD",
+   "PATIO",
+   "PICNIC",
+   "SUMMER",
+   "LEMONADE",
+   "COOLER",
+   "FAMILY"
+  ],
+  "fact": "Fresh rosemary from the garden adds a lovely smoky flavor on the grill."
+ },
+ "Kids in the Garden": {
+  "words": [
+   "GRANDKIDS",
+   "SEEDS",
+   "WORMS",
+   "WATERING",
+   "BEANSPROUT",
+   "SUNFLOWER",
+   "SCARECROW",
+   "PUDDLES",
+   "MUDPIES",
+   "LADYBUG",
+   "BUBBLES",
+   "CHALK"
+  ],
+  "fact": "Fast growers like sunflowers and radishes are great for gardening with children."
+ },
+ "The Gardener's Reward": {
+  "words": [
+   "HARVEST",
+   "BLOOMS",
+   "SUNSET",
+   "PEACE",
+   "RELAXING",
+   "GRATEFUL",
+   "FRESHAIR",
+   "FRAGRANT",
+   "SERENITY",
+   "LEMONADE",
+   "HAMMOCK",
+   "SMILES"
+  ],
+  "fact": "Many people find that time in a garden helps them feel calm and relaxed."
+ }
+}
