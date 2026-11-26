@@ -1,0 +1,85 @@
+{
+  "title": "Large Print Gardening Word Search",
+  "subtitle": "100 Puzzles for Seniors and Garden Lovers",
+  "volume": "Volume 1",
+  "author": "REPLACE_WITH_PUBLISHER_NAME",
+  "year": 2026,
+  "grid_size": 13,
+  "seed": 11,
+  "puzzle_count": 100,
+  "themes_file": "themes_gardening.json",
+  "fact_label": "Garden Tip",
+  "bonus_pages": true,
+  "back_cover_text": "Spend a peaceful hour in the garden, whatever the weather. Each of the 100 puzzles has 12 hidden words printed in big, clear letters, plus a friendly gardening tip on every page. Solutions and garden planner pages are included.",
+  "cover": {
+    "layout": "garden",
+    "tag": "A GIFT FOR GARDENERS",
+    "headline": "LARGE PRINT",
+    "main": "GARDENING",
+    "sub": "WORD SEARCH",
+    "audience": "100 PUZZLES FOR SENIORS & GARDEN LOVERS",
+    "teaser": [
+      [
+        "SEEDS",
+        1,
+        2,
+        [
+          0,
+          1
+        ]
+      ],
+      [
+        "BLOOM",
+        3,
+        8,
+        [
+          1,
+          0
+        ]
+      ],
+      [
+        "ROSES",
+        4,
+        0,
+        [
+          1,
+          1
+        ]
+      ],
+      [
+        "HERBS",
+        8,
+        3,
+        [
+          0,
+          1
+        ]
+      ]
+    ],
+    "ribbon": "BIG CLEAR LETTERS  \u2022  TIPS & PLANNER INSIDE",
+    "back_title": [
+      "Big print.",
+      "Big blooms."
+    ],
+    "features": [
+      "100 garden-themed puzzles",
+      "Extra-large, easy-to-read letters",
+      "A gardening tip on every page",
+      "Solutions and garden planner",
+      "One puzzle per page"
+    ],
+    "gift_line": "A thoughtful gift for anyone who loves to garden.",
+    "tiles": "GROW"
+  },
+  "cover_palette": {
+    "bg_top": "#14532D",
+    "bg_bottom": "#2E7D4F",
+    "accent": "#FACC15",
+    "coral": "#F97362",
+    "mint": "#A7F3D0",
+    "sky": "#BAE6FD",
+    "card": "#FFFDF5",
+    "ink": "#14352A",
+    "text": "#FFFFFF"
+  }
+}
