@@ -8,11 +8,15 @@ import math
 import os
 import random
 import string
+import sys
 
 from reportlab.lib.colors import Color, HexColor, white
 from reportlab.lib.utils import simpleSplit
 from reportlab.pdfbase.pdfmetrics import stringWidth
 from reportlab.pdfgen import canvas
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from fonts import REG, BOLD, OBL  # noqa: E402
 
 IN = 72.0
 TRIM_W, TRIM_H, BLEED = 8.5, 11.0, 0.125
@@ -94,14 +98,14 @@ def draw_front(c, x0, pal, cfg, pages):
     cx = ox + TRIM_W * IN / 2
     # --- headline ---
     c.setFillColor(acc)
-    spaced(c, "LARGE PRINT", cx, oy + 10.28 * IN, "Helvetica-Bold", 24, 7)
+    spaced(c, "LARGE PRINT", cx, oy + 10.28 * IN, BOLD, 24, 7)
     title = cfg["title"].upper().replace("LARGE PRINT", "").strip() or cfg["title"].upper()
     parts = title.split(" ", 1)
     y = oy + 9.12 * IN
     for p in parts:
-        size = fit_font(p, "Helvetica-Bold", 6.6 * IN, 90)
+        size = fit_font(p, BOLD, 6.6 * IN, 90)
         c.setFillColor(txt)
-        c.setFont("Helvetica-Bold", size)
+        c.setFont(BOLD, size)
         c.drawCentredString(cx, y, p)
         last = y
         y -= size * 0.98
@@ -110,7 +114,7 @@ def draw_front(c, x0, pal, cfg, pages):
     c.line(cx - 1.0 * IN, last - 0.2 * IN, cx + 1.0 * IN, last - 0.2 * IN)
     sub = cfg["subtitle"].upper().lstrip("0123456789 ")   # the badge already says the number
     c.setFillColor(txt)
-    spaced(c, sub, cx, last - 0.52 * IN, "Helvetica-Bold", 15.5, 2.2)
+    spaced(c, sub, cx, last - 0.52 * IN, BOLD, 15.5, 2.2)
 
     # --- white card with the teaser grid ---
     card_w, card_h = 5.6 * IN, 5.6 * IN
@@ -143,7 +147,7 @@ def draw_front(c, x0, pal, cfg, pages):
         c.roundRect(-cell * 0.46, -cell * 0.44, length + cell * 0.92, cell * 0.88, cell * 0.44, stroke=0, fill=1)
         c.restoreState()
     c.setFillColor(ink)
-    c.setFont("Helvetica-Bold", 29)
+    c.setFont(BOLD, 29)
     for r in range(9):
         for col in range(9):
             c.drawCentredString(gx + (col + 0.5) * cell, gy_top - (r + 0.5) * cell - 11, grid[r][col])
@@ -160,9 +164,9 @@ def draw_front(c, x0, pal, cfg, pages):
     c.setLineWidth(4)
     c.circle(0, 0, br, stroke=1, fill=1)
     c.setFillColor(ink)
-    c.setFont("Helvetica-Bold", 44)
+    c.setFont(BOLD, 44)
     c.drawCentredString(0, -4, str(cfg["puzzle_count"]))
-    spaced(c, "PUZZLES", 0, -27, "Helvetica-Bold", 12.5, 1.3)
+    spaced(c, "PUZZLES", 0, -27, BOLD, 12.5, 1.3)
     c.restoreState()
 
     # --- bottom ribbon ---
@@ -171,10 +175,10 @@ def draw_front(c, x0, pal, cfg, pages):
     c.setFillColor(acc)
     c.roundRect(rx, ry, rw, rh, 12, stroke=0, fill=1)
     c.setFillColor(ink)
-    spaced(c, "BIG CLEAR LETTERS  •  SOLUTIONS INCLUDED", cx, ry + 0.19 * IN, "Helvetica-Bold", 14.5, 1.6)
+    spaced(c, "BIG CLEAR LETTERS  •  SOLUTIONS INCLUDED", cx, ry + 0.19 * IN, BOLD, 14.5, 1.6)
     if cfg.get("volume"):
         c.setFillColor(txt)
-        spaced(c, cfg["volume"].upper(), cx, oy + 1.08 * IN, "Helvetica-Bold", 15, 4)
+        spaced(c, cfg["volume"].upper(), cx, oy + 1.08 * IN, BOLD, 15, 4)
 
 
 
@@ -228,25 +232,25 @@ def draw_front_garden(c, x0, pal, cfg, pages):
     side_garden(c, ox + 7.95 * IN, oy, -1, pal)
     # tag pill
     tag = cv["tag"]
-    tw = sum(stringWidth(ch, "Helvetica-Bold", 14) for ch in tag) + 2.4 * (len(tag) - 1) + 40
+    tw = sum(stringWidth(ch, BOLD, 14) for ch in tag) + 2.4 * (len(tag) - 1) + 40
     c.setFillColor(coral)
     c.roundRect(cx - tw / 2, oy + 10.2 * IN, tw, 0.4 * IN, 14, stroke=0, fill=1)
     c.setFillColor(white)
-    spaced(c, tag, cx, oy + 10.2 * IN + 0.14 * IN, "Helvetica-Bold", 14, 2.4)
+    spaced(c, tag, cx, oy + 10.2 * IN + 0.14 * IN, BOLD, 14, 2.4)
     # LARGE PRINT is the most prominent element
     c.setFillColor(txt)
-    size = fit_font(cv["headline"], "Helvetica-Bold", 7.0 * IN, 96)
-    c.setFont("Helvetica-Bold", size)
+    size = fit_font(cv["headline"], BOLD, 7.0 * IN, 96)
+    c.setFont(BOLD, size)
     y = oy + 9.3 * IN
     c.drawCentredString(cx, y, cv["headline"])
-    size2 = fit_font(cv["main"], "Helvetica-Bold", 6.9 * IN, 80)
+    size2 = fit_font(cv["main"], BOLD, 6.9 * IN, 80)
     c.setFillColor(acc)
-    c.setFont("Helvetica-Bold", size2)
+    c.setFont(BOLD, size2)
     y2 = y - 0.98 * IN
     c.drawCentredString(cx, y2, cv["main"])
     c.setFillColor(txt)
-    spaced(c, cv["sub"], cx, y2 - 0.56 * IN, "Helvetica-Bold", 26, 9)
-    spaced(c, cv["audience"], cx, y2 - 0.98 * IN, "Helvetica-Bold", 13.5, 1.8)
+    spaced(c, cv["sub"], cx, y2 - 0.56 * IN, BOLD, 26, 9)
+    spaced(c, cv["audience"], cx, y2 - 0.98 * IN, BOLD, 13.5, 1.8)
     # card with teaser grid
     card_w = card_h = 5.45 * IN
     card_x, card_y = cx - card_w / 2, oy + 1.5 * IN
@@ -275,7 +279,7 @@ def draw_front_garden(c, x0, pal, cfg, pages):
         c.roundRect(-cell * 0.46, -cell * 0.44, length + cell * 0.92, cell * 0.88, cell * 0.44, stroke=0, fill=1)
         c.restoreState()
     c.setFillColor(ink)
-    c.setFont("Helvetica-Bold", 28)
+    c.setFont(BOLD, 28)
     for r in range(9):
         for col in range(9):
             c.drawCentredString(gx + (col + 0.5) * cell, gy_top - (r + 0.5) * cell - 10, grid[r][col])
@@ -291,9 +295,9 @@ def draw_front_garden(c, x0, pal, cfg, pages):
     c.setLineWidth(4)
     c.circle(0, 0, br, stroke=1, fill=1)
     c.setFillColor(white)
-    c.setFont("Helvetica-Bold", 38)
+    c.setFont(BOLD, 38)
     c.drawCentredString(0, -2, str(cfg["puzzle_count"]))
-    spaced(c, "PUZZLES", 0, -24, "Helvetica-Bold", 11.5, 1.2)
+    spaced(c, "PUZZLES", 0, -24, BOLD, 11.5, 1.2)
     c.restoreState()
     # ribbon + volume
     rw, rh = 6.4 * IN, 0.5 * IN
@@ -301,10 +305,10 @@ def draw_front_garden(c, x0, pal, cfg, pages):
     c.setFillColor(acc)
     c.roundRect(rx, ry, rw, rh, 12, stroke=0, fill=1)
     c.setFillColor(ink)
-    spaced(c, cv["ribbon"], cx, ry + 0.18 * IN, "Helvetica-Bold", 13.5, 1.5)
+    spaced(c, cv["ribbon"], cx, ry + 0.18 * IN, BOLD, 13.5, 1.5)
     if cfg.get("volume"):
         c.setFillColor(txt)
-        spaced(c, cfg["volume"].upper(), cx, oy + 1.13 * IN, "Helvetica-Bold", 14, 4)
+        spaced(c, cfg["volume"].upper(), cx, oy + 1.13 * IN, BOLD, 14, 4)
 
 
 def check(c, x, y, size, color):
@@ -331,7 +335,7 @@ def draw_back(c, x0, H, pal, cfg):
     width = TRIM_W * IN - 1.6 * IN
     top = oy + TRIM_H * IN
     c.setFillColor(acc)
-    c.setFont("Helvetica-Bold", 38)
+    c.setFont(BOLD, 38)
     bt = cfg.get("cover", {}).get("back_title", ["Big print.", "Big fun."])
     c.drawString(left, top - 1.25 * IN, bt[0])
     c.drawString(left, top - 1.25 * IN - 46, bt[1])
@@ -339,9 +343,9 @@ def draw_back(c, x0, H, pal, cfg):
     c.setLineWidth(4)
     c.line(left, top - 1.25 * IN - 66, left + 1.2 * IN, top - 1.25 * IN - 66)
     c.setFillColor(txt)
-    c.setFont("Helvetica", 16.5)
+    c.setFont(REG, 16.5)
     y = top - 1.25 * IN - 100
-    for line in simpleSplit(cfg["back_cover_text"], "Helvetica", 16.5, width):
+    for line in simpleSplit(cfg["back_cover_text"], REG, 16.5, width):
         c.drawString(left, y, line)
         y -= 24
     # feature panel
@@ -359,12 +363,12 @@ def draw_back(c, x0, H, pal, cfg):
     for f in feats:
         check(c, left + 0.38 * IN, fy + 5, 10, acc)
         c.setFillColor(txt)
-        c.setFont("Helvetica-Bold", 17)
+        c.setFont(BOLD, 17)
         c.drawString(left + 0.7 * IN, fy, f)
         fy -= 0.5 * IN
     c.setFillColor(txt)
     alpha(c, 0.8)
-    c.setFont("Helvetica-Oblique", 14)
+    c.setFont(OBL, 14)
     c.drawString(left, py - ph - 0.5 * IN, cfg.get("cover", {}).get("gift_line", "A friendly gift for anyone who enjoys a calm, screen-free break."))
     alpha(c, 1)
     tile = 0.62 * IN
@@ -374,7 +378,7 @@ def draw_back(c, x0, H, pal, cfg):
         c.setFillColor(cols[i])
         c.roundRect(tx, oy + 0.62 * IN, tile, tile, 10, stroke=0, fill=1)
         c.setFillColor(HexColor(pal["ink"]))
-        c.setFont("Helvetica-Bold", 34)
+        c.setFont(BOLD, 34)
         c.drawCentredString(tx + tile / 2, oy + 0.62 * IN + 0.16 * IN, ch)
     # barcode keep-out (white 2.0 x 1.2 in box; KDP overlays its own barcode)
     bar_w, bar_h = 2.0 * IN, 1.2 * IN
@@ -388,7 +392,7 @@ def build(cfg, pages, out_path):
     spine = d["spine_in"] * IN
     pal = dict(DEFAULT_PALETTE)
     pal.update(cfg.get("cover_palette", {}))
-    c = canvas.Canvas(out_path, pagesize=(W, H))
+    c = canvas.Canvas(out_path, pagesize=(W, H), initialFontName=REG)
     c.setTitle(cfg["title"] + " (cover)")
     gradient_bg(c, W, H, HexColor(pal["bg_top"]), HexColor(pal["bg_bottom"]))
     circles(c, W, H, pal, random.Random(cfg["seed"]))
@@ -401,7 +405,7 @@ def build(cfg, pages, out_path):
         c.translate((BLEED + TRIM_W) * IN + spine / 2, H / 2)
         c.rotate(-90)
         c.setFillColor(HexColor(pal["text"]))
-        c.setFont("Helvetica-Bold", min(18, spine * 0.55))
+        c.setFont(BOLD, min(18, spine * 0.55))
         c.drawCentredString(0, -spine * 0.2, cfg["title"].upper())
         c.restoreState()
     c.save()

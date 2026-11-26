@@ -12,11 +12,12 @@ from reportlab.pdfgen import canvas
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from wordsearch import make_puzzle  # noqa: E402
+from fonts import REG, BOLD, OBL  # noqa: E402
 
 W, H = letter                      # 612 x 792 pt = 8.5 x 11 in
 OUTER, INNER, TOP, BOTTOM = 43.2, 54.0, 43.2, 46.8   # 0.6 / 0.75 / 0.6 / 0.65 in
 CELL = 36.0                        # 0.5 in cells -> 22pt letters
-FONT, FONT_B = "Helvetica", "Helvetica-Bold"
+FONT, FONT_B = REG, BOLD
 
 
 def live_area(page_no):
@@ -188,9 +189,9 @@ def page_puzzle(c, page_no, number, theme, puzzle, words, fact="", fact_label="G
         c.drawString(gx + col * col_w + 8, y0 - row * lead, w)
     if fact:
         text = f"{fact_label}: {fact}"
-        lines = simpleSplit(text, "Helvetica-Oblique", 12.5, size * CELL - 10)
+        lines = simpleSplit(text, OBL, 12.5, size * CELL - 10)
         yy = y0 - per_col * lead + 6
-        c.setFont("Helvetica-Oblique", 12.5)
+        c.setFont(OBL, 12.5)
         for ln in lines[:2]:
             c.drawString(gx + 8, yy, ln)
             yy -= 15
@@ -273,7 +274,7 @@ def build(cfg, themes_path, out_path):
         p = make_puzzle(themes[name]["words"], size=size, seed=f"{cfg['seed']}-{i}")
         puzzles.append((i, name, p, themes[name]["words"], themes[name]["fact"]))
 
-    c = canvas.Canvas(out_path, pagesize=letter)
+    c = canvas.Canvas(out_path, pagesize=letter, initialFontName=REG)
     c.setTitle(f"{cfg['title']} {cfg.get('volume', '')}".strip())
     c.setAuthor(cfg["author"])
     page_no = 1
