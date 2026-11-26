@@ -9,10 +9,91 @@
  "puzzle_count": 100,
  "themes_file": "themes_birds.json",
  "fact_label": "Bird Fact",
- "bonus_pages": true,
- "back_cover_text": "Spend a peaceful hour with your favorite feathered friends, whatever the weather. Each of the 100 puzzles has 12 hidden words printed in big, clear letters, plus a friendly bird fact on every page. Solutions and bird watching log pages are included.",
+ "bonus_pages": [
+  {
+   "kind": "log",
+   "title": "My Bird Watching Log",
+   "subtitle": "Write down every bird you spot.",
+   "columns": [
+    [
+     "Date",
+     0.17
+    ],
+    [
+     "Bird",
+     0.33
+    ],
+    [
+     "Where",
+     0.25
+    ],
+    [
+     "Notes",
+     0.25
+    ]
+   ]
+  },
+  {
+   "kind": "log",
+   "title": "My Bird Watching Log",
+   "subtitle": "Write down every bird you spot.",
+   "columns": [
+    [
+     "Date",
+     0.17
+    ],
+    [
+     "Bird",
+     0.33
+    ],
+    [
+     "Where",
+     0.25
+    ],
+    [
+     "Notes",
+     0.25
+    ]
+   ]
+  },
+  {
+   "kind": "checklist",
+   "title": "Birds I Have Spotted",
+   "subtitle": "Tick each bird the first time you see it.",
+   "items": [
+    "American Robin",
+    "Northern Cardinal",
+    "Blue Jay",
+    "Black-capped Chickadee",
+    "Tufted Titmouse",
+    "White-breasted Nuthatch",
+    "Downy Woodpecker",
+    "House Finch",
+    "American Goldfinch",
+    "Dark-eyed Junco",
+    "Song Sparrow",
+    "Mourning Dove",
+    "Eastern Bluebird",
+    "Carolina Wren",
+    "Gray Catbird",
+    "Northern Mockingbird",
+    "Red-winged Blackbird",
+    "Baltimore Oriole",
+    "Ruby-throated Hummingbird",
+    "Cedar Waxwing",
+    "Red-tailed Hawk",
+    "Great Horned Owl"
+   ],
+   "extra_label": "More birds I have seen:"
+  },
+  {
+   "kind": "lines",
+   "title": "Bird Notes"
+  }
+ ],
+ "back_cover_text": "Spend a cheerful hour with your favorite feathered friends, whatever the weather. Each of the 100 puzzles hides 12 bird words in big, clear letters, with a fun bird fact on every page. Solutions, a bird watching log and a \"Birds I Have Spotted\" checklist are inside.",
  "cover": {
-  "layout": "birds",
+  "layout": "sunrise",
   "tag": "A GIFT FOR BIRD LOVERS",
   "headline": "LARGE PRINT",
   "main": "BACKYARD BIRDS",
@@ -20,9 +101,9 @@
   "audience": "100 PUZZLES FOR SENIORS & BIRD LOVERS",
   "teaser": [
    [
-    "WREN",
+    "ROBIN",
     1,
-    2,
+    1,
     [
      0,
      1
@@ -30,7 +111,7 @@
    ],
    [
     "FINCH",
-    3,
+    2,
     8,
     [
      1,
@@ -38,8 +119,17 @@
     ]
    ],
    [
-    "OWL",
+    "WREN",
     4,
+    2,
+    [
+     0,
+     1
+    ]
+   ],
+   [
+    "OWL",
+    5,
     0,
     [
      1,
@@ -56,30 +146,46 @@
     ]
    ]
   ],
-  "ribbon": "BIG CLEAR LETTERS  \u2022  BIRD FACTS & LOG INSIDE",
+  "ribbon": "BIG CLEAR LETTERS  •  A BIRD FACT ON EVERY PAGE  •  BIRD LOG INSIDE",
   "back_title": [
    "Big print.",
-   "Big birdsong."
+   "Big birdsong!"
   ],
   "features": [
    "100 bird-themed puzzles",
    "Extra-large, easy-to-read letters",
    "A bird fact on every page",
-   "Solutions and bird watching log",
-   "One puzzle per page"
+   "Bird watching log & checklist",
+   "One puzzle per page, solutions at the back"
   ],
   "gift_line": "A thoughtful gift for anyone who loves to watch birds.",
-  "tiles": "BIRD"
+  "tiles": "BIRD",
+  "birds": [
+   "cardinal",
+   "goldfinch",
+   "bluebird"
+  ]
  },
  "cover_palette": {
-  "bg_top": "#0C4A6E",
-  "bg_bottom": "#1D7FA8",
-  "accent": "#FDBA3B",
-  "coral": "#F97362",
-  "mint": "#BAE6FD",
-  "sky": "#E0F2FE",
-  "card": "#FFFDF5",
-  "ink": "#0B2F45",
-  "text": "#FFFFFF"
+  "sky_top": "#8ECAE6",
+  "sky_mid": "#BDE0FE",
+  "sky_glow": "#FFC8A2",
+  "sky_low": "#FFE8A3",
+  "sun": "#FFD166",
+  "ray": "#FFB703",
+  "ink": "#1D3557",
+  "coral": "#E63946",
+  "teal": "#2A9D8F",
+  "orange": "#F4A261",
+  "leaf": "#57CC99",
+  "leaf_dark": "#2D936C",
+  "bark": "#7A4E2D",
+  "card": "#FFFAF0",
+  "accent": "#FFD166",
+  "mint": "#A0E7E5",
+  "sky": "#BDE0FE",
+  "text": "#FFFFFF",
+  "bg_top": "#8ECAE6",
+  "bg_bottom": "#FFE8A3"
  }
 }

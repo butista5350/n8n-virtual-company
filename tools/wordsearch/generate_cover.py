@@ -17,6 +17,7 @@ from reportlab.pdfgen import canvas
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from fonts import REG, BOLD, OBL  # noqa: E402
+import cover_sunrise  # noqa: E402
 
 IN = 72.0
 TRIM_W, TRIM_H, BLEED = 8.5, 11.0, 0.125
@@ -616,6 +617,11 @@ def build(cfg, pages, out_path):
     pal.update(cfg.get("cover_palette", {}))
     c = canvas.Canvas(out_path, pagesize=(W, H), initialFontName=REG)
     c.setTitle(cfg["title"] + " (cover)")
+    c.setAuthor(cfg["author"])
+    if cfg.get("cover", {}).get("layout") == "sunrise":
+        cover_sunrise.build(c, W, H, spine, BLEED * IN, TRIM_W * IN, cfg, pages >= SPINE_TEXT_MIN_PAGES)
+        c.save()
+        return d
     gradient_bg(c, W, H, HexColor(pal["bg_top"]), HexColor(pal["bg_bottom"]))
     circles(c, W, H, pal, random.Random(cfg["seed"]))
     back_x0 = BLEED * IN

@@ -151,9 +151,52 @@ class TestGardeningEdition(unittest.TestCase):
         self.assertEqual(len(PdfReader(cov).pages), 1)
 
 
+BIRDS_CFG = json.load(open(os.path.join(ROOT, "data", "book.birds.json"), encoding="utf-8"))
+BIRDS = json.load(open(os.path.join(ROOT, "data", "themes_birds.json"), encoding="utf-8"))
+
+
+class TestBirdsEdition(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.tmp = tempfile.mkdtemp()
+        cls.interior = os.path.join(cls.tmp, "b.pdf")
+        cls.pages = gb.build(BIRDS_CFG, os.path.join(ROOT, "data", "themes_birds.json"), cls.interior)
+        cls.cover = os.path.join(cls.tmp, "bc.pdf")
+        cls.dim = gc.build(BIRDS_CFG, cls.pages, cls.cover)
+
+    def test_hundred_themes_twelve_words(self):
+        self.assertEqual(len(BIRDS), 100)
+        for name, v in BIRDS.items():
+            self.assertEqual(len(set(v["words"])), 12, name)
+        for old in ("Famous Bird Names", "Birds of Mexico and South", "Birder Snacks"):
+            self.assertNotIn(old, BIRDS)
+
+    def test_back_matter_is_about_birds(self):
+        r = PdfReader(self.interior)
+        self.assertEqual(self.pages, 132)
+        back = " ".join(p.extract_text() for p in r.pages[-4:])
+        self.assertIn("My Bird Watching Log", back)
+        self.assertIn("Birds I Have Spotted", back)
+        self.assertIn("Bird Notes", back)
+        self.assertNotIn("Garden", back)
+
+    def test_sunrise_cover(self):
+        self.assertEqual(BIRDS_CFG["cover"]["layout"], "sunrise")
+        r = PdfReader(self.cover)
+        self.assertAlmostEqual(float(r.pages[0].mediabox.width) / 72, self.dim["width_in"], delta=0.01)
+        text = r.pages[0].extract_text()
+        self.assertIn("BACKYARD BIRDS", text)
+        self.assertIn(BIRDS_CFG["author"], text)
+
+    def test_unknown_bonus_kind_rejected(self):
+        cfg = dict(BIRDS_CFG, bonus_pages=[{"kind": "nope", "title": "x"}], puzzle_count=1)
+        with self.assertRaises(ValueError):
+            gb.build(cfg, os.path.join(ROOT, "data", "themes_birds.json"), os.path.join(self.tmp, "x.pdf"))
+
+
 class TestPolicy(unittest.TestCase):
     """T0 policy: no network, no LLM; repository hygiene."""
-    FILES = [os.path.join(ROOT, n) for n in ("wordsearch.py", "generate_book.py", "generate_cover.py")]
+    FILES = [os.path.join(ROOT, n) for n in ("wordsearch.py", "generate_book.py", "generate_cover.py", "cover_sunrise.py")]
 
     def test_no_network_or_llm_imports(self):
         banned = re.compile(r"^\s*(import|from)\s+(requests|urllib|http|socket|openai|anthropic|httpx|aiohttp)\b", re.M)
