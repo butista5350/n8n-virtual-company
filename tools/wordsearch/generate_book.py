@@ -218,21 +218,48 @@ def page_solutions(c, page_no, items, first):
     footer(c, page_no)
 
 
-def page_bonus(c, page_no, kind, title):
+# Back-matter pages. A config may set "bonus_pages" to a list of page specs, e.g.
+#   {"kind": "log", "title": "My Bird Watching Log", "subtitle": "...", "columns": [["Date", 0.18], ...]}
+#   {"kind": "checklist", "title": "Birds I Have Spotted", "items": [...], "extra_label": "More birds I have seen:"}
+#   {"kind": "lines", "title": "Bird Notes"}     {"kind": "plan", "title": "...", "subtitle": "..."}
+# "bonus_pages": true keeps the original gardening set below.
+GARDEN_BONUS = [
+    {"kind": "plan", "title": "My Garden Plan", "subtitle": "Sketch your garden: each square is one step."},
+    {"kind": "log", "title": "Plant and Seed Log",
+     "columns": [["Plant", 0.38], ["Planted on", 0.2], ["Where", 0.2], ["Notes", 0.22]]},
+    {"kind": "lines", "title": "Garden Notes"},
+    {"kind": "lines", "title": "Garden Notes"},
+]
+
+
+def bonus_specs(cfg):
+    b = cfg.get("bonus_pages")
+    if b is True:
+        return GARDEN_BONUS
+    return list(b or [])
+
+
+def page_bonus(c, page_no, spec):
+    kind, title = spec["kind"], spec["title"]
     cx = center_x(page_no)
     x0, x1 = live_area(page_no)
+    c.setFillGray(0)
     c.setFont(FONT_B, 28)
     c.drawCentredString(cx, H - TOP - 28, title)
+    top = H - TOP - 70
+    if spec.get("subtitle"):
+        c.setFont(FONT, 14)
+        c.drawCentredString(cx, top - 6, spec["subtitle"])
+        top -= 30
     c.setStrokeGray(0.35)
     c.setLineWidth(0.8)
-    top = H - TOP - 70
     if kind == "lines":
         y = top
         while y > BOTTOM + 20:
             c.line(x0 + 10, y, x1 - 10, y)
             y -= 34
     elif kind == "log":
-        cols = [("Plant", 0.38), ("Planted on", 0.2), ("Where", 0.2), ("Notes", 0.22)]
+        cols = spec.get("columns") or [["Plant", 0.38], ["Planted on", 0.2], ["Where", 0.2], ["Notes", 0.22]]
         wtot = x1 - x0 - 20
         c.setFont(FONT_B, 13)
         xx = x0 + 10
@@ -248,12 +275,35 @@ def page_bonus(c, page_no, kind, title):
             c.line(xx, top, xx, y + 38)
             xx += wtot * frac
         c.line(x1 - 10, top, x1 - 10, y + 38)
+    elif kind == "checklist":
+        items = spec.get("items", [])
+        half = (len(items) + 1) // 2
+        colw = (x1 - x0 - 20) / 2
+        y0 = top - 20
+        rh = 28
+        c.setFont(FONT, 15)
+        c.setLineWidth(1.2)
+        c.setStrokeGray(0)
+        for k, item in enumerate(items):
+            col, row = divmod(k, half)
+            x = x0 + 10 + col * colw
+            y = y0 - row * rh
+            c.rect(x, y - 2, 15, 15, stroke=1, fill=0)
+            c.drawString(x + 24, y + 1, item)
+        y = y0 - half * rh - 14
+        if spec.get("extra_label"):
+            c.setFont(FONT_B, 15)
+            c.drawString(x0 + 10, y, spec["extra_label"])
+            c.setStrokeGray(0.35)
+            c.setLineWidth(0.8)
+            y -= 34
+            while y > BOTTOM + 20:
+                c.line(x0 + 10, y, x1 - 10, y)
+                y -= 34
     elif kind == "plan":
-        c.setFont(FONT, 14)
-        c.drawCentredString(cx, top - 6, "Sketch your garden: each square is one step.")
         step = 24
         gx0 = x0 + 10
-        gy_top = top - 24
+        gy_top = top + 6 if spec.get("subtitle") else top - 24
         cols_n = int((x1 - x0 - 20) // step)
         rows_n = int((gy_top - BOTTOM - 20) // step)
         c.setStrokeGray(0.75)
@@ -261,6 +311,8 @@ def page_bonus(c, page_no, kind, title):
             c.line(gx0, gy_top - r * step, gx0 + cols_n * step, gy_top - r * step)
         for k in range(cols_n + 1):
             c.line(gx0 + k * step, gy_top, gx0 + k * step, gy_top - rows_n * step)
+    else:
+        raise ValueError(f"unknown bonus page kind: {kind}")
     footer(c, page_no)
 
 
@@ -289,11 +341,9 @@ def build(cfg, themes_path, out_path):
         chunk = [(n, nm, p) for n, nm, p, _, _ in puzzles[k:k + per_page]]
         page_solutions(c, page_no, chunk, first=(k == 0))
         c.showPage(); page_no += 1
-    if cfg.get("bonus_pages"):
-        for kind, title in (("plan", "My Garden Plan"), ("log", "Plant and Seed Log"),
-                            ("lines", "Garden Notes"), ("lines", "Garden Notes")):
-            page_bonus(c, page_no, kind, title)
-            c.showPage(); page_no += 1
+    for spec in bonus_specs(cfg):
+        page_bonus(c, page_no, spec)
+        c.showPage(); page_no += 1
     total = page_no - 1
     if total % 2 == 1:   # keep an even page count
         footer(c, page_no); c.showPage(); total += 1
