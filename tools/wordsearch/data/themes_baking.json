@@ -1,0 +1,1702 @@
+{
+ "The Baker's Pantry": {
+  "words": [
+   "FLOUR",
+   "SUGAR",
+   "BUTTER",
+   "EGGS",
+   "YEAST",
+   "SALT",
+   "MILK",
+   "VANILLA",
+   "HONEY",
+   "COCOA",
+   "OATS",
+   "RAISINS"
+  ],
+  "fact": "Store flour in an airtight container in a cool, dry place to keep it fresh longer."
+ },
+ "Measuring Up": {
+  "words": [
+   "CUP",
+   "MEASURE",
+   "SCALE",
+   "GRAMS",
+   "OUNCE",
+   "PINCH",
+   "DASH",
+   "LEVEL",
+   "HEAPING",
+   "TEASPOON",
+   "QUART",
+   "PINT"
+  ],
+  "fact": "Spoon flour into the cup and level it off; scooping packs in too much."
+ },
+ "Mixing Bowl Tools": {
+  "words": [
+   "WHISK",
+   "SPATULA",
+   "MIXER",
+   "BOWL",
+   "BEATER",
+   "SIFTER",
+   "SCRAPER",
+   "LADLE",
+   "STRAINER",
+   "PADDLE",
+   "HOOK",
+   "FUNNEL"
+  ],
+  "fact": "A rubber spatula scrapes every last bit of batter from the bowl."
+ },
+ "Bread Basics": {
+  "words": [
+   "DOUGH",
+   "KNEAD",
+   "RISE",
+   "PROOF",
+   "LOAF",
+   "CRUST",
+   "CRUMB",
+   "GLUTEN",
+   "STARTER",
+   "RYE",
+   "WHEAT",
+   "SHAPE"
+  ],
+  "fact": "Kneading builds gluten, which gives bread its stretch and chew."
+ },
+ "The Cookie Jar": {
+  "words": [
+   "CHOCOLATECHIP",
+   "OATMEAL",
+   "SNICKERDOODLE",
+   "GINGERSNAP",
+   "SHORTBREAD",
+   "MACAROON",
+   "BISCOTTI",
+   "PEANUTBUTTER",
+   "MOLASSES",
+   "THUMBPRINT",
+   "WAFER",
+   "ICEBOX"
+  ],
+  "fact": "Chill cookie dough for an hour so the cookies spread less in the oven."
+ },
+ "Cake Layers": {
+  "words": [
+   "SPONGE",
+   "CHIFFON",
+   "POUND",
+   "ANGEL",
+   "RING",
+   "LAYER",
+   "SHEET",
+   "CUPCAKE",
+   "FROSTING",
+   "FILLING",
+   "SPRINKLES",
+   "CRUMB"
+  ],
+  "fact": "Let cakes cool completely before frosting, or the icing will melt and slide."
+ },
+ "The Pie Shop": {
+  "words": [
+   "APPLE",
+   "CHERRY",
+   "PECAN",
+   "PUMPKIN",
+   "LEMON",
+   "PEACH",
+   "BLUEBERRY",
+   "RHUBARB",
+   "KEYLIME",
+   "CUSTARD",
+   "MERINGUE",
+   "LATTICE"
+  ],
+  "fact": "Cold butter and ice water make the flakiest pie crust."
+ },
+ "In the Oven": {
+  "words": [
+   "PREHEAT",
+   "BAKE",
+   "BROIL",
+   "RACK",
+   "TIMER",
+   "THERMOMETER",
+   "GOLDEN",
+   "BROWN",
+   "COOL",
+   "TRAY",
+   "MITT",
+   "CONVECTION"
+  ],
+  "fact": "Give the oven time to preheat fully; many need 15 to 20 minutes."
+ },
+ "Sweet Spices": {
+  "words": [
+   "CINNAMON",
+   "NUTMEG",
+   "GINGER",
+   "CLOVES",
+   "ALLSPICE",
+   "CARDAMOM",
+   "ANISE",
+   "MACE",
+   "VANILLA",
+   "SAFFRON",
+   "PEPPER",
+   "CORIANDER"
+  ],
+  "fact": "Mace and nutmeg come from the same fruit; mace is the lacy coat around the seed."
+ },
+ "Muffin Morning": {
+  "words": [
+   "BLUEBERRY",
+   "BANANA",
+   "BRAN",
+   "CORN",
+   "LEMON",
+   "POPPYSEED",
+   "PUMPKIN",
+   "STREUSEL",
+   "BATTER",
+   "LINER",
+   "TIN",
+   "CRUMBLE"
+  ],
+  "fact": "Stir muffin batter just until combined; a few lumps keep muffins tender."
+ },
+ "Sweet Sugars": {
+  "words": [
+   "GRANULATED",
+   "BROWN",
+   "POWDERED",
+   "CASTER",
+   "DEMERARA",
+   "TURBINADO",
+   "MOLASSES",
+   "SYRUP",
+   "HONEY",
+   "MAPLE",
+   "AGAVE",
+   "CANE"
+  ],
+  "fact": "Keep brown sugar soft by storing it with a slice of bread in a sealed jar."
+ },
+ "Holiday Baking": {
+  "words": [
+   "GINGERBREAD",
+   "FRUITCAKE",
+   "STOLLEN",
+   "YULELOG",
+   "PANETTONE",
+   "EGGNOG",
+   "PEPPERMINT",
+   "SPRITZ",
+   "SUGARPLUM",
+   "CRANBERRY",
+   "MINCEMEAT",
+   "SHORTBREAD"
+  ],
+  "fact": "Stollen is a German Christmas bread filled with dried fruit and often marzipan."
+ },
+ "Breakfast Bakes": {
+  "words": [
+   "CROISSANT",
+   "DANISH",
+   "SCONE",
+   "BAGEL",
+   "MUFFIN",
+   "WAFFLE",
+   "PANCAKE",
+   "BISCUIT",
+   "CREPE",
+   "STRUDEL",
+   "QUICHE",
+   "GRANOLA"
+  ],
+  "fact": "Freeze baked scones, then warm them in the oven for a fresh-baked breakfast."
+ },
+ "Frosting and Icing": {
+  "words": [
+   "BUTTERCREAM",
+   "GANACHE",
+   "FONDANT",
+   "GLAZE",
+   "ROYAL",
+   "MERINGUE",
+   "CREAMCHEESE",
+   "WHIPPED",
+   "DRIZZLE",
+   "PIPING",
+   "ROSETTE",
+   "SWIRL"
+  ],
+  "fact": "Ganache is simply chocolate melted together with warm cream."
+ },
+ "Chocolate Lovers": {
+  "words": [
+   "COCOA",
+   "FUDGE",
+   "BROWNIE",
+   "TRUFFLE",
+   "MOCHA",
+   "DARK",
+   "MILK",
+   "WHITE",
+   "BITTERSWEET",
+   "CHIPS",
+   "GANACHE",
+   "BONBON"
+  ],
+  "fact": "Cocoa beans grow inside large pods on the cacao tree."
+ },
+ "Fruit Fillings": {
+  "words": [
+   "APPLE",
+   "QUINCE",
+   "CHERRY",
+   "PEACH",
+   "APRICOT",
+   "PLUM",
+   "FIG",
+   "DATE",
+   "LEMON",
+   "ORANGE",
+   "PEAR",
+   "RASPBERRY"
+  ],
+  "fact": "Toss berries in a little flour before adding them so they don't all sink."
+ },
+ "Nutty Treats": {
+  "words": [
+   "ALMOND",
+   "PECAN",
+   "WALNUT",
+   "HAZELNUT",
+   "PISTACHIO",
+   "CASHEW",
+   "PEANUT",
+   "MACADAMIA",
+   "CHESTNUT",
+   "PRALINE",
+   "MARZIPAN",
+   "BRITTLE"
+  ],
+  "fact": "Toast nuts in a dry pan for a few minutes to bring out their flavor."
+ },
+ "Bakeware Cupboard": {
+  "words": [
+   "LOAFPAN",
+   "PIEPLATE",
+   "SHEETPAN",
+   "RAMEKIN",
+   "SPRINGFORM",
+   "TUBEPAN",
+   "TARTPAN",
+   "CASSEROLE",
+   "SKILLET",
+   "MUFFINTIN",
+   "DUTCHOVEN",
+   "BAKINGSTONE"
+  ],
+  "fact": "Glass pans heat slowly; many bakers lower the oven by 25 degrees F for them."
+ },
+ "Grandma's Recipes": {
+  "words": [
+   "RECIPE",
+   "CARD",
+   "FAMILY",
+   "SECRET",
+   "TRADITION",
+   "HEIRLOOM",
+   "SUNDAY",
+   "KITCHEN",
+   "APRON",
+   "MEMORY",
+   "HOMEMADE",
+   "SHARING"
+  ],
+  "fact": "Copy treasured family recipe cards and keep the originals somewhere safe."
+ },
+ "Yeast Breads": {
+  "words": [
+   "BRIOCHE",
+   "CHALLAH",
+   "FOCACCIA",
+   "BAGUETTE",
+   "CIABATTA",
+   "SOURDOUGH",
+   "PUMPERNICKEL",
+   "RYE",
+   "PITA",
+   "NAAN",
+   "ROLLS",
+   "PRETZEL"
+  ],
+  "fact": "Challah is a braided bread traditionally baked for the Jewish Sabbath."
+ },
+ "Quick Breads": {
+  "words": [
+   "BANANA",
+   "ZUCCHINI",
+   "CORNBREAD",
+   "SODABREAD",
+   "SCONE",
+   "BISCUIT",
+   "PUMPKIN",
+   "DATENUT",
+   "BAKINGSODA",
+   "BAKINGPOWDER",
+   "BUTTERMILK",
+   "MUFFIN"
+  ],
+  "fact": "Quick breads rise with baking soda or powder instead of yeast, so no waiting."
+ },
+ "The Bake Sale": {
+  "words": [
+   "BROWNIES",
+   "COOKIES",
+   "CUPCAKES",
+   "PRICE",
+   "TAG",
+   "CHARITY",
+   "SCHOOL",
+   "CHURCH",
+   "NEIGHBORS",
+   "TRAY",
+   "NAPKIN",
+   "DONATION"
+  ],
+  "fact": "Wrap bake sale treats one by one so buyers can grab one and go."
+ },
+ "French Pastries": {
+  "words": [
+   "ECLAIR",
+   "CROISSANT",
+   "MACARON",
+   "MADELEINE",
+   "PROFITEROLE",
+   "TARTE",
+   "BRIOCHE",
+   "CREPE",
+   "MILLEFEUILLE",
+   "PALMIER",
+   "BEIGNET",
+   "CHOUX"
+  ],
+  "fact": "Madeleines are small, shell-shaped sponge cakes from France."
+ },
+ "Italian Treats": {
+  "words": [
+   "CANNOLI",
+   "TIRAMISU",
+   "BISCOTTI",
+   "PANETTONE",
+   "AMARETTI",
+   "ZEPPOLE",
+   "TORTA",
+   "CROSTATA",
+   "PANNACOTTA",
+   "SFOGLIATELLE",
+   "GELATO",
+   "PIZZELLE"
+  ],
+  "fact": "Biscotti means twice-cooked, because the cookies are baked two times."
+ },
+ "American Classics": {
+  "words": [
+   "APPLEPIE",
+   "BROWNIE",
+   "CHEESECAKE",
+   "CORNBREAD",
+   "CUPCAKE",
+   "DONUT",
+   "SHORTCAKE",
+   "COBBLER",
+   "BISCUIT",
+   "PECANPIE",
+   "MUFFIN",
+   "WHOOPIEPIE"
+  ],
+  "fact": "Boston cream pie is really a cake, filled with custard and topped with chocolate."
+ },
+ "Cupcake Party": {
+  "words": [
+   "LINER",
+   "FROSTING",
+   "SPRINKLES",
+   "CHERRY",
+   "CANDLE",
+   "SWIRL",
+   "PIPING",
+   "BAG",
+   "TOPPER",
+   "CONFETTI",
+   "VANILLA",
+   "RAINBOW"
+  ],
+  "fact": "Fill cupcake liners about two-thirds full so they rise without spilling over."
+ },
+ "Butter and Eggs": {
+  "words": [
+   "BUTTER",
+   "EGGS",
+   "YOLK",
+   "WHITE",
+   "SHELL",
+   "CREAM",
+   "CHURN",
+   "UNSALTED",
+   "SOFTENED",
+   "MELTED",
+   "WHIP",
+   "BEAT"
+  ],
+  "fact": "Room-temperature eggs and butter blend more smoothly into batter."
+ },
+ "Pancakes and Waffles": {
+  "words": [
+   "BATTER",
+   "GRIDDLE",
+   "SYRUP",
+   "FLAPJACK",
+   "STACK",
+   "FLIP",
+   "SPATULA",
+   "BLUEBERRY",
+   "BUTTERMILK",
+   "IRON",
+   "CRISPY",
+   "MAPLE"
+  ],
+  "fact": "Flip pancakes once bubbles form on top and the edges look set."
+ },
+ "The Little Bakeshop": {
+  "words": [
+   "BAKERY",
+   "COUNTER",
+   "DISPLAY",
+   "OVEN",
+   "APRON",
+   "ROLLS",
+   "BREAD",
+   "PASTRY",
+   "COFFEE",
+   "BOX",
+   "TWINE",
+   "REGULARS"
+  ],
+  "fact": "Many town bakers start work before dawn so bread is fresh when the doors open."
+ },
+ "Scones and Biscuits": {
+  "words": [
+   "CREAM",
+   "BUTTERMILK",
+   "FLAKY",
+   "TENDER",
+   "CUTTER",
+   "LAYERS",
+   "JAM",
+   "CLOTTED",
+   "DROP",
+   "CURRANT",
+   "CHEDDAR",
+   "GRAVY"
+  ],
+  "fact": "Press a biscuit cutter straight down; twisting seals the edges and stops the rise."
+ },
+ "Lemon Zest": {
+  "words": [
+   "LEMON",
+   "LIME",
+   "ORANGE",
+   "ZEST",
+   "JUICE",
+   "CURD",
+   "TART",
+   "GRATER",
+   "PEEL",
+   "CITRUS",
+   "MERINGUE",
+   "GLAZE"
+  ],
+  "fact": "Zest citrus fruit before you juice it; it is much easier that way."
+ },
+ "Candy Making": {
+  "words": [
+   "FUDGE",
+   "TOFFEE",
+   "CARAMEL",
+   "BRITTLE",
+   "TAFFY",
+   "NOUGAT",
+   "FONDANT",
+   "LOLLIPOP",
+   "DIVINITY",
+   "PRALINE",
+   "THERMOMETER",
+   "SYRUP"
+  ],
+  "fact": "A candy thermometer takes the guesswork out of fudge and caramel."
+ },
+ "Baking Verbs": {
+  "words": [
+   "STIR",
+   "FOLD",
+   "WHISK",
+   "BEAT",
+   "CREAM",
+   "SIFT",
+   "KNEAD",
+   "ROLL",
+   "GREASE",
+   "DUST",
+   "DRIZZLE",
+   "BLEND"
+  ],
+  "fact": "To fold, gently lift and turn the batter so the air stays in."
+ },
+ "Cheesecake": {
+  "words": [
+   "CREAMCHEESE",
+   "GRAHAM",
+   "CRUST",
+   "SPRINGFORM",
+   "WATERBATH",
+   "SOURCREAM",
+   "VANILLA",
+   "STRAWBERRY",
+   "TOPPING",
+   "CHILL",
+   "SMOOTH",
+   "SLICE"
+  ],
+  "fact": "A warm, wet knife cuts the cleanest cheesecake slices."
+ },
+ "Cinnamon Rolls": {
+  "words": [
+   "DOUGH",
+   "SPIRAL",
+   "SWIRL",
+   "BUTTER",
+   "BROWNSUGAR",
+   "CINNAMON",
+   "ICING",
+   "RISE",
+   "OVEN",
+   "GOOEY",
+   "PECANS",
+   "SLICE"
+  ],
+  "fact": "Slice rolled dough with unflavored dental floss for neat, round rolls."
+ },
+ "The Donut Shop": {
+  "words": [
+   "GLAZED",
+   "JELLY",
+   "SPRINKLE",
+   "CRULLER",
+   "FRITTER",
+   "BEIGNET",
+   "OLDFASHIONED",
+   "POWDERED",
+   "HOLES",
+   "CHOCOLATE",
+   "BOSTONCREAM",
+   "FRYER"
+  ],
+  "fact": "Apple fritters are fried dough studded with chunks of apple."
+ },
+ "Gingerbread House": {
+  "words": [
+   "GINGERBREAD",
+   "WALLS",
+   "ROOF",
+   "ICING",
+   "GUMDROPS",
+   "PEPPERMINT",
+   "DOOR",
+   "WINDOW",
+   "CHIMNEY",
+   "SNOW",
+   "WREATH",
+   "PATH"
+  ],
+  "fact": "Royal icing dries hard, which makes it the best glue for a gingerbread house."
+ },
+ "Afternoon Tea": {
+  "words": [
+   "TEAPOT",
+   "SCONES",
+   "CLOTTEDCREAM",
+   "JAM",
+   "CUCUMBER",
+   "SANDWICH",
+   "TEACAKE",
+   "SAUCER",
+   "CUP",
+   "LACE",
+   "TIERS",
+   "LEMON"
+  ],
+  "fact": "Afternoon tea became fashionable in England in the 1840s."
+ },
+ "Baking Science": {
+  "words": [
+   "LEAVENING",
+   "GLUTEN",
+   "STARCH",
+   "PROTEIN",
+   "ACID",
+   "STEAM",
+   "AIR",
+   "BUBBLES",
+   "EMULSION",
+   "OVENSPRING",
+   "MAILLARD",
+   "BROWNING"
+  ],
+  "fact": "The Maillard reaction is what turns crusts golden brown and tasty."
+ },
+ "Perfect Pie Crust": {
+  "words": [
+   "FLOUR",
+   "BUTTER",
+   "LARD",
+   "ICEWATER",
+   "CRIMP",
+   "FLUTE",
+   "LATTICE",
+   "BLINDBAKE",
+   "WEIGHTS",
+   "ROLLINGPIN",
+   "DOCKING",
+   "EGGWASH"
+  ],
+  "fact": "Brush the crust with egg wash for a shiny, golden top."
+ },
+ "Berry Picking": {
+  "words": [
+   "STRAWBERRY",
+   "BLUEBERRY",
+   "RASPBERRY",
+   "BLACKBERRY",
+   "GOOSEBERRY",
+   "CRANBERRY",
+   "ELDERBERRY",
+   "MULBERRY",
+   "BOYSENBERRY",
+   "HUCKLEBERRY",
+   "BASKET",
+   "PATCH"
+  ],
+  "fact": "Rinse berries only right before using them; moisture makes them spoil faster."
+ },
+ "Apple Orchard": {
+  "words": [
+   "GRANNYSMITH",
+   "HONEYCRISP",
+   "GALA",
+   "FUJI",
+   "MCINTOSH",
+   "BRAEBURN",
+   "JONAGOLD",
+   "CIDER",
+   "ORCHARD",
+   "BUSHEL",
+   "LADDER",
+   "CORE"
+  ],
+  "fact": "Tart, firm apples like Granny Smith hold their shape well in pies."
+ },
+ "Pumpkin Patch": {
+  "words": [
+   "PUMPKIN",
+   "PIE",
+   "SPICE",
+   "PUREE",
+   "ROLL",
+   "BREAD",
+   "MUFFINS",
+   "SEEDS",
+   "VINE",
+   "HARVEST",
+   "GOURD",
+   "CUSTARD"
+  ],
+  "fact": "Use plain pumpkin puree, not pie filling, unless the recipe says otherwise."
+ },
+ "Picnic Desserts": {
+  "words": [
+   "LEMONBARS",
+   "BROWNIES",
+   "BLONDIES",
+   "COOKIES",
+   "HANDPIES",
+   "CUPCAKES",
+   "TURNOVERS",
+   "MUFFINS",
+   "BASKET",
+   "BLANKET",
+   "COOLER",
+   "NAPKINS"
+  ],
+  "fact": "Bar cookies travel well; cut them in the pan and pack them flat."
+ },
+ "Kitchen Timer": {
+  "words": [
+   "MINUTE",
+   "SECOND",
+   "HOUR",
+   "ALARM",
+   "BEEP",
+   "DING",
+   "CLOCK",
+   "TIMER",
+   "COUNTDOWN",
+   "BUZZER",
+   "CHECK",
+   "TOOTHPICK"
+  ],
+  "fact": "Set the timer for the shortest bake time in the recipe and check early."
+ },
+ "Sourdough": {
+  "words": [
+   "STARTER",
+   "LEVAIN",
+   "FEED",
+   "JAR",
+   "BUBBLES",
+   "TANGY",
+   "CRUST",
+   "SCORE",
+   "BANNETON",
+   "DISCARD",
+   "RISE",
+   "FERMENT"
+  ],
+  "fact": "Sourdough rises with wild yeast and bacteria instead of store-bought yeast."
+ },
+ "Cookie Cutters": {
+  "words": [
+   "STAR",
+   "HEART",
+   "TREE",
+   "BELL",
+   "ANGEL",
+   "MOON",
+   "CIRCLE",
+   "FLOWER",
+   "SNOWMAN",
+   "LEAF",
+   "BUNNY",
+   "STOCKING"
+  ],
+  "fact": "Dip cutters in flour between cuts so the dough doesn't stick."
+ },
+ "Sprinkles and Toppings": {
+  "words": [
+   "SPRINKLES",
+   "NONPAREILS",
+   "JIMMIES",
+   "CHIPS",
+   "COCONUT",
+   "NUTS",
+   "CHERRIES",
+   "DRIZZLE",
+   "CANDY",
+   "STREUSEL",
+   "CRUMBS",
+   "DRAGEES"
+  ],
+  "fact": "In parts of the United States, rainbow sprinkles are called jimmies."
+ },
+ "The Breakfast Table": {
+  "words": [
+   "TOAST",
+   "BAGEL",
+   "MUFFIN",
+   "JAM",
+   "BUTTER",
+   "HONEY",
+   "COFFEE",
+   "TEA",
+   "JUICE",
+   "PLATE",
+   "NAPKIN",
+   "SUNRISE"
+  ],
+  "fact": "Wrap warm muffins in a cloth napkin to keep them cozy at the table."
+ },
+ "Fall Flavors": {
+  "words": [
+   "APPLE",
+   "PUMPKIN",
+   "PECAN",
+   "MAPLE",
+   "CIDER",
+   "CINNAMON",
+   "NUTMEG",
+   "CRANBERRY",
+   "SWEETPOTATO",
+   "PEAR",
+   "CARAMEL",
+   "GINGER"
+  ],
+  "fact": "Toss sliced apples with lemon juice to keep them from browning."
+ },
+ "Spring Treats": {
+  "words": [
+   "STRAWBERRY",
+   "RHUBARB",
+   "LEMON",
+   "CARROTCAKE",
+   "COCONUT",
+   "LAVENDER",
+   "HONEY",
+   "MINT",
+   "APRICOT",
+   "BLOSSOM",
+   "PASTEL",
+   "EASTER"
+  ],
+  "fact": "Rhubarb is a vegetable, but it is almost always cooked like a fruit."
+ },
+ "Summer Desserts": {
+  "words": [
+   "SHORTCAKE",
+   "COBBLER",
+   "CRISP",
+   "PEACHES",
+   "BERRIES",
+   "ICEBOXCAKE",
+   "KEYLIME",
+   "POPSICLE",
+   "WATERMELON",
+   "LEMONADE",
+   "PAVLOVA",
+   "SUNSHINE"
+  ],
+  "fact": "Pavlova was named after the Russian ballerina Anna Pavlova."
+ },
+ "Winter Warmers": {
+  "words": [
+   "BREADPUDDING",
+   "GINGERBREAD",
+   "HOTCOCOA",
+   "CIDER",
+   "CINNAMON",
+   "SPICECAKE",
+   "FIRESIDE",
+   "BLANKET",
+   "SNOWDAY",
+   "TREACLE",
+   "CRUMBLE",
+   "MITTENS"
+  ],
+  "fact": "Day-old bread soaks up custard best for bread pudding."
+ },
+ "Coffee Cake Corner": {
+  "words": [
+   "STREUSEL",
+   "CRUMB",
+   "TUBEPAN",
+   "SOURCREAM",
+   "CINNAMON",
+   "COFFEE",
+   "MUG",
+   "SLICE",
+   "WALNUT",
+   "SWIRL",
+   "MORNING",
+   "CHAT"
+  ],
+  "fact": "Coffee cake is named for being served with coffee; most contain none."
+ },
+ "Bread Shapes": {
+  "words": [
+   "BOULE",
+   "BATARD",
+   "BAGUETTE",
+   "BRAID",
+   "KNOT",
+   "ROLL",
+   "LOAF",
+   "RING",
+   "TWIST",
+   "PLAIT",
+   "CROWN",
+   "ROUND"
+  ],
+  "fact": "A boule is a round loaf; the word means ball in French."
+ },
+ "Flour Power": {
+  "words": [
+   "ALLPURPOSE",
+   "BREAD",
+   "CAKE",
+   "PASTRY",
+   "WHOLEWHEAT",
+   "RYE",
+   "SPELT",
+   "ALMOND",
+   "COCONUT",
+   "OAT",
+   "CORNMEAL",
+   "SEMOLINA"
+  ],
+  "fact": "Bread flour has more protein than cake flour, so it makes chewier bread."
+ },
+ "Sweet Rolls": {
+  "words": [
+   "CINNAMONROLL",
+   "STICKYBUN",
+   "HONEYBUN",
+   "KOLACHE",
+   "DANISH",
+   "BABKA",
+   "BRIOCHE",
+   "HOTCROSSBUN",
+   "ORANGEROLL",
+   "CHELSEABUN",
+   "MORNINGBUN",
+   "POTICA"
+  ],
+  "fact": "Hot cross buns are a traditional treat at Easter time."
+ },
+ "Tarts and Tartlets": {
+  "words": [
+   "FRUIT",
+   "CUSTARD",
+   "LEMON",
+   "TATIN",
+   "FRANGIPANE",
+   "PASTRY",
+   "GLAZE",
+   "SHELL",
+   "FLUTED",
+   "ALMOND",
+   "BERRY",
+   "TREACLE"
+  ],
+  "fact": "Tarte Tatin is an upside-down apple tart from France."
+ },
+ "Kitchen Helpers": {
+  "words": [
+   "APRON",
+   "OVENMITT",
+   "POTHOLDER",
+   "TOWEL",
+   "TIMER",
+   "RACK",
+   "SCALE",
+   "SIFTER",
+   "ROLLINGPIN",
+   "PASTRYBRUSH",
+   "THERMOMETER",
+   "CUTTER"
+  ],
+  "fact": "An oven thermometer shows whether your oven runs hot or cool."
+ },
+ "Cookie Exchange": {
+  "words": [
+   "SWAP",
+   "TIN",
+   "RIBBON",
+   "RECIPES",
+   "FRIENDS",
+   "DOZEN",
+   "PLATTER",
+   "LABEL",
+   "VARIETY",
+   "HOLIDAY",
+   "PARTY",
+   "BOX"
+  ],
+  "fact": "Bake sturdy cookies for a swap; delicate ones may crumble on the way."
+ },
+ "Custards and Puddings": {
+  "words": [
+   "CREMEBRULEE",
+   "FLAN",
+   "CUSTARD",
+   "BLANCMANGE",
+   "TAPIOCA",
+   "RICEPUDDING",
+   "CARAMEL",
+   "RAMEKIN",
+   "WATERBATH",
+   "VANILLA",
+   "EGGYOLK",
+   "BREADPUDDING"
+  ],
+  "fact": "Creme brulee means burnt cream; its sugar top is caramelized."
+ },
+ "Breads of the World": {
+  "words": [
+   "CHALLAH",
+   "NAAN",
+   "PITA",
+   "TORTILLA",
+   "BAGUETTE",
+   "FOCACCIA",
+   "INJERA",
+   "AREPA",
+   "BAO",
+   "SODABREAD",
+   "LAVASH",
+   "CHAPATI"
+  ],
+  "fact": "Injera is a spongy Ethiopian flatbread made from teff flour."
+ },
+ "The Rolling Pin": {
+  "words": [
+   "ROLLINGPIN",
+   "DOUGH",
+   "FLOUR",
+   "DUST",
+   "SMOOTH",
+   "THIN",
+   "EVEN",
+   "BOARD",
+   "MAT",
+   "PARCHMENT",
+   "CHILL",
+   "CIRCLE"
+  ],
+  "fact": "Roll dough from the center outward and give it a quarter turn often."
+ },
+ "Brownies and Bars": {
+  "words": [
+   "FUDGY",
+   "CHEWY",
+   "CAKEY",
+   "BLONDIE",
+   "LEMONBARS",
+   "DATESQUARE",
+   "SEVENLAYER",
+   "NANAIMO",
+   "TRAYBAKE",
+   "CRUMBLEBAR",
+   "CORNER",
+   "SQUARES"
+  ],
+  "fact": "Nanaimo bars are a no-bake treat named after a city in Canada."
+ },
+ "Fruit Crisps": {
+  "words": [
+   "CRISP",
+   "CRUMBLE",
+   "COBBLER",
+   "BETTY",
+   "BUCKLE",
+   "GRUNT",
+   "SLUMP",
+   "PANDOWDY",
+   "OATS",
+   "TOPPING",
+   "APPLE",
+   "PEACH"
+  ],
+  "fact": "Buckle, grunt and slump are all old names for homey fruit desserts."
+ },
+ "County Fair Baking": {
+  "words": [
+   "BLUERIBBON",
+   "JUDGES",
+   "ENTRY",
+   "FAIR",
+   "PRIZE",
+   "CONTEST",
+   "PIE",
+   "JAM",
+   "PICKLES",
+   "RECIPE",
+   "TASTING",
+   "WINNER"
+  ],
+  "fact": "Fair judges look at taste, texture and looks, so present your best slice."
+ },
+ "Kids in the Kitchen": {
+  "words": [
+   "APRON",
+   "STOOL",
+   "MEASURE",
+   "STIR",
+   "SPRINKLES",
+   "COOKIES",
+   "CUTTERS",
+   "HELPER",
+   "LICK",
+   "SPOON",
+   "SMILES",
+   "MESS"
+  ],
+  "fact": "Let young helpers measure and stir; it teaches counting and patience."
+ },
+ "Tropical Treats": {
+  "words": [
+   "COCONUT",
+   "PINEAPPLE",
+   "MANGO",
+   "BANANA",
+   "PASSIONFRUIT",
+   "LIME",
+   "MACAROON",
+   "UPSIDEDOWN",
+   "GUAVA",
+   "PAPAYA",
+   "TOASTED",
+   "ISLAND"
+  ],
+  "fact": "Toast shredded coconut in a dry pan until golden for extra flavor."
+ },
+ "Maple and Honey": {
+  "words": [
+   "MAPLE",
+   "HONEY",
+   "SYRUP",
+   "SUGARING",
+   "SAP",
+   "BEES",
+   "HIVE",
+   "COMB",
+   "DRIZZLE",
+   "GOLDEN",
+   "SWEET",
+   "AMBER"
+  ],
+  "fact": "It takes about 40 gallons of maple sap to make one gallon of syrup."
+ },
+ "Morning Oats": {
+  "words": [
+   "OATMEAL",
+   "ROLLEDOATS",
+   "STEELCUT",
+   "GRANOLA",
+   "RAISINS",
+   "BROWNSUGAR",
+   "COOKIES",
+   "FLAPJACK",
+   "BARS",
+   "MUESLI",
+   "PORRIDGE",
+   "CRUNCH"
+  ],
+  "fact": "In Britain, a flapjack is a chewy oat bar, not a pancake."
+ },
+ "Delicious Words": {
+  "words": [
+   "SWEET",
+   "TREAT",
+   "CREAMY",
+   "FLAKY",
+   "GOOEY",
+   "CRUNCHY",
+   "MOIST",
+   "FLUFFY",
+   "RICH",
+   "TENDER",
+   "BUTTERY",
+   "DELICIOUS"
+  ],
+  "fact": "For a moist cake, avoid overbaking; start checking a few minutes early."
+ },
+ "Baking Day": {
+  "words": [
+   "APRON",
+   "RECIPE",
+   "PREHEAT",
+   "MIX",
+   "BAKE",
+   "COOL",
+   "FROST",
+   "SHARE",
+   "SMELL",
+   "KITCHEN",
+   "OVEN",
+   "JOY"
+  ],
+  "fact": "Read the whole recipe before you start, and set out every ingredient."
+ },
+ "Cookies of the World": {
+  "words": [
+   "SPECULOOS",
+   "PFEFFERNUSSE",
+   "AMARETTI",
+   "MACARON",
+   "ALFAJOR",
+   "KOURABIEDES",
+   "LEBKUCHEN",
+   "SHORTBREAD",
+   "BISCOTTI",
+   "POLVORON",
+   "ANZAC",
+   "FORTUNE"
+  ],
+  "fact": "Anzac biscuits are oat cookies from Australia and New Zealand."
+ },
+ "Cake Decorating": {
+  "words": [
+   "PIPING",
+   "NOZZLE",
+   "TURNTABLE",
+   "OFFSETSPATULA",
+   "FONDANT",
+   "ROSETTE",
+   "BORDER",
+   "WRITING",
+   "SPRINKLES",
+   "FLOWERS",
+   "CRUMBCOAT",
+   "TIERS"
+  ],
+  "fact": "A thin crumb coat of frosting traps loose crumbs before the final layer."
+ },
+ "Birthday Cake": {
+  "words": [
+   "CANDLES",
+   "WISH",
+   "BALLOONS",
+   "PARTY",
+   "PRESENTS",
+   "SPRINKLES",
+   "FROSTING",
+   "LAYERS",
+   "SLICE",
+   "CELEBRATE",
+   "SINGING",
+   "CONFETTI"
+  ],
+  "fact": "Birthday cakes with candles were a German custom by the late 1700s."
+ },
+ "Wedding Cake": {
+  "words": [
+   "TIERS",
+   "WHITE",
+   "LACE",
+   "FLOWERS",
+   "PILLARS",
+   "TOPPER",
+   "FONDANT",
+   "BUTTERCREAM",
+   "CUTTING",
+   "SLICE",
+   "BRIDE",
+   "GROOM"
+  ],
+  "fact": "Tall, tiered wedding cakes grew popular in Britain during the 1800s."
+ },
+ "Pretzels and Bagels": {
+  "words": [
+   "PRETZEL",
+   "BAGEL",
+   "BOIL",
+   "KNOT",
+   "TWIST",
+   "SALT",
+   "SESAME",
+   "POPPY",
+   "EVERYTHING",
+   "ONION",
+   "CHEWY",
+   "GLOSSY"
+  ],
+  "fact": "Bagels are boiled before baking, which gives them a shiny, chewy crust."
+ },
+ "Savory Bakes": {
+  "words": [
+   "POTPIE",
+   "QUICHE",
+   "CALZONE",
+   "EMPANADA",
+   "PASTY",
+   "GALETTE",
+   "STROMBOLI",
+   "FOCACCIA",
+   "SPANAKOPITA",
+   "SAUSAGEROLL",
+   "HANDPIE",
+   "CHEESESTRAW"
+  ],
+  "fact": "Cornish pasties were a handy lunch for tin miners in England."
+ },
+ "Herbs in Baking": {
+  "words": [
+   "ROSEMARY",
+   "THYME",
+   "BASIL",
+   "DILL",
+   "SAGE",
+   "CHIVES",
+   "OREGANO",
+   "LAVENDER",
+   "MINT",
+   "PARSLEY",
+   "TARRAGON",
+   "CHERVIL"
+  ],
+  "fact": "Rosemary and sea salt make a simple, fragrant topping for focaccia."
+ },
+ "Seeds and Grains": {
+  "words": [
+   "SESAME",
+   "POPPY",
+   "SUNFLOWER",
+   "FLAX",
+   "CHIA",
+   "CARAWAY",
+   "PUMPKIN",
+   "OATS",
+   "BARLEY",
+   "MILLET",
+   "QUINOA",
+   "BUCKWHEAT"
+  ],
+  "fact": "Caraway seeds give classic rye bread its distinctive flavor."
+ },
+ "Oops in the Oven": {
+  "words": [
+   "BURNT",
+   "SUNKEN",
+   "SOGGY",
+   "DRY",
+   "CRACKED",
+   "FLAT",
+   "DENSE",
+   "TOUGH",
+   "LUMPY",
+   "RUNNY",
+   "STUCK",
+   "DOMED"
+  ],
+  "fact": "A cake that sinks in the middle may have had the oven door opened too soon."
+ },
+ "Tea Time Cakes": {
+  "words": [
+   "VICTORIA",
+   "BATTENBERG",
+   "DUNDEE",
+   "MADEIRA",
+   "LEMONDRIZZLE",
+   "ECCLES",
+   "BAKEWELL",
+   "WELSHCAKE",
+   "TEACAKE",
+   "ROCKCAKE",
+   "PARKIN",
+   "SIMNEL"
+  ],
+  "fact": "Battenberg cake has a pink and yellow checkerboard wrapped in marzipan."
+ },
+ "Kitchen Scents": {
+  "words": [
+   "CINNAMON",
+   "VANILLA",
+   "BUTTER",
+   "YEAST",
+   "TOAST",
+   "COFFEE",
+   "CARAMEL",
+   "CHOCOLATE",
+   "LEMON",
+   "GINGER",
+   "NUTMEG",
+   "FRESHBREAD"
+  ],
+  "fact": "Much of the smell of baking bread comes from aromas formed in the crust."
+ },
+ "A Baker's Dozen": {
+  "words": [
+   "DOZEN",
+   "THIRTEEN",
+   "EXTRA",
+   "ROLLS",
+   "BUNS",
+   "LOAVES",
+   "BAKER",
+   "COUNT",
+   "BOX",
+   "TRAY",
+   "ORDER",
+   "CUSTOMER"
+  ],
+  "fact": "A baker's dozen is 13; bakers once added one so no order came up short."
+ },
+ "Chocolate Chip Cookies": {
+  "words": [
+   "CHIPS",
+   "DOUGH",
+   "BROWNSUGAR",
+   "BUTTER",
+   "VANILLA",
+   "CHEWY",
+   "CRISPY",
+   "GOLDEN",
+   "MILK",
+   "DUNK",
+   "WARM",
+   "BATCH"
+  ],
+  "fact": "Brown sugar makes cookies chewier; white sugar makes them crisper."
+ },
+ "Banana Bread": {
+  "words": [
+   "BANANA",
+   "RIPE",
+   "SPOTTY",
+   "MASHED",
+   "WALNUTS",
+   "LOAF",
+   "CINNAMON",
+   "MOIST",
+   "SLICE",
+   "CHOCOLATE",
+   "FREEZER",
+   "BREAD"
+  ],
+  "fact": "Freeze overripe bananas in their peels until you are ready to bake."
+ },
+ "Pound Cake": {
+  "words": [
+   "POUND",
+   "BUTTER",
+   "SUGAR",
+   "EGGS",
+   "FLOUR",
+   "LOAF",
+   "DENSE",
+   "GOLDEN",
+   "GLAZE",
+   "LEMON",
+   "MARBLE",
+   "SLICE"
+  ],
+  "fact": "Pound cake was named for using a pound each of butter, sugar, eggs and flour."
+ },
+ "Strawberry Season": {
+  "words": [
+   "STRAWBERRY",
+   "SHORTCAKE",
+   "JAM",
+   "PIE",
+   "RHUBARB",
+   "CREAM",
+   "HULL",
+   "PATCH",
+   "BASKET",
+   "RED",
+   "SWEET",
+   "JUNE"
+  ],
+  "fact": "Hull strawberries after washing them so they don't soak up water."
+ },
+ "Cherry on Top": {
+  "words": [
+   "CHERRY",
+   "PIT",
+   "STEM",
+   "MARASCHINO",
+   "CLAFOUTIS",
+   "BLACKFOREST",
+   "SUNDAE",
+   "COBBLER",
+   "TART",
+   "SOUR",
+   "SWEET",
+   "ORCHARD"
+  ],
+  "fact": "Clafoutis is a French baked custard traditionally made with cherries."
+ },
+ "The Bread Basket": {
+  "words": [
+   "WHITE",
+   "WHEAT",
+   "RYE",
+   "SOURDOUGH",
+   "MULTIGRAIN",
+   "ROLLS",
+   "BUNS",
+   "CROISSANT",
+   "BISCUIT",
+   "BREADSTICK",
+   "CRACKER",
+   "BUTTER"
+  ],
+  "fact": "Store crusty bread in a paper or cloth bag; plastic softens the crust."
+ },
+ "Peach Cobbler": {
+  "words": [
+   "PEACHES",
+   "COBBLER",
+   "BISCUIT",
+   "TOPPING",
+   "CINNAMON",
+   "BUBBLY",
+   "GOLDEN",
+   "VANILLA",
+   "ICECREAM",
+   "SKILLET",
+   "SOUTHERN",
+   "SUMMER"
+  ],
+  "fact": "Dip peaches in boiling water for a minute and their skins slip right off."
+ },
+ "Carrot Cake": {
+  "words": [
+   "CARROTS",
+   "GRATED",
+   "RAISINS",
+   "WALNUTS",
+   "PINEAPPLE",
+   "COCONUT",
+   "CREAMCHEESE",
+   "SPICE",
+   "OIL",
+   "MOIST",
+   "LAYERS",
+   "ORANGE"
+  ],
+  "fact": "Finely grated carrots add natural sweetness and keep the cake moist."
+ },
+ "Scottish Shortbread": {
+  "words": [
+   "BUTTER",
+   "SUGAR",
+   "FLOUR",
+   "SCOTLAND",
+   "FINGERS",
+   "ROUNDS",
+   "CRUMBLY",
+   "TARTAN",
+   "TIN",
+   "TEA",
+   "GOLDEN",
+   "WEDGES"
+  ],
+  "fact": "Classic Scottish shortbread uses only butter, sugar and flour."
+ },
+ "The Cooling Rack": {
+  "words": [
+   "COOLING",
+   "RACK",
+   "WIRE",
+   "STEAM",
+   "REST",
+   "WAIT",
+   "AIRFLOW",
+   "CRISP",
+   "BOTTOM",
+   "CRUMBS",
+   "PATIENCE",
+   "WINDOWSILL"
+  ],
+  "fact": "Cool bakes on a wire rack so air flows underneath and bottoms stay crisp."
+ },
+ "Marshmallow Fun": {
+  "words": [
+   "MARSHMALLOW",
+   "SMORES",
+   "GRAHAM",
+   "ROCKYROAD",
+   "COCOA",
+   "TOASTED",
+   "CAMPFIRE",
+   "GOOEY",
+   "PUFFY",
+   "SQUARES",
+   "MELTED",
+   "STICKS"
+  ],
+  "fact": "Marshmallows were first made from the root of the marsh mallow plant."
+ },
+ "Almond Delights": {
+  "words": [
+   "ALMOND",
+   "MARZIPAN",
+   "FRANGIPANE",
+   "AMARETTI",
+   "MACARON",
+   "BEARCLAW",
+   "FINANCIER",
+   "BAKEWELL",
+   "BISCOTTI",
+   "SLIVERED",
+   "EXTRACT",
+   "FLOUR"
+  ],
+  "fact": "French macarons are made with ground almonds, egg whites and sugar."
+ },
+ "Mini Treats": {
+  "words": [
+   "PETITFOUR",
+   "CUPCAKE",
+   "TARTLET",
+   "MACARON",
+   "ECLAIR",
+   "CAKEPOP",
+   "COOKIE",
+   "MADELEINE",
+   "BONBON",
+   "TRUFFLE",
+   "MINIPIE",
+   "BROWNIEBITE"
+  ],
+  "fact": "Mini muffins bake in about half the time of full-size ones, so check early."
+ },
+ "Thanksgiving Table": {
+  "words": [
+   "PUMPKINPIE",
+   "PECANPIE",
+   "APPLEPIE",
+   "ROLLS",
+   "CORNBREAD",
+   "STUFFING",
+   "CRANBERRY",
+   "SWEETPOTATO",
+   "GRATITUDE",
+   "FAMILY",
+   "HARVEST",
+   "GRAVY"
+  ],
+  "fact": "Bake pies a day ahead to free up the oven on the big day."
+ },
+ "Bake With Love": {
+  "words": [
+   "SHARE",
+   "GIFT",
+   "NEIGHBOR",
+   "FRIEND",
+   "FAMILY",
+   "KINDNESS",
+   "COMFORT",
+   "HOMEMADE",
+   "WARMTH",
+   "THANKYOU",
+   "SMILE",
+   "HUG"
+  ],
+  "fact": "A loaf of homemade bread is a warm, welcome gift for a new neighbor."
+ },
+ "Sweet Endings": {
+  "words": [
+   "DESSERT",
+   "FINALE",
+   "TREAT",
+   "SLICE",
+   "CRUMBS",
+   "SECONDS",
+   "COFFEE",
+   "SWEET",
+   "DELIGHT",
+   "ENJOY",
+   "DONE",
+   "YUM"
+  ],
+  "fact": "Wrap leftover cake slices tightly so they stay moist for days."
+ }
+}

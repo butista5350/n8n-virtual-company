@@ -194,6 +194,43 @@ class TestBirdsEdition(unittest.TestCase):
             gb.build(cfg, os.path.join(ROOT, "data", "themes_birds.json"), os.path.join(self.tmp, "x.pdf"))
 
 
+class TestBakingEdition(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.cfg = json.load(open(os.path.join(ROOT, "data", "book.baking.json"), encoding="utf-8"))
+        cls.tmp = tempfile.mkdtemp()
+        cls.interior = os.path.join(cls.tmp, "k.pdf")
+        cls.pages = gb.build(cls.cfg, os.path.join(ROOT, "data", "themes_baking.json"), cls.interior)
+        cls.cover = os.path.join(cls.tmp, "kc.pdf")
+        gc.build(cls.cfg, cls.pages, cls.cover)
+
+    def test_book_shape(self):
+        self.assertEqual(self.pages, 132)
+        back = " ".join(p.extract_text() for p in PdfReader(self.interior).pages[-4:])
+        self.assertIn("My Baking Log", back)
+        self.assertNotIn("Garden", back)
+
+    def test_bakery_cover(self):
+        self.assertEqual(self.cfg["cover"]["scene"], "bakery")
+        self.assertIn("BAKING", PdfReader(self.cover).pages[0].extract_text())
+
+
+class TestThemeData(unittest.TestCase):
+    def test_no_word_hidden_inside_another(self):
+        """A word inside another word of the same puzzle (BERRY / RASPBERRY) confuses solvers."""
+        for fname in ("themes_birds.json", "themes_baking.json"):
+            themes = json.load(open(os.path.join(ROOT, "data", fname), encoding="utf-8"))
+            self.assertEqual(len(themes), 100, fname)
+            for name, v in themes.items():
+                ws = v["words"]
+                self.assertEqual(len(set(ws)), 12, name)
+                for a in ws:
+                    self.assertTrue(a.isalpha() and len(a) <= 13, (name, a))
+                    for b in ws:
+                        if a != b:
+                            self.assertNotIn(a, b, (fname, name))
+
+
 class TestPolicy(unittest.TestCase):
     """T0 policy: no network, no LLM; repository hygiene."""
     FILES = [os.path.join(ROOT, n) for n in ("wordsearch.py", "generate_book.py", "generate_cover.py", "cover_sunrise.py")]
