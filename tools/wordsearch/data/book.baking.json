@@ -1,0 +1,166 @@
+{
+ "title": "Large Print Baking Word Search",
+ "subtitle": "100 Puzzles for Seniors and Home Bakers",
+ "volume": "Volume 1",
+ "author": "H. Eagle",
+ "year": 2026,
+ "grid_size": 13,
+ "seed": 31,
+ "puzzle_count": 100,
+ "themes_file": "themes_baking.json",
+ "fact_label": "Baking Bite",
+ "back_cover_text": "Warm up with a cozy hour in the kitchen, no oven needed. Each of the 100 puzzles hides 12 baking words in big, clear letters, from breads and pies to cookies and cakes, with a tasty baking tip or fact on every page. Solutions, a baking log and recipe note pages are inside.",
+ "bonus_pages": [
+  {
+   "kind": "log",
+   "title": "My Baking Log",
+   "subtitle": "Note what you baked and how it turned out.",
+   "columns": [
+    [
+     "Date",
+     0.17
+    ],
+    [
+     "What I Baked",
+     0.38
+    ],
+    [
+     "Notes",
+     0.3
+    ],
+    [
+     "Rating",
+     0.15
+    ]
+   ]
+  },
+  {
+   "kind": "checklist",
+   "title": "Bakes I Want to Try",
+   "subtitle": "Tick each one once you've baked it.",
+   "items": [
+    "Banana Bread",
+    "Apple Pie",
+    "Cinnamon Rolls",
+    "Lemon Bars",
+    "Carrot Cake",
+    "Scones",
+    "Sourdough Loaf",
+    "Peach Cobbler",
+    "Shortbread",
+    "Pound Cake",
+    "Focaccia",
+    "Pumpkin Pie",
+    "Blueberry Muffins",
+    "Brownies",
+    "Cheesecake",
+    "Gingerbread",
+    "Biscuits",
+    "Pecan Pie",
+    "Cornbread",
+    "Madeleines"
+   ],
+   "extra_label": "More bakes on my list:"
+  },
+  {
+   "kind": "lines",
+   "title": "My Recipe Notes"
+  },
+  {
+   "kind": "lines",
+   "title": "My Recipe Notes"
+  }
+ ],
+ "cover": {
+  "layout": "sunrise",
+  "scene": "bakery",
+  "tag": "A GIFT FOR HOME BAKERS",
+  "headline": "LARGE PRINT",
+  "main": "BAKING",
+  "sub": "WORD SEARCH",
+  "audience": "100 PUZZLES FOR SENIORS & HOME BAKERS",
+  "teaser": [
+   [
+    "COOKIE",
+    1,
+    1,
+    [
+     0,
+     1
+    ]
+   ],
+   [
+    "FLOUR",
+    2,
+    8,
+    [
+     1,
+     0
+    ]
+   ],
+   [
+    "CAKE",
+    4,
+    2,
+    [
+     0,
+     1
+    ]
+   ],
+   [
+    "PIE",
+    5,
+    0,
+    [
+     1,
+     1
+    ]
+   ],
+   [
+    "BUN",
+    8,
+    3,
+    [
+     0,
+     1
+    ]
+   ]
+  ],
+  "ribbon": "BIG CLEAR LETTERS  •  A BAKING TIP ON EVERY PAGE  •  BAKING LOG INSIDE",
+  "back_title": [
+   "Big print.",
+   "Sweet fun!"
+  ],
+  "features": [
+   "100 baking-themed puzzles",
+   "Extra-large, easy-to-read letters",
+   "A baking tip or fact on every page",
+   "Baking log & recipe note pages",
+   "One puzzle per page, solutions at the back"
+  ],
+  "gift_line": "A thoughtful gift for anyone who loves to bake.",
+  "tiles": "BAKE"
+ },
+ "cover_palette": {
+  "sky_top": "#CDEBF7",
+  "sky_mid": "#FFE5EC",
+  "sky_glow": "#FFD6A5",
+  "sky_low": "#FFF1C1",
+  "sun": "#FFD166",
+  "ray": "#FFB703",
+  "ink": "#4A2C2A",
+  "coral": "#D6336C",
+  "teal": "#F4A261",
+  "orange": "#F4A261",
+  "leaf": "#57CC99",
+  "leaf_dark": "#2D936C",
+  "bark": "#8B5A2B",
+  "card": "#FFFBF5",
+  "accent": "#FFD166",
+  "mint": "#A0E7E5",
+  "sky": "#BDE0FE",
+  "text": "#FFFFFF",
+  "bg_top": "#8ECAE6",
+  "bg_bottom": "#FFE8A3"
+ }
+}

@@ -9,6 +9,7 @@ import sys
 from reportlab.lib.pagesizes import letter
 from reportlab.lib.utils import simpleSplit
 from reportlab.pdfgen import canvas
+from reportlab.pdfbase.pdfmetrics import stringWidth
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from wordsearch import make_puzzle  # noqa: E402
@@ -183,7 +184,10 @@ def page_puzzle(c, page_no, number, theme, puzzle, words, fact="", fact_label="G
     col_w = size * CELL / cols
     y0 = y_top - size * CELL - 32
     lead = 24 if fact else 26
-    c.setFont(FONT_B, 18)
+    fs = 18.0                      # shrink only when a word would leave < 4pt before the next column
+    while fs > 14 and max(stringWidth(w, FONT_B, fs) for w in words) > col_w - 4:
+        fs -= 0.5
+    c.setFont(FONT_B, fs)
     for i, w in enumerate(sorted(words)):
         col, row = divmod(i, per_col)
         c.drawString(gx + col * col_w + 8, y0 - row * lead, w)

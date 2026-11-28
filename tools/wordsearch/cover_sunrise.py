@@ -176,6 +176,158 @@ def bird(c, x, y, s, kind, flip=False):
     c.restoreState()
 
 
+# ---------- bakery scene pieces (original drawn shapes) ----------
+def heart(c, x, y, s, col):
+    c.setFillColor(col)
+    p = c.beginPath()
+    p.moveTo(x, y)
+    p.curveTo(x - 12 * s, y + 8 * s, x - 10 * s, y + 20 * s, x, y + 14 * s)
+    p.curveTo(x + 10 * s, y + 20 * s, x + 12 * s, y + 8 * s, x, y)
+    c.drawPath(p, stroke=0, fill=1)
+
+
+def steam(c, x, y, s, col=white):
+    c.saveState()
+    c.setStrokeColor(col)
+    c.setStrokeAlpha(0.85)
+    c.setLineWidth(4 * s)
+    c.setLineCap(1)
+    for dx in (-14, 0, 14):
+        p = c.beginPath()
+        p.moveTo(x + dx * s, y)
+        p.curveTo(x + (dx - 8) * s, y + 12 * s, x + (dx + 8) * s, y + 22 * s, x + dx * s, y + 34 * s)
+        c.drawPath(p, stroke=1, fill=0)
+    c.restoreState()
+
+
+def cupcake(c, x, y, s, frost="#FF8FAB", wrap="#3A86FF"):
+    c.saveState()
+    c.translate(x, y)
+    c.scale(s, s)
+    _path(c, lambda p: (p.moveTo(-26, 0), p.lineTo(26, 0), p.lineTo(34, 40), p.lineTo(-34, 40), p.close()), HexColor(wrap))
+    c.setStrokeColor(white)
+    c.setStrokeAlpha(0.6)
+    c.setLineWidth(3)
+    for k in range(-3, 4):
+        c.line(k * 8, 2, k * 10, 38)
+    c.setStrokeAlpha(1)
+    c.setFillColor(HexColor(frost))
+    c.roundRect(-40, 36, 80, 20, 10, stroke=0, fill=1)
+    c.roundRect(-32, 52, 64, 18, 9, stroke=0, fill=1)
+    c.roundRect(-22, 66, 44, 16, 8, stroke=0, fill=1)
+    for (dx, dy, col) in ((-24, 46, "#FFD166"), (12, 44, "#2A9D8F"), (-6, 60, "#FFFFFF"), (18, 58, "#FFD166"), (-14, 74, "#2A9D8F")):
+        c.setFillColor(HexColor(col))
+        c.roundRect(dx, dy, 8, 3, 1.5, stroke=0, fill=1)
+    c.setFillColor(HexColor("#D62828"))
+    c.circle(0, 90, 9, stroke=0, fill=1)
+    c.setStrokeColor(HexColor("#6B4226"))
+    c.setLineWidth(2)
+    c.line(2, 98, 8, 108)
+    c.restoreState()
+
+
+def pie(c, x, y, s):
+    c.saveState()
+    c.translate(x, y)
+    c.scale(s, s)
+    c.setFillColor(HexColor("#BDE0FE"))
+    c.ellipse(-56, -6, 56, 10, stroke=0, fill=1)
+    _path(c, lambda p: (p.moveTo(-50, 4), p.curveTo(-50, 66, 50, 66, 50, 4), p.close()), HexColor("#E9A55B"))
+    c.saveState()
+    p = c.beginPath()
+    p.moveTo(-50, 4)
+    p.curveTo(-50, 66, 50, 66, 50, 4)
+    p.close()
+    c.clipPath(p, stroke=0, fill=0)
+    c.setStrokeColor(HexColor("#F6C88A"))
+    c.setLineWidth(6)
+    for k in range(-5, 6):
+        c.line(k * 14 - 30, 0, k * 14 + 30, 60)
+        c.line(k * 14 + 30, 0, k * 14 - 30, 60)
+    c.restoreState()
+    c.setFillColor(HexColor("#C97B35"))
+    for k in range(-5, 6):
+        c.circle(k * 9.5, 5, 5.5, stroke=0, fill=1)
+    c.restoreState()
+    steam(c, x, y + 56 * s, 0.9 * s)
+
+
+def loaf(c, x, y, s):
+    c.saveState()
+    c.translate(x, y)
+    c.scale(s, s)
+    _path(c, lambda p: (p.moveTo(-50, 0), p.lineTo(50, 0), p.curveTo(62, 0, 60, 52, 34, 58),
+                        p.curveTo(10, 66, -10, 66, -34, 58), p.curveTo(-60, 52, -62, 0, -50, 0), p.close()),
+          HexColor("#D9893D"))
+    _path(c, lambda p: (p.moveTo(-46, 4), p.lineTo(46, 4), p.curveTo(54, 6, 52, 40, 32, 48),
+                        p.curveTo(10, 54, -10, 54, -32, 48), p.curveTo(-52, 40, -54, 6, -46, 4), p.close()),
+          HexColor("#E9A55B"))
+    c.setStrokeColor(HexColor("#FBE3B5"))
+    c.setLineWidth(5)
+    c.setLineCap(1)
+    for k in (-24, 0, 24):
+        c.line(k - 8, 34, k + 8, 50)
+    c.restoreState()
+
+
+def cookie(c, x, y, r):
+    c.setFillColor(HexColor("#E3A857"))
+    c.circle(x, y, r, stroke=0, fill=1)
+    c.setFillColor(HexColor("#5C3D2E"))
+    for dx, dy in ((-0.4, 0.3), (0.35, 0.35), (0.1, -0.4), (-0.3, -0.25), (0.45, -0.1)):
+        c.circle(x + dx * r, y + dy * r, r * 0.13, stroke=0, fill=1)
+
+
+def cake_stand(c, x, y, s, pal):
+    c.saveState()
+    c.translate(x, y)
+    c.scale(s, s)
+    c.setFillColor(HexColor("#FFFFFF"))
+    c.ellipse(-30, 0, 30, 10, stroke=0, fill=1)
+    c.rect(-6, 5, 12, 40, stroke=0, fill=1)
+    c.ellipse(-70, 40, 70, 54, stroke=0, fill=1)
+    c.setFillColor(HexColor("#FFC8DD"))
+    c.rect(-54, 48, 108, 40, stroke=0, fill=1)
+    c.setFillColor(HexColor("#FFF6E5"))
+    c.rect(-54, 64, 108, 6, stroke=0, fill=1)
+    c.setFillColor(HexColor("#7A4E2D"))
+    c.roundRect(-56, 82, 112, 14, 5, stroke=0, fill=1)
+    for k, ln in ((-44, 14), (-24, 22), (-4, 10), (16, 18), (38, 12)):
+        c.roundRect(k - 4, 84 - ln, 8, ln + 4, 4, stroke=0, fill=1)
+    c.setFillColor(HexColor(pal["coral"]))
+    for k in (-30, 0, 30):
+        c.circle(k, 102, 7, stroke=0, fill=1)
+    c.restoreState()
+
+
+def gingham(c, x0, x1, top_pts, ybot=0, col="#E63946"):
+    """Checked tablecloth under a wavy top edge. top_pts = (y_left, c1, c2, y_right)."""
+    yl, (c1x, c1y), (c2x, c2y), yr = top_pts
+    p = c.beginPath()
+    p.moveTo(x0, ybot)
+    p.lineTo(x0, yl)
+    p.curveTo(c1x, c1y, c2x, c2y, x1, yr)
+    p.lineTo(x1, ybot)
+    p.close()
+    c.saveState()
+    c.setFillColor(white)
+    c.drawPath(p, stroke=0, fill=1)
+    c.clipPath(p, stroke=0, fill=0)
+    sq = 18
+    c.setFillColor(HexColor(col))
+    c.setFillAlpha(0.45)
+    top = max(yl, yr, c1y, c2y) + sq
+    xx = x0
+    while xx < x1:
+        c.rect(xx, ybot, sq / 2 * 1.0, top - ybot, stroke=0, fill=1)
+        xx += sq
+    yy = ybot
+    while yy < top:
+        c.rect(x0, yy, x1 - x0, sq / 2, stroke=0, fill=1)
+        yy += sq
+    c.restoreState()
+
+
 def pill(c, x, y, w, h, col):
     c.setFillColor(col)
     c.roundRect(x, y, w, h, h / 2, stroke=0, fill=1)
@@ -233,8 +385,12 @@ def draw_front(c, fx0, oy, trim_w, pal, cfg):
     Y = lambda v: oy + v - 9        # design coordinates were laid out on a 0.125 in bleed
     sun(c, fx0 + trim_w - 62, Y(445), 54, pal)
     cloud(c, fx0 + 22, Y(470), 0.9)
+    bakery = cv.get("scene") == "bakery"
     for dx, dy, s in ((70, 515, 0.8), (104, 530, 0.6), (40, 735, 0.7)):
-        flyer(c, fx0 + dx, Y(dy), s, ink)
+        if bakery:
+            heart(c, fx0 + dx, Y(dy), s * 0.9, coral)
+        else:
+            flyer(c, fx0 + dx, Y(dy), s, ink)
 
     tag = cv.get("tag", "")
     if tag:
@@ -279,26 +435,36 @@ def draw_front(c, fx0, oy, trim_w, pal, cfg):
             x, y = cc(r, col)
             c.drawCentredString(x, y - 7.5, g[r][col])
 
-    # branch, leaves and perched birds
     by = card_y + card_h + 6
-    c.saveState()
-    c.setStrokeColor(HexColor(pal["bark"]))
-    c.setLineCap(1)
-    c.setLineWidth(11)
-    p = c.beginPath()
-    p.moveTo(fx0 - 4, by - 18)
-    p.curveTo(card_x + 60, by + 8, card_x + card_w - 40, by - 4, card_x + card_w + 70, by + 18)
-    c.drawPath(p, stroke=1, fill=0)
-    c.setLineWidth(5)
-    c.line(card_x + card_w - 10, by + 6, card_x + card_w + 30, by + 46)
-    c.restoreState()
-    for lx, ly, a in ((fx0 + 30, by - 12, 150), (card_x + 30, by + 4, 120), (card_x + card_w + 20, by + 40, 40),
-                      (card_x + card_w + 36, by + 44, 100), (card_x + card_w - 30, by + 6, 70), (card_x + 150, by + 4, 60)):
-        leaf(c, lx, ly, a, 1.05, pal)
-    kinds = cv.get("birds", ["cardinal", "goldfinch", "bluebird"])[:3]
-    spots = ((70, 4, 0.95, False), (185, 4, 0.9, False), (300, 2, 0.92, True))
-    for kind, (dx, dy, s, flip) in zip(kinds, spots):
-        bird(c, card_x + dx, by + dy, s, kind, flip)
+    if bakery:
+        # wooden shelf across the top of the card, with bakes on it
+        c.setFillColor(HexColor(pal["bark"]))
+        c.roundRect(card_x - 26, by - 14, card_w + 52, 16, 6, stroke=0, fill=1)
+        c.setFillColor(HexColor("#9C6B43"))
+        c.roundRect(card_x - 26, by - 4, card_w + 52, 6, 3, stroke=0, fill=1)
+        cupcake(c, card_x + 62, by + 2, 0.95)
+        pie(c, card_x + 182, by + 4, 1.15)
+        loaf(c, card_x + 298, by + 2, 0.95)
+    else:
+        c.saveState()
+        c.setStrokeColor(HexColor(pal["bark"]))
+        c.setLineCap(1)
+        c.setLineWidth(11)
+        p = c.beginPath()
+        p.moveTo(fx0 - 4, by - 18)
+        p.curveTo(card_x + 60, by + 8, card_x + card_w - 40, by - 4, card_x + card_w + 70, by + 18)
+        c.drawPath(p, stroke=1, fill=0)
+        c.setLineWidth(5)
+        c.line(card_x + card_w - 10, by + 6, card_x + card_w + 30, by + 46)
+        c.restoreState()
+        for lx, ly, a in ((fx0 + 30, by - 12, 150), (card_x + 30, by + 4, 120), (card_x + card_w + 20, by + 40, 40),
+                          (card_x + card_w + 36, by + 44, 100), (card_x + card_w - 30, by + 6, 70), (card_x + 150, by + 4, 60)):
+            leaf(c, lx, ly, a, 1.05, pal)
+        kinds = cv.get("birds", ["cardinal", "goldfinch", "bluebird"])[:3]
+        spots = ((70, 4, 0.95, False), (185, 4, 0.9, False), (300, 2, 0.92, True))
+        for kind, (dx, dy, s, flip) in zip(kinds, spots):
+            bird(c, card_x + dx, by + dy, s, kind, flip)
+
 
     # starburst badge beside the card (never over letters)
     bx, byy = card_x + card_w + 66, card_y + 150
@@ -326,19 +492,24 @@ def draw_front(c, fx0, oy, trim_w, pal, cfg):
     c.setFont(REG, 13)
     c.drawCentredString(bx, card_y + 38, cfg["author"])
 
-    # meadow + flowers
-    c.setFillColor(HexColor(pal["leaf"]))
-    p = c.beginPath()
-    p.moveTo(fx0, 0)
-    p.lineTo(fx0, Y(70))
-    p.curveTo(fx0 + 200, Y(100), fx0 + 420, Y(60), fx0 + trim_w + 20, Y(90))
-    p.lineTo(fx0 + trim_w + 20, 0)
-    p.close()
-    c.drawPath(p, stroke=0, fill=1)
-    sunc, orange = HexColor(pal["sun"]), HexColor(pal["orange"])
-    for dx, dy, r, colr in ((30, 70, 13, "#FF8FAB"), (card_w + 120, 95, 14, "#CDB4DB"), (card_w + 160, 78, 11, pal["sun"]),
-                            (card_w + 200, 100, 12, "#FF8FAB"), (card_w + 240, 80, 10, "#FFFFFF")):
-        flower(c, fx0 + dx, Y(dy), r, HexColor(colr), orange if colr == pal["sun"] else sunc)
+    if bakery:
+        gingham(c, fx0 - 2, fx0 + trim_w + 20, (Y(70), (fx0 + 200, Y(100)), (fx0 + 420, Y(60)), Y(90)), 0, pal["coral"])
+        for dx, dy, r in ((34, 66, 16), (card_w + 130, 92, 15), (card_w + 175, 74, 13), (card_w + 220, 96, 14)):
+            cookie(c, fx0 + dx, Y(dy), r)
+    else:
+        c.setFillColor(HexColor(pal["leaf"]))
+        p = c.beginPath()
+        p.moveTo(fx0, 0)
+        p.lineTo(fx0, Y(70))
+        p.curveTo(fx0 + 200, Y(100), fx0 + 420, Y(60), fx0 + trim_w + 20, Y(90))
+        p.lineTo(fx0 + trim_w + 20, 0)
+        p.close()
+        c.drawPath(p, stroke=0, fill=1)
+        sunc, orange = HexColor(pal["sun"]), HexColor(pal["orange"])
+        for dx, dy, r, colr in ((30, 70, 13, "#FF8FAB"), (card_w + 120, 95, 14, "#CDB4DB"), (card_w + 160, 78, 11, pal["sun"]),
+                                (card_w + 200, 100, 12, "#FF8FAB"), (card_w + 240, 80, 10, "#FFFFFF")):
+            flower(c, fx0 + dx, Y(dy), r, HexColor(colr), orange if colr == pal["sun"] else sunc)
+
 
     strip = cv.get("ribbon", "")
     if strip:
@@ -374,9 +545,14 @@ def draw_back(c, bx_trim0, oy, trim_w, pal, cfg):
     ink, coral = HexColor(pal["ink"]), HexColor(pal["coral"])
     Y = lambda v: oy + v - 9
     left = bx_trim0 + 36
+    bakery = cv.get("scene") == "bakery"
     cloud(c, bx_trim0 + 380, Y(700), 0.8)
-    flyer(c, bx_trim0 + 470, Y(740), 0.9, ink)
-    flyer(c, bx_trim0 + 510, Y(725), 0.7, ink)
+    if bakery:
+        heart(c, bx_trim0 + 470, Y(735), 0.9, coral)
+        heart(c, bx_trim0 + 505, Y(718), 0.7, coral)
+    else:
+        flyer(c, bx_trim0 + 470, Y(740), 0.9, ink)
+        flyer(c, bx_trim0 + 510, Y(725), 0.7, ink)
     bt = cv.get("back_title", ["Big print.", "Big fun!"])
     for i, (line, col) in enumerate(zip(bt, (ink, coral))):
         w = stringWidth(line, BOLD, 44)
@@ -406,31 +582,37 @@ def draw_back(c, bx_trim0, oy, trim_w, pal, cfg):
     c.setFont(OBL, 13)
     c.drawString(left, fy - 32, cv.get("gift_line", ""))
 
-    # meadow, birdhouse, a bird and flowers
-    c.setFillColor(HexColor(pal["leaf"]))
-    p = c.beginPath()
-    p.moveTo(0, 0)
-    p.lineTo(0, Y(95))
-    p.curveTo(bx_trim0 + 191, Y(70), bx_trim0 + 411, Y(115), bx_trim0 + trim_w, Y(80))
-    p.lineTo(bx_trim0 + trim_w, 0)
-    p.close()
-    c.drawPath(p, stroke=0, fill=1)
-    hx = left + 70
-    c.setFillColor(HexColor(pal["bark"]))
-    c.rect(hx - 4, Y(40), 8, 110, stroke=0, fill=1)
-    c.setFillColor(HexColor("#FFB4A2"))
-    c.rect(hx - 34, Y(140), 68, 60, stroke=0, fill=1)
-    _path(c, lambda p: (p.moveTo(hx - 44, Y(198)), p.lineTo(hx, Y(236)), p.lineTo(hx + 44, Y(198)), p.close()), coral)
-    c.setFillColor(HexColor("#5C3D2E"))
-    c.circle(hx, Y(174), 12, stroke=0, fill=1)
-    c.setStrokeColor(HexColor("#5C3D2E"))
-    c.setLineWidth(3)
-    c.line(hx, Y(152), hx + 20, Y(152))
-    kinds = cv.get("birds", ["cardinal", "goldfinch", "bluebird"])
-    bird(c, hx + 110, Y(92), 0.8, kinds[-1], flip=True)
-    sunc, orange = HexColor(pal["sun"]), HexColor(pal["orange"])
-    for x, yv, r, colr in ((left + 200, 88, 11, pal["sun"]), (left + 240, 70, 12, "#FF8FAB"), (left + 15, 60, 10, "#CDB4DB")):
-        flower(c, x, Y(yv), r, HexColor(colr), orange if colr == pal["sun"] else sunc)
+    if bakery:
+        gingham(c, -2, bx_trim0 + trim_w, (Y(95), (bx_trim0 + 191, Y(70)), (bx_trim0 + 411, Y(115)), Y(80)), 0, pal["coral"])
+        cake_stand(c, left + 80, Y(78), 1.0, pal)
+        cupcake(c, left + 200, Y(70), 0.75, frost="#CDB4DB", wrap=pal["teal"])
+        for x, yv, r in ((left + 262, 60, 13), (left + 290, 82, 11), (left + 10, 50, 11)):
+            cookie(c, x, Y(yv), r)
+    else:
+        c.setFillColor(HexColor(pal["leaf"]))
+        p = c.beginPath()
+        p.moveTo(0, 0)
+        p.lineTo(0, Y(95))
+        p.curveTo(bx_trim0 + 191, Y(70), bx_trim0 + 411, Y(115), bx_trim0 + trim_w, Y(80))
+        p.lineTo(bx_trim0 + trim_w, 0)
+        p.close()
+        c.drawPath(p, stroke=0, fill=1)
+        hx = left + 70
+        c.setFillColor(HexColor(pal["bark"]))
+        c.rect(hx - 4, Y(40), 8, 110, stroke=0, fill=1)
+        c.setFillColor(HexColor("#FFB4A2"))
+        c.rect(hx - 34, Y(140), 68, 60, stroke=0, fill=1)
+        _path(c, lambda p: (p.moveTo(hx - 44, Y(198)), p.lineTo(hx, Y(236)), p.lineTo(hx + 44, Y(198)), p.close()), coral)
+        c.setFillColor(HexColor("#5C3D2E"))
+        c.circle(hx, Y(174), 12, stroke=0, fill=1)
+        c.setStrokeColor(HexColor("#5C3D2E"))
+        c.setLineWidth(3)
+        c.line(hx, Y(152), hx + 20, Y(152))
+        kinds = cv.get("birds", ["cardinal", "goldfinch", "bluebird"])
+        bird(c, hx + 110, Y(92), 0.8, kinds[-1], flip=True)
+        sunc, orange = HexColor(pal["sun"]), HexColor(pal["orange"])
+        for x, yv, r, colr in ((left + 200, 88, 11, pal["sun"]), (left + 240, 70, 12, "#FF8FAB"), (left + 15, 60, 10, "#CDB4DB")):
+            flower(c, x, Y(yv), r, HexColor(colr), orange if colr == pal["sun"] else sunc)
     # barcode keep-out (white 2.0 x 1.2 in box; KDP overlays its own barcode)
     c.setFillColor(white)
     c.rect(bx_trim0 + trim_w - 0.25 * IN - 2 * IN, oy + 0.25 * IN, 2 * IN, 1.2 * IN, stroke=0, fill=1)
